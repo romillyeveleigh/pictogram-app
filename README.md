@@ -18,7 +18,65 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Keyword Generation
+
+This app uses Google Gemini API to generate descriptive keywords for each icon image, enabling semantic search functionality.
+
+### Setup
+
+1. **Get a Gemini API Key**
+   - Visit [Google AI Studio](https://aistudio.google.com/) to get your API key
+   - Create a `.env.local` file in the root directory:
+   ```bash
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+### Generating Keywords
+
+The keyword generation script processes all icon images and generates descriptive keywords using the Gemini API.
+
+**Test Run (5 images):**
+```bash
+npm run generate-keywords:test
+```
+
+**Custom Limit:**
+```bash
+npx tsx scripts/generate-keywords.ts --limit=100
+```
+
+**Full Generation (all ~4,254 images):**
+```bash
+npm run generate-keywords
+```
+
+### How It Works
+
+- The script processes images in batches of 10 (matching the API rate limit of 10 requests/minute)
+- Keywords are saved to `keywords.json` in the root directory
+- Progress is saved after each batch, so you can safely stop and resume
+- Already processed images are automatically skipped on subsequent runs
+- The script respects API rate limits with automatic delays between batches
+
+### Expected Duration
+
+- **Test run (5 images)**: ~10 seconds
+- **100 images**: ~11 minutes
+- **Full generation (~4,254 images)**: ~7.7 hours
+
+### Search Functionality
+
+Once keywords are generated:
+- Search works by matching keywords first, then falls back to filename matching
+- Keywords are displayed in the icon detail panel
+- You can copy keywords for use elsewhere
+
+The `keywords.json` file is automatically loaded when the app starts, so no additional configuration is needed after generation.
 
 ## Learn More
 

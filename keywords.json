@@ -1,175 +1,65 @@
 {
-  "/icons/ibm/3d-curve--auto-vessels@2x.png": [
-    "Nodes",
-    "network",
-    "connection",
-    "graph",
-    "data",
-    "communication",
-    "hub",
-    "abstract",
-    "linked"
-  ],
-  "/icons/ibm/3rd-party-connected@2x.png": [
-    "Network",
-    "connection",
-    "hub",
-    "node",
-    "connected",
-    "technology",
-    "central",
-    "four nodes",
-    "diagram",
-    "link"
-  ],
   "/icons/ibm/3d-curve--auto-colon@2x.png": [
-    "Route",
+    "route",
     "path",
-    "connection",
-    "itinerary",
-    "travel",
-    "journey",
     "direction",
-    "roadmap",
-    "way"
+    "travel",
+    "connected",
+    "winding",
+    "map",
+    "journey"
   ],
-  "/icons/ibm/3d-software@2x.png": [
-    "Add",
-    "cube",
-    "box",
-    "create",
-    "new object",
-    "3d",
-    "plus",
-    "inventory",
-    "item"
+  "/icons/ibm/3d-curve--auto-vessels@2x.png": [
+    "Shuffle",
+    "Randomize",
+    "Interconnect",
+    "Connect",
+    "Swirl",
+    "Abstract",
+    "Loop",
+    "Network"
   ],
-  "/icons/ibm/3d-cursor--alt@2x.png": [
-    "Target",
-    "Focus",
-    "Aim",
-    "Crosshair",
-    "Scope",
-    "Circle",
-    "Precise",
-    "Accuracy",
-    "Selection"
+  "/icons/ibm/3d-curve--manual@2x.png": [
+    "connection",
+    "link",
+    "chain",
+    "network",
+    "nodes",
+    "interconnected",
+    "relationships",
+    "dependency",
+    "linking"
   ],
   "/icons/ibm/3d-cursor@2x.png": [
     "Object",
+    "Select",
+    "Box",
     "3D",
-    "model",
-    "cube",
-    "transformation",
-    "manipulation",
-    "convert",
-    "box",
-    "graphic design"
+    "Transform",
+    "Move",
+    "Manipulation",
+    "Grid",
+    "Positioning"
   ],
-  "/icons/ibm/3d-ica@2x.png": [
-    "ICA",
-    "3D modeling",
-    "cube",
-    "software",
-    "app icon",
-    "design tool",
-    "digital design",
-    "isometric",
-    "graphic design"
+  "/icons/ibm/3d-cursor--alt@2x.png": [
+    "Target",
+    "aim",
+    "crosshair",
+    "focus",
+    "accuracy",
+    "precision",
+    "select",
+    "location"
   ],
-  "/icons/ibm/3d-curve--manual@2x.png": [
-    "chain",
-    "link",
-    "connection",
-    "linked",
-    "networking",
-    "nodes",
-    "connected dots",
-    "line graph"
-  ],
-  "/icons/ibm/3d-mpr-toggle@2x.png": [
-    "3D scan",
-    "object detection",
-    "augmented reality",
-    "cube",
-    "frame",
-    "AR",
-    "camera",
-    "perspective",
-    "dimension"
-  ],
-  "/icons/ibm/3d-print-mesh@2x.png": [
-    "Icosahedron",
-    "geodesic dome",
-    "geometric shape",
-    "wireframe",
-    "polygon mesh",
-    "technology",
-    "data structure",
-    "3D model",
-    "sphere",
-    "triangular facets"
-  ],
-  "/icons/ibm/4k@2x.png": [
-    "4K",
-    "resolution",
-    "ultra HD",
-    "video quality",
-    "display",
-    "screen resolution",
-    "television",
-    "high definition"
-  ],
-  "/icons/ibm/Add@2x.png": [
-    "Plus sign",
-    "add",
-    "addition",
-    "cross",
-    "math",
-    "positive",
-    "increase",
-    "symbol",
-    "create"
-  ],
-  "/icons/ibm/Add-comment@2x.png": [
-    "add comment",
-    "new message",
-    "speech bubble",
-    "plus sign",
-    "create",
-    "talk",
-    "communication",
-    "outline"
-  ],
-  "/icons/ibm/Activity@2x.png": [
-    "Waveform",
-    "Signal",
-    "Oscilloscope",
-    "Pulse",
-    "Line graph",
-    "Frequency",
-    "Graph",
-    "Measurement"
-  ],
-  "/icons/ibm/4k--filled@2x.png": [
-    "4K",
-    "Ultra HD",
-    "Resolution",
-    "Video quality",
-    "Black icon",
-    "UHD",
-    "High resolution"
-  ],
-  "/icons/ibm/Ai-results--high@2x.png": [
-    "idea",
-    "solution",
-    "light bulb",
-    "innovation",
-    "creative thinking",
-    "triangle",
-    "abstract",
-    "problem solving",
-    "brainstorming"
+  "/icons/ibm/Account@2x.png": [
+    "window",
+    "browser",
+    "tab",
+    "interface",
+    "document",
+    "content",
+    "list",
+    "menu"
   ],
   "/icons/ibm/Add--alt@2x.png": [
     "Add",
@@ -179,142 +69,592 @@
     "new",
     "positive",
     "increase",
-    "addition"
+    "symbol"
   ],
-  "/icons/ibm/Account@2x.png": [
-    "Tab",
-    "Browser",
-    "Webpage",
-    "Document",
-    "Content",
-    "Interface",
-    "Outline",
-    "Information"
+  "/icons/ibm/4k@2x.png": [
+    "4K",
+    "resolution",
+    "ultra hd",
+    "quality",
+    "video format",
+    "display",
+    "tv",
+    "screen"
   ],
-  "/icons/ibm/Ai-results--low@2x.png": [
+  "/icons/ibm/3rd-party-connected@2x.png": [
+    "Network",
+    "Connection",
+    "Hub",
+    "Node",
+    "Four Points",
+    "Central",
+    "Structure",
+    "Connected",
+    "Diagram"
+  ],
+  "/icons/ibm/3d-print-mesh@2x.png": [
+    "Geometric",
+    "structure",
+    "interconnected",
+    "network",
+    "design",
+    "icosahedron",
+    "mesh",
+    "grid",
+    "polygonal"
+  ],
+  "/icons/ibm/3d-ica@2x.png": [
+    "ICA",
+    "product",
+    "cube",
+    "package",
+    "software",
+    "licensing",
+    "branding",
+    "tech"
+  ],
+  "/icons/ibm/Activity@2x.png": [
+    "Waveform",
+    "Signal",
+    "Oscilloscope",
+    "Graph",
+    "Peak",
+    "Valley",
+    "Diagram",
+    "Pulse",
+    "Sine wave"
+  ],
+  "/icons/ibm/3d-mpr-toggle@2x.png": [
+    "object detection",
+    "3D scan",
+    "cube",
+    "box",
+    "bounding box",
+    "recognition",
+    "augmented reality",
+    "AR",
+    "scan"
+  ],
+  "/icons/ibm/4k--filled@2x.png": [
+    "4K",
+    "Ultra HD",
+    "Resolution",
+    "Video quality",
+    "High definition",
+    "Screen resolution",
+    "Black square",
+    "White text"
+  ],
+  "/icons/ibm/3d-software@2x.png": [
+    "add package",
+    "create package",
+    "new product",
+    "box plus",
+    "add item",
+    "product plus"
+  ],
+  "/icons/ibm/Ai-results@2x.png": [
     "Idea",
-    "lightbulb",
-    "creativity",
     "inspiration",
     "innovation",
-    "solution",
-    "bulb",
-    "outline icon",
-    "lamp"
-  ],
-  "/icons/ibm/Add--filled@2x.png": [
-    "Add",
-    "Plus",
-    "Black circle",
-    "New",
-    "Create",
-    "Positive",
-    "Addition",
-    "Cross"
-  ],
-  "/icons/ibm/Ai-status@2x.png": [
-    "bulb",
-    "energy",
-    "electricity",
+    "creativity",
     "lightbulb",
-    "power",
-    "lightning bolt",
-    "innovation",
-    "idea"
+    "magnifying glass",
+    "search",
+    "insight",
+    "research"
   ],
   "/icons/ibm/Ai-results--medium@2x.png": [
-    "Lightbulb",
+    "IoT",
+    "device",
     "square",
-    "smart idea",
+    "internet of things",
+    "connected device",
+    "smart device",
+    "network",
     "technology",
-    "innovation",
-    "lamp",
-    "thinking",
-    "creativity"
+    "automation"
   ],
   "/icons/ibm/Ai-results--urgent@2x.png": [
     "Idea",
-    "lightbulb",
-    "brainstorming",
-    "creativity",
-    "solution",
-    "invention",
-    "innovation",
-    "light",
-    "exclamation marks"
+    "Bulb",
+    "Inspiration",
+    "Lightbulb",
+    "Brainstorm",
+    "Innovation",
+    "Solution",
+    "Creativity"
   ],
-  "/icons/ibm/Ai-status--complete@2x.png": [
-    "idea",
-    "lightbulb",
-    "check mark",
-    "solution",
-    "approved idea",
-    "completed",
-    "innovation",
-    "successful idea"
+  "/icons/ibm/Add@2x.png": [
+    "Plus sign",
+    "add",
+    "addition",
+    "cross",
+    "positive",
+    "increase",
+    "math",
+    "medical"
   ],
-  "/icons/ibm/Ai-status--in-progress@2x.png": [
-    "idea",
-    "lightbulb",
-    "thinking",
-    "dots",
-    "innovation",
-    "brainstorming",
-    "solution",
-    "creativity"
-  ],
-  "/icons/ibm/Ai-results@2x.png": [
-    "insight",
-    "idea",
-    "search",
-    "bulb",
-    "lightbulb",
-    "find",
-    "discover",
-    "innovation"
-  ],
-  "/icons/ibm/Ai-status--rejected@2x.png": [
-    "No idea",
-    "no inspiration",
-    "blocked idea",
-    "brainstorming block",
-    "creative block",
-    "lightbulb disabled",
-    "lack of ideas",
-    "problem solving",
-    "unavailable"
+  "/icons/ibm/Add--filled@2x.png": [
+    "add",
+    "plus sign",
+    "create",
+    "new",
+    "black circle",
+    "math symbol",
+    "positive",
+    "increase"
   ],
   "/icons/ibm/Ai-results--very-high@2x.png": [
     "Idea",
     "lightbulb",
     "exclamation",
-    "suggestion",
-    "innovation",
-    "problem",
-    "solution",
-    "inspiration",
-    "light",
-    "alert"
+    "alert",
+    "notification",
+    "bulb",
+    "attention",
+    "information"
   ],
-  "/icons/ibm/Ai-status--queued@2x.png": [
+  "/icons/ibm/Ai-results--low@2x.png": [
+    "Idea",
+    "lightbulb",
+    "innovation",
+    "solution",
+    "creative",
+    "thinking",
+    "light",
+    "brainstorm",
+    "inspiration"
+  ],
+  "/icons/ibm/Ai-status--complete@2x.png": [
+    "idea approved",
+    "lightbulb check",
+    "creative solution",
+    "idea validation",
+    "checked bulb",
+    "idea success",
+    "innovation confirmed",
+    "bulb tick",
+    "project approved"
+  ],
+  "/icons/ibm/Add-comment@2x.png": [
+    "add comment",
+    "new message",
+    "speech bubble",
+    "plus sign",
+    "chat icon",
+    "create comment",
+    "add feedback",
+    "outline icon"
+  ],
+  "/icons/ibm/Ai-results--high@2x.png": [
+    "Innovation",
     "idea",
     "lightbulb",
+    "delta symbol",
+    "change",
+    "creativity",
     "solution",
-    "innovation",
-    "lamp",
-    "creative",
-    "inspiration",
-    "think"
+    "transformation",
+    "think different"
   ],
-  "/icons/ibm/Ai-status--failed@2x.png": [
-    "Lightbulb",
-    "idea",
-    "innovation",
-    "brainstorming",
-    "solution",
-    "creative",
-    "light",
-    "thought",
-    "invention"
+  "/icons/ibm/Align--horizontal-left@2x.png": [
+    "Align right",
+    "text alignment",
+    "right align",
+    "formatting",
+    "document",
+    "paragraph alignment",
+    "right justification",
+    "layout"
+  ],
+  "/icons/ibm/Align--vertical-bottom@2x.png": [
+    "Sort",
+    "Filter",
+    "Ranking",
+    "Ascending",
+    "Descending",
+    "Column",
+    "Data",
+    "List"
+  ],
+  "/icons/ibm/Align-box--top-left@2x.png": [
+    "Document",
+    "file",
+    "page",
+    "text",
+    "report",
+    "content",
+    "new file",
+    "outlined",
+    "data",
+    "list"
+  ],
+  "/icons/ibm/App-connectivity@2x.png": [
+    "flowchart",
+    "diagram",
+    "process",
+    "workflow",
+    "organization",
+    "hierarchy",
+    "connection",
+    "structure"
+  ],
+  "/icons/ibm/Api--1@2x.png": [
+    "API",
+    "Application Programming Interface",
+    "code",
+    "programming",
+    "software",
+    "text",
+    "abbreviation"
+  ],
+  "/icons/ibm/Api@2x.png": [
+    "Network",
+    "Connection",
+    "Graph",
+    "Nodes",
+    "Interconnected",
+    "Hub",
+    "Cluster",
+    "Data",
+    "Relationship"
+  ],
+  "/icons/ibm/Angle@2x.png": [
+    "Do not disturb",
+    "Silent mode",
+    "Mute",
+    "Toggle",
+    "Audio off",
+    "Notification off",
+    "crescent",
+    "switch"
+  ],
+  "/icons/ibm/Alphanumeric@2x.png": [
+    "Alphanumeric",
+    "text",
+    "letters",
+    "numbers",
+    "symbols",
+    "font",
+    "type"
+  ],
+  "/icons/ibm/Analytics--custom@2x.png": [
+    "Edit graph",
+    "modify data",
+    "chart improvement",
+    "increase",
+    "arrow",
+    "pencil",
+    "statistical analysis",
+    "growth"
+  ],
+  "/icons/ibm/App@2x.png": [
+    "app",
+    "application",
+    "text icon",
+    "rounded font",
+    "software",
+    "program",
+    "simple",
+    "black"
+  ],
+  "/icons/ibm/Annotation-visibility@2x.png": [
+    "Switch",
+    "electrical",
+    "toggle",
+    "on/off",
+    "settings",
+    "control",
+    "hardware",
+    "lever"
+  ],
+  "/icons/ibm/Analytics--reference@2x.png": [
+    "Import",
+    "Export",
+    "Data transfer",
+    "Arrow icon",
+    "Vertical line",
+    "Zigzag",
+    "file transfer",
+    "data import"
+  ],
+  "/icons/ibm/Analytics@2x.png": [
+    "growth chart",
+    "rising graph",
+    "trend up",
+    "positive trend",
+    "statistics",
+    "analytics",
+    "arrow up",
+    "line chart"
+  ],
+  "/icons/ibm/Apps@2x.png": [
+    "grid",
+    "menu",
+    "squares",
+    "apps",
+    "dashboard",
+    "options",
+    "settings"
+  ],
+  "/icons/ibm/Arrow--down-left@2x.png": [
+    "Arrow",
+    "Down Left",
+    "Direction",
+    "Navigation",
+    "Pointing",
+    "Corner"
+  ],
+  "/icons/ibm/Application@2x.png": [
+    "App launcher",
+    "grid",
+    "menu",
+    "dashboard",
+    "squares",
+    "tiles",
+    "application selector",
+    "view options"
+  ],
+  "/icons/ibm/Archive@2x.png": [
+    "File cabinet",
+    "document storage",
+    "archive",
+    "drawer",
+    "organization",
+    "filing",
+    "records",
+    "office",
+    "data",
+    "storage"
+  ],
+  "/icons/ibm/Area--custom@2x.png": [
+    "Network",
+    "Connection",
+    "Linked",
+    "Nodes",
+    "Graph",
+    "Connectivity",
+    "Data",
+    "Diagram",
+    "Dots",
+    "Square"
+  ],
+  "/icons/ibm/Arrow--down-right@2x.png": [
+    "Corner arrow",
+    "diagonal arrow",
+    "southwest arrow",
+    "return arrow",
+    "arrow icon",
+    "directional arrow"
+  ],
+  "/icons/ibm/Apple@2x.png": [
+    "Apple icon",
+    "fruit",
+    "outline",
+    "education",
+    "healthy",
+    "food",
+    "simple",
+    "nutrition"
+  ],
+  "/icons/ibm/Appcatalogue@2x.png": [
+    "App catalogue",
+    "app list",
+    "mobile app",
+    "software",
+    "listing",
+    "directory",
+    "application",
+    "black text"
+  ],
+  "/icons/ibm/Area@2x.png": [
+    "Linked nodes",
+    "network",
+    "square grid",
+    "connection",
+    "structure",
+    "graph",
+    "interconnect",
+    "data points"
+  ],
+  "/icons/ibm/Arrow--annotation@2x.png": [
+    "Text style",
+    "text formatting",
+    "text direction",
+    "typography",
+    "text editor",
+    "arrow",
+    "outward",
+    "expand"
+  ],
+  "/icons/ibm/Arrow--up@2x.png": [
+    "Arrow",
+    "up",
+    "direction",
+    "upload",
+    "increase",
+    "move up",
+    "navigation",
+    "forward"
+  ],
+  "/icons/ibm/Arrows--horizontal@2x.png": [
+    "exchange arrows",
+    "swap",
+    "transfer",
+    "two-way",
+    "bidirectional",
+    "convert",
+    "opposite directions",
+    "change"
+  ],
+  "/icons/ibm/Arrow--up-right@2x.png": [
+    "arrow",
+    "northeast",
+    "direction",
+    "diagonal arrow",
+    "up right",
+    "navigation"
+  ],
+  "/icons/ibm/Arrow--left@2x.png": [
+    "Arrow",
+    "left arrow",
+    "back",
+    "return",
+    "navigation",
+    "previous",
+    "direction",
+    "pointing left"
+  ],
+  "/icons/ibm/Arrows--vertical@2x.png": [
+    "arrows",
+    "up down",
+    "sort",
+    "vertical arrows",
+    "toggle",
+    "direction",
+    "flip",
+    "change order"
+  ],
+  "/icons/ibm/Arrow--right@2x.png": [
+    "Arrow",
+    "right arrow",
+    "forward",
+    "next",
+    "direction",
+    "pointer",
+    "navigation",
+    "simple arrow"
+  ],
+  "/icons/ibm/Asterisk@2x.png": [
+    "Asterisk",
+    "star symbol",
+    "math symbol",
+    "multiplication",
+    "placeholder",
+    "glyph",
+    "five points"
+  ],
+  "/icons/ibm/Arrow-shift-down@2x.png": [
+    "Download",
+    "Arrow down",
+    "Direction",
+    "Navigation",
+    "Pointer",
+    "Graphic",
+    "Simple",
+    "Outline"
+  ],
+  "/icons/ibm/Arrow--up-left@2x.png": [
+    "Arrow",
+    "direction",
+    "up",
+    "left",
+    "north-west",
+    "navigation",
+    "pointer"
+  ],
+  "/icons/ibm/Arrow--down@2x.png": [
+    "arrow down",
+    "download",
+    "direction",
+    "navigation",
+    "scroll down",
+    "collapse",
+    "reveal",
+    "open",
+    "expand"
+  ],
+  "/icons/ibm/Barrier@2x.png": [
+    "List",
+    "menu",
+    "more",
+    "options",
+    "vertical dots",
+    "three dots",
+    "ellipsis",
+    "settings"
+  ],
+  "/icons/ibm/Boolean@2x.png": [
+    "Theme",
+    "dark mode",
+    "light mode",
+    "toggle",
+    "switch",
+    "circle",
+    "interface",
+    "preference"
+  ],
+  "/icons/ibm/Border--bottom@2x.png": [
+    "Invoice",
+    "Receipt",
+    "Document",
+    "Dotted border",
+    "Paper",
+    "Bill",
+    "Transaction",
+    "Record"
+  ],
+  "/icons/ibm/Border--right@2x.png": [
+    "Invoice",
+    "receipt",
+    "document",
+    "billing",
+    "dotted border",
+    "list",
+    "statement",
+    "financial",
+    "record",
+    "transaction"
+  ],
+  "/icons/ibm/Border--full@2x.png": [
+    "Document",
+    "file",
+    "list",
+    "text",
+    "square",
+    "lined",
+    "minimal",
+    "content"
+  ],
+  "/icons/ibm/Border--left@2x.png": [
+    "Select",
+    "Area",
+    "Crop",
+    "Dashed Border",
+    "Selection",
+    "Image Selection",
+    "Edit",
+    "Transform"
+  ],
+  "/icons/ibm/Border--none@2x.png": [
+    "crop",
+    "image crop",
+    "photo editing",
+    "dotted square",
+    "rectangle",
+    "trim",
+    "icon",
+    "adjust"
   ]
 }

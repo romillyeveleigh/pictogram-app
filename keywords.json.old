@@ -1,0 +1,320 @@
+{
+  "/icons/ibm/3d-curve--auto-vessels@2x.png": [
+    "Nodes",
+    "network",
+    "connection",
+    "graph",
+    "data",
+    "communication",
+    "hub",
+    "abstract",
+    "linked"
+  ],
+  "/icons/ibm/3rd-party-connected@2x.png": [
+    "Network",
+    "connection",
+    "hub",
+    "node",
+    "connected",
+    "technology",
+    "central",
+    "four nodes",
+    "diagram",
+    "link"
+  ],
+  "/icons/ibm/3d-curve--auto-colon@2x.png": [
+    "Route",
+    "path",
+    "connection",
+    "itinerary",
+    "travel",
+    "journey",
+    "direction",
+    "roadmap",
+    "way"
+  ],
+  "/icons/ibm/3d-software@2x.png": [
+    "Add",
+    "cube",
+    "box",
+    "create",
+    "new object",
+    "3d",
+    "plus",
+    "inventory",
+    "item"
+  ],
+  "/icons/ibm/3d-cursor--alt@2x.png": [
+    "Target",
+    "Focus",
+    "Aim",
+    "Crosshair",
+    "Scope",
+    "Circle",
+    "Precise",
+    "Accuracy",
+    "Selection"
+  ],
+  "/icons/ibm/3d-cursor@2x.png": [
+    "Object",
+    "3D",
+    "model",
+    "cube",
+    "transformation",
+    "manipulation",
+    "convert",
+    "box",
+    "graphic design"
+  ],
+  "/icons/ibm/3d-ica@2x.png": [
+    "ICA",
+    "3D modeling",
+    "cube",
+    "software",
+    "app icon",
+    "design tool",
+    "digital design",
+    "isometric",
+    "graphic design"
+  ],
+  "/icons/ibm/3d-curve--manual@2x.png": [
+    "chain",
+    "link",
+    "connection",
+    "linked",
+    "networking",
+    "nodes",
+    "connected dots",
+    "line graph"
+  ],
+  "/icons/ibm/3d-mpr-toggle@2x.png": [
+    "3D scan",
+    "object detection",
+    "augmented reality",
+    "cube",
+    "frame",
+    "AR",
+    "camera",
+    "perspective",
+    "dimension"
+  ],
+  "/icons/ibm/3d-print-mesh@2x.png": [
+    "Icosahedron",
+    "geodesic dome",
+    "geometric shape",
+    "wireframe",
+    "polygon mesh",
+    "technology",
+    "data structure",
+    "3D model",
+    "sphere",
+    "triangular facets"
+  ],
+  "/icons/ibm/4k@2x.png": [
+    "4K",
+    "resolution",
+    "ultra HD",
+    "video quality",
+    "display",
+    "screen resolution",
+    "television",
+    "high definition"
+  ],
+  "/icons/ibm/Add@2x.png": [
+    "Plus sign",
+    "add",
+    "addition",
+    "cross",
+    "math",
+    "positive",
+    "increase",
+    "symbol",
+    "create"
+  ],
+  "/icons/ibm/Add-comment@2x.png": [
+    "add comment",
+    "new message",
+    "speech bubble",
+    "plus sign",
+    "create",
+    "talk",
+    "communication",
+    "outline"
+  ],
+  "/icons/ibm/Activity@2x.png": [
+    "Waveform",
+    "Signal",
+    "Oscilloscope",
+    "Pulse",
+    "Line graph",
+    "Frequency",
+    "Graph",
+    "Measurement"
+  ],
+  "/icons/ibm/4k--filled@2x.png": [
+    "4K",
+    "Ultra HD",
+    "Resolution",
+    "Video quality",
+    "Black icon",
+    "UHD",
+    "High resolution"
+  ],
+  "/icons/ibm/Ai-results--high@2x.png": [
+    "idea",
+    "solution",
+    "light bulb",
+    "innovation",
+    "creative thinking",
+    "triangle",
+    "abstract",
+    "problem solving",
+    "brainstorming"
+  ],
+  "/icons/ibm/Add--alt@2x.png": [
+    "Add",
+    "plus sign",
+    "circle",
+    "create",
+    "new",
+    "positive",
+    "increase",
+    "addition"
+  ],
+  "/icons/ibm/Account@2x.png": [
+    "Tab",
+    "Browser",
+    "Webpage",
+    "Document",
+    "Content",
+    "Interface",
+    "Outline",
+    "Information"
+  ],
+  "/icons/ibm/Ai-results--low@2x.png": [
+    "Idea",
+    "lightbulb",
+    "creativity",
+    "inspiration",
+    "innovation",
+    "solution",
+    "bulb",
+    "outline icon",
+    "lamp"
+  ],
+  "/icons/ibm/Add--filled@2x.png": [
+    "Add",
+    "Plus",
+    "Black circle",
+    "New",
+    "Create",
+    "Positive",
+    "Addition",
+    "Cross"
+  ],
+  "/icons/ibm/Ai-status@2x.png": [
+    "bulb",
+    "energy",
+    "electricity",
+    "lightbulb",
+    "power",
+    "lightning bolt",
+    "innovation",
+    "idea"
+  ],
+  "/icons/ibm/Ai-results--medium@2x.png": [
+    "Lightbulb",
+    "square",
+    "smart idea",
+    "technology",
+    "innovation",
+    "lamp",
+    "thinking",
+    "creativity"
+  ],
+  "/icons/ibm/Ai-results--urgent@2x.png": [
+    "Idea",
+    "lightbulb",
+    "brainstorming",
+    "creativity",
+    "solution",
+    "invention",
+    "innovation",
+    "light",
+    "exclamation marks"
+  ],
+  "/icons/ibm/Ai-status--complete@2x.png": [
+    "idea",
+    "lightbulb",
+    "check mark",
+    "solution",
+    "approved idea",
+    "completed",
+    "innovation",
+    "successful idea"
+  ],
+  "/icons/ibm/Ai-status--in-progress@2x.png": [
+    "idea",
+    "lightbulb",
+    "thinking",
+    "dots",
+    "innovation",
+    "brainstorming",
+    "solution",
+    "creativity"
+  ],
+  "/icons/ibm/Ai-results@2x.png": [
+    "insight",
+    "idea",
+    "search",
+    "bulb",
+    "lightbulb",
+    "find",
+    "discover",
+    "innovation"
+  ],
+  "/icons/ibm/Ai-status--rejected@2x.png": [
+    "No idea",
+    "no inspiration",
+    "blocked idea",
+    "brainstorming block",
+    "creative block",
+    "lightbulb disabled",
+    "lack of ideas",
+    "problem solving",
+    "unavailable"
+  ],
+  "/icons/ibm/Ai-results--very-high@2x.png": [
+    "Idea",
+    "lightbulb",
+    "exclamation",
+    "suggestion",
+    "innovation",
+    "problem",
+    "solution",
+    "inspiration",
+    "light",
+    "alert"
+  ],
+  "/icons/ibm/Ai-status--queued@2x.png": [
+    "idea",
+    "lightbulb",
+    "solution",
+    "innovation",
+    "lamp",
+    "creative",
+    "inspiration",
+    "think"
+  ],
+  "/icons/ibm/Ai-status--failed@2x.png": [
+    "Lightbulb",
+    "idea",
+    "innovation",
+    "brainstorming",
+    "solution",
+    "creative",
+    "light",
+    "thought",
+    "invention"
+  ]
+}
