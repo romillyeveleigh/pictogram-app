@@ -511,7 +511,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
             </div>
           ) : (
             <div 
-              className="relative p-6 mt-2"
+              className="relative p-6 mt-2 mx-2"
               style={{
                 height: `${rowVirtualizer.getTotalSize()}px`,
               }}
@@ -679,33 +679,6 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                       </button>
                     </div>
                   </div>
-                  {selectedIcon.keywords && selectedIcon.keywords.length > 0 && (
-                    <div>
-                      <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
-                        Keywords
-                      </label>
-                      <div className="flex items-start gap-2">
-                        <div className="flex-1 px-4 py-3 glass border border-white/30 dark:border-white/10 rounded-xl text-sm text-gray-900 dark:text-gray-100">
-                          <div className="flex flex-wrap gap-2">
-                            {selectedIcon.keywords.map((keyword, idx) => (
-                              <span
-                                key={idx}
-                                className="px-3 py-1 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full text-xs font-medium shadow-md"
-                              >
-                                {keyword}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                        <button
-                          onClick={() => handleCopyKeywords(selectedIcon.keywords!)}
-                          className="px-5 py-2.5 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg shadow-purple-500/30 hover:scale-105"
-                        >
-                          {copiedIcon === 'keywords' ? 'Copied!' : 'Copy'}
-                        </button>
-                      </div>
-                    </div>
-                  )}
                 </div>
               </div>
             </div>
