@@ -21,28 +21,26 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Format icons data efficiently for the prompt
+    // Format icons data efficiently - only send path and keywords to minimize token usage
+    // Use compact format without pretty printing to reduce token count
     const iconsData = icons.map(icon => ({
-      path: icon.path,
-      filename: icon.filename,
-      keywords: icon.keywords || [],
-      category: icon.category,
+      p: icon.path, // 'p' instead of 'path' to save tokens
+      k: (icon.keywords || []).join(', '), // 'k' instead of 'keywords', join to string
     }));
 
-    // Get the generative model
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+    // Get the generative model - use the suggested model with higher quota
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
 
-    // Create the prompt
-    const prompt = `Given the following text query and list of icons with their metadata, analyze which icons are thematically related to the text query.
+    // Create a more compact prompt
+    const iconsJson = JSON.stringify(iconsData); // Compact JSON, no pretty printing
+    
+    const prompt = `Text query: "${query}"
 
-Text Query: "${query}"
+Icons (${icons.length} total, format: {p: "path", k: "keywords"}):
+${iconsJson}
 
-Icons Data (${icons.length} total):
-${JSON.stringify(iconsData, null, 2)}
-
-Return ONLY a JSON array of icon paths (the "path" field values) that are thematically related to the text query. 
-Do not include any explanation, markdown formatting, or additional text - only the JSON array.
-Example format: ["/icons/ibm/example@2x.png", "/icons/streamline/another@2x.png"]`;
+Return ONLY a JSON array of icon paths (the "p" field values) thematically related to the query. No explanation, only JSON array.
+Example: ["/icons/ibm/example@2x.png"]`;
 
     // Generate content
     const result = await model.generateContent(prompt);
