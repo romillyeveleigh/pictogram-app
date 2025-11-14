@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
 
     // Get the generative model with temperature set to 0 for deterministic results
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-2.0-flash-exp',
+      model: 'gemini-2.0-flash',
       generationConfig: {
         temperature: 0, // Set to 0 for deterministic results
       }
@@ -58,6 +58,8 @@ Example format: ["/icons/ibm/example@2x.png", "/icons/streamline/another@2x.png"
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const responseText = response.text().trim();
+
+    console.log('responseText', responseText);
 
     // Try to extract JSON array from the response
     // Handle cases where response might have markdown code blocks or extra text
