@@ -23,6 +23,13 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
   const [downloadedIcon, setDownloadedIcon] = useState<string | null>(null);
   const [columns, setColumns] = useState(2);
   const parentRef = useRef<HTMLDivElement>(null);
+  
+  // AI search state
+  const [searchMode, setSearchMode] = useState<'keyword' | 'ai'>('keyword');
+  const [aiSearchQuery, setAiSearchQuery] = useState('');
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiSuggestedPaths, setAiSuggestedPaths] = useState<string[]>([]);
+  const [aiError, setAiError] = useState<string | null>(null);
 
   const filteredIcons = useMemo(() => {
     let filtered = icons;
@@ -32,23 +39,36 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       filtered = filtered.filter(icon => icon.category === selectedCategory);
     }
 
-    // Filter by search query (search in keywords, fallback to filename if no keywords)
-    if (searchQuery.trim()) {
-      const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(icon => {
-        // If keywords exist, search in keywords
-        if (icon.keywords && icon.keywords.length > 0) {
-          return icon.keywords.some(keyword => 
-            keyword.toLowerCase().includes(query)
-          );
+    // Filter based on search mode
+    if (searchMode === 'ai') {
+      // AI search mode: filter by suggested paths
+      if (aiSuggestedPaths.length > 0) {
+        filtered = filtered.filter(icon => aiSuggestedPaths.includes(icon.path));
+      } else {
+        // If no suggestions yet, show all (or empty if query exists but no results)
+        if (aiSearchQuery.trim() && !aiLoading) {
+          filtered = [];
         }
-        // Fallback to filename search if no keywords available
-        return icon.filename.toLowerCase().includes(query);
-      });
+      }
+    } else {
+      // Keyword search mode: search in keywords, fallback to filename
+      if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase();
+        filtered = filtered.filter(icon => {
+          // If keywords exist, search in keywords
+          if (icon.keywords && icon.keywords.length > 0) {
+            return icon.keywords.some(keyword => 
+              keyword.toLowerCase().includes(query)
+            );
+          }
+          // Fallback to filename search if no keywords available
+          return icon.filename.toLowerCase().includes(query);
+        });
+      }
     }
 
     return filtered;
-  }, [icons, searchQuery, selectedCategory]);
+  }, [icons, searchQuery, selectedCategory, searchMode, aiSuggestedPaths, aiSearchQuery, aiLoading]);
 
   // Calculate columns based on container width
   useLayoutEffect(() => {
@@ -184,6 +204,57 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
     }
   };
 
+  const handleAiSearch = async () => {
+    if (!aiSearchQuery.trim()) {
+      setAiError('Please enter some text to search');
+      return;
+    }
+
+    setAiLoading(true);
+    setAiError(null);
+    setAiSuggestedPaths([]);
+
+    try {
+      const response = await fetch('/api/suggest-icons', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          query: aiSearchQuery,
+          icons: icons,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to get suggestions');
+      }
+
+      const data = await response.json();
+      setAiSuggestedPaths(data.suggestedPaths || []);
+    } catch (err) {
+      console.error('Error getting AI suggestions:', err);
+      setAiError(err instanceof Error ? err.message : 'Failed to get suggestions');
+      setAiSuggestedPaths([]);
+    } finally {
+      setAiLoading(false);
+    }
+  };
+
+  const handleSearchModeChange = (mode: 'keyword' | 'ai') => {
+    setSearchMode(mode);
+    if (mode === 'keyword') {
+      // Clear AI search state when switching to keyword mode
+      setAiSearchQuery('');
+      setAiSuggestedPaths([]);
+      setAiError(null);
+    } else {
+      // Clear keyword search when switching to AI mode
+      setSearchQuery('');
+    }
+  };
+
   return (
     <div className="flex h-screen relative overflow-hidden">
       {/* Animated gradient background */}
@@ -247,12 +318,36 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
           <div className="px-4 sm:px-6 py-5">
             {/* Site Title */}
             <div className="mb-5 animate-fade-in">
-              <h1 className="text-3xl sm:text-4xl font-bold gradient-text mb-2">
+              <h1 className="text-3xl sm:text-4xl font-bold gradient-text mb-2 pb-2">
                 Apolitical Image Finder
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Search through <span className="font-semibold text-indigo-600 dark:text-indigo-400">{icons.length}</span> icons by keywords or filename
+                Search through <span className="font-semibold text-indigo-600 dark:text-indigo-400">{icons.length}</span> icons by keywords or AI
               </p>
+            </div>
+            
+            {/* Search Mode Toggle */}
+            <div className="mb-4 flex items-center gap-2">
+              <button
+                onClick={() => handleSearchModeChange('keyword')}
+                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
+                  searchMode === 'keyword'
+                    ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30'
+                    : 'glass border border-white/30 dark:border-white/10 text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/10'
+                }`}
+              >
+                Keyword Search
+              </button>
+              <button
+                onClick={() => handleSearchModeChange('ai')}
+                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
+                  searchMode === 'ai'
+                    ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30'
+                    : 'glass border border-white/30 dark:border-white/10 text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/10'
+                }`}
+              >
+                AI Search
+              </button>
             </div>
             
             <div className="flex items-center gap-3">
@@ -265,28 +360,83 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
-              <div className="flex-1 relative">
-                <input
-                  type="text"
-                  placeholder="Search icons by keywords or filename..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full px-4 py-3 pl-11 border border-white/30 dark:border-white/10 rounded-xl glass text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all duration-300"
-                />
-                <svg
-                  className="absolute left-3.5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              {searchMode === 'keyword' ? (
+                <div className="flex-1 relative">
+                  <input
+                    type="text"
+                    placeholder="Search icons by keywords or filename..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full px-4 py-3 pl-11 border border-white/30 dark:border-white/10 rounded-xl glass text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all duration-300"
                   />
-                </svg>
-              </div>
+                  <svg
+                    className="absolute left-3.5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </div>
+              ) : (
+                <div className="flex-1 flex items-center gap-2">
+                  <div className="flex-1 relative">
+                    <input
+                      type="text"
+                      placeholder="Describe what you're looking for (e.g., 'icons related to technology and innovation')..."
+                      value={aiSearchQuery}
+                      onChange={(e) => setAiSearchQuery(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' && !aiLoading) {
+                          handleAiSearch();
+                        }
+                      }}
+                      className="w-full px-4 py-3 pl-11 border border-white/30 dark:border-white/10 rounded-xl glass text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all duration-300"
+                      disabled={aiLoading}
+                    />
+                    <svg
+                      className="absolute left-3.5 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                      />
+                    </svg>
+                  </div>
+                  <button
+                    onClick={handleAiSearch}
+                    disabled={aiLoading || !aiSearchQuery.trim()}
+                    className="px-5 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold transition-all duration-300 shadow-lg shadow-indigo-500/30 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center gap-2"
+                  >
+                    {aiLoading ? (
+                      <>
+                        <svg className="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <span>Searching...</span>
+                      </>
+                    ) : (
+                      <>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <span>Find Icons</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+              )}
               <button
                 onClick={() => setShowCustomizer(!showCustomizer)}
                 className="px-5 py-3 rounded-xl glass border border-white/30 dark:border-white/10 text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/10 transition-all duration-300 hover:scale-105 font-medium"
@@ -294,6 +444,11 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                 Customizer
               </button>
             </div>
+            {aiError && (
+              <div className="mt-3 px-4 py-2 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-sm text-red-700 dark:text-red-400">
+                {aiError}
+              </div>
+            )}
             {showCustomizer && (
               <div className="mt-4 p-5 glass rounded-xl border border-white/30 dark:border-white/10 animate-scale-in">
                 <div className="space-y-4">
@@ -315,7 +470,20 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
               </div>
             )}
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-              Showing <span className="font-semibold text-indigo-600 dark:text-indigo-400">{filteredIcons.length}</span> of {icons.length} icons
+              {searchMode === 'ai' && aiSuggestedPaths.length > 0 ? (
+                <>
+                  Showing <span className="font-semibold text-indigo-600 dark:text-indigo-400">{filteredIcons.length}</span> AI-suggested icons
+                  {selectedCategory && ` in ${selectedCategory}`}
+                </>
+              ) : searchMode === 'ai' && aiSearchQuery.trim() && !aiLoading ? (
+                <>
+                  No icons found for &quot;{aiSearchQuery}&quot;
+                </>
+              ) : (
+                <>
+                  Showing <span className="font-semibold text-indigo-600 dark:text-indigo-400">{filteredIcons.length}</span> of {icons.length} icons
+                </>
+              )}
             </p>
           </div>
         </header>
