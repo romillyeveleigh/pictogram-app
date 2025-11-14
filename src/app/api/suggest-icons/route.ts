@@ -21,26 +21,38 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Format icons data efficiently - only send path and keywords to minimize token usage
-    // Use compact format without pretty printing to reduce token count
+    // Format icons data efficiently for the prompt
     const iconsData = icons.map(icon => ({
-      p: icon.path, // 'p' instead of 'path' to save tokens
-      k: (icon.keywords || []).join(', '), // 'k' instead of 'keywords', join to string
+      path: icon.path,
+      filename: icon.filename,
+      keywords: icon.keywords || [],
+      category: icon.category,
     }));
 
-    // Get the generative model - use the suggested model with higher quota
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
+    // Get the generative model with temperature set to 0 for deterministic results
+    const model = genAI.getGenerativeModel({ 
+      model: 'gemini-2.0-flash-exp',
+      generationConfig: {
+        temperature: 0, // Set to 0 for deterministic results
+      }
+    });
 
-    // Create a more compact prompt
-    const iconsJson = JSON.stringify(iconsData); // Compact JSON, no pretty printing
-    
-    const prompt = `Text query: "${query}"
+    // Create a set of valid icon paths for validation
+    const validPaths = new Set(icons.map(icon => icon.path));
 
-Icons (${icons.length} total, format: {p: "path", k: "keywords"}):
-${iconsJson}
+    // Create the prompt
+    const prompt = `Given the following text query and list of icons with their metadata, analyze which icons are thematically related to the text query.
 
-Return ONLY a JSON array of icon paths (the "p" field values) thematically related to the query. No explanation, only JSON array.
-Example: ["/icons/ibm/example@2x.png"]`;
+Text Query: "${query}"
+
+Icons Data (${icons.length} total):
+${JSON.stringify(iconsData, null, 2)}
+
+Return ONLY a JSON array of icon paths (the "path" field values) that are thematically related to the text query. 
+IMPORTANT: Only return paths that exist in the Icons Data above. Do not invent or guess paths.
+Do not include any explanation, markdown formatting, or additional text - only the JSON array.
+Each item in the array must include the extension ".png".
+Example format: ["/icons/ibm/example@2x.png", "/icons/streamline/another@2x.png"]`;
 
     // Generate content
     const result = await model.generateContent(prompt);
@@ -77,7 +89,16 @@ Example: ["/icons/ibm/example@2x.png"]`;
       throw new Error('Response is not an array');
     }
 
-    return NextResponse.json({ suggestedPaths });
+    // Validate and filter out invalid paths
+    const validSuggestedPaths = suggestedPaths.filter((path: string) => {
+      const isValid = validPaths.has(path);
+      if (!isValid) {
+        console.warn(`Invalid path returned by AI: ${path}`);
+      }
+      return isValid;
+    });
+
+    return NextResponse.json({ suggestedPaths: validSuggestedPaths });
   } catch (error) {
     console.error('Error generating icon suggestions:', error);
     return NextResponse.json(
