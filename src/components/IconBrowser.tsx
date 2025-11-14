@@ -329,7 +329,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
             </div>
           ) : (
             <div 
-              className="relative p-6"
+              className="relative p-6 mt-2"
               style={{
                 height: `${rowVirtualizer.getTotalSize()}px`,
               }}
