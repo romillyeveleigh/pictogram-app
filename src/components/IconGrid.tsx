@@ -17,9 +17,16 @@ export default function IconGrid({ icons }: IconGridProps) {
     }
     
     const query = searchQuery.toLowerCase();
-    return icons.filter(icon => 
-      icon.filename.toLowerCase().includes(query)
-    );
+    return icons.filter(icon => {
+      // If keywords exist, search in keywords
+      if (icon.keywords && icon.keywords.length > 0) {
+        return icon.keywords.some(keyword => 
+          keyword.toLowerCase().includes(query)
+        );
+      }
+      // Fallback to filename search if no keywords available
+      return icon.filename.toLowerCase().includes(query);
+    });
   }, [icons, searchQuery]);
 
   return (
@@ -27,7 +34,7 @@ export default function IconGrid({ icons }: IconGridProps) {
       <div className="mb-8">
         <input
           type="text"
-          placeholder="Search icons by filename..."
+          placeholder="Search icons by keywords or filename..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full px-4 py-3 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-white"
