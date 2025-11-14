@@ -32,12 +32,19 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       filtered = filtered.filter(icon => icon.category === selectedCategory);
     }
 
-    // Filter by search query
+    // Filter by search query (search in keywords, fallback to filename if no keywords)
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(icon => 
-        icon.filename.toLowerCase().includes(query)
-      );
+      filtered = filtered.filter(icon => {
+        // If keywords exist, search in keywords
+        if (icon.keywords && icon.keywords.length > 0) {
+          return icon.keywords.some(keyword => 
+            keyword.toLowerCase().includes(query)
+          );
+        }
+        // Fallback to filename search if no keywords available
+        return icon.filename.toLowerCase().includes(query);
+      });
     }
 
     return filtered;

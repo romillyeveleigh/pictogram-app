@@ -1,0 +1,56 @@
+{
+  "/icons/ibm/3d-cursor--alt@2x.png": [
+    "Target",
+    "Aim",
+    "Crosshair",
+    "Accuracy",
+    "Focus",
+    "Bullseye",
+    "Reticle",
+    "Scope",
+    "Center"
+  ],
+  "/icons/ibm/3d-cursor@2x.png": [
+    "Unpack",
+    "Package",
+    "Extract",
+    "Box",
+    "Cube",
+    "Archive",
+    "Import",
+    "Unzip",
+    "Decompress"
+  ],
+  "/icons/ibm/3d-curve--auto-colon@2x.png": [
+    "Path",
+    "route",
+    "connection",
+    "journey",
+    "way",
+    "navigation",
+    "travel",
+    "diagram"
+  ],
+  "/icons/ibm/3d-curve--auto-vessels@2x.png": [
+    "Shuffle",
+    "Randomize",
+    "Intermix",
+    "Swap",
+    "Connect",
+    "Interconnected",
+    "Network",
+    "Abstract",
+    "Circular",
+    "Branching"
+  ],
+  "/icons/ibm/3d-curve--manual@2x.png": [
+    "Chain",
+    "Link",
+    "Connection",
+    "Relationship",
+    "Data link",
+    "Two nodes",
+    "Linked",
+    "Network"
+  ]
+}
