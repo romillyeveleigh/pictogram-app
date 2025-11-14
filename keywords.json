@@ -1176,5 +1176,414 @@
     "communication",
     "bullhorn",
     "notification"
+  ],
+  "/icons/ibm/Caret--right@2x.png": [
+    "Play icon",
+    "right arrow",
+    "media control",
+    "forward",
+    "next",
+    "triangle",
+    "direction"
+  ],
+  "/icons/ibm/Caret--sort--down@2x.png": [
+    "Arrow down",
+    "downward",
+    "drop down",
+    "collapse",
+    "expand",
+    "triangle",
+    "chevron",
+    "menu",
+    "navigation"
+  ],
+  "/icons/ibm/Calendar--heat-map@2x.png": [
+    "calendar",
+    "event",
+    "date",
+    "schedule",
+    "appointment",
+    "planner",
+    "reminder",
+    "agenda"
+  ],
+  "/icons/ibm/Caret--left@2x.png": [
+    "Left arrow",
+    "back",
+    "previous",
+    "navigation",
+    "chevron",
+    "triangle",
+    "pointing",
+    "direction"
+  ],
+  "/icons/ibm/Carbon@2x.png": [
+    "Hexagon",
+    "location",
+    "pin",
+    "marker",
+    "geometric",
+    "map",
+    "gps",
+    "pointer"
+  ],
+  "/icons/ibm/Calibrate@2x.png": [
+    "caliper",
+    "measuring tool",
+    "dimension",
+    "engineering",
+    "precise",
+    "micrometers",
+    "instrument",
+    "gauge"
+  ],
+  "/icons/ibm/Caret--down@2x.png": [
+    "Down arrow",
+    "dropdown",
+    "expand",
+    "collapse",
+    "triangle",
+    "chevron",
+    "navigation",
+    "menu",
+    "scroll down"
+  ],
+  "/icons/ibm/Carbon-for-ibm-product@2x.png": [
+    "Connectivity",
+    "Network",
+    "Hexagon",
+    "Data",
+    "Connection",
+    "Nodes",
+    "Circuit",
+    "Technology",
+    "Structure"
+  ],
+  "/icons/ibm/Carbon-for-ibm-dotcom@2x.png": [
+    "Web development",
+    "browser",
+    "website",
+    "code",
+    "programming",
+    "hexagon",
+    "design",
+    "outline icon"
+  ],
+  "/icons/ibm/Calculation@2x.png": [
+    "Math",
+    "calculator",
+    "plus",
+    "minus",
+    "multiply",
+    "divide",
+    "equals",
+    "arithmetic",
+    "calculation"
+  ],
+  "/icons/ibm/Caret--up@2x.png": [
+    "Up arrow",
+    "direction",
+    "triangle",
+    "chevron",
+    "navigation",
+    "caret",
+    "move up",
+    "upload"
+  ],
+  "/icons/ibm/Caret--sort--up@2x.png": [
+    "Arrow up",
+    "triangle",
+    "direction",
+    "navigation",
+    "chevron",
+    "upward",
+    "UI icon",
+    "black arrow",
+    "simple arrow"
+  ],
+  "/icons/ibm/Caret--sort@2x.png": [
+    "sort",
+    "up down arrows",
+    "ordering",
+    "toggle",
+    "ascending descending",
+    "expand collapse",
+    "data sorting"
+  ],
+  "/icons/ibm/Categories@2x.png": [
+    "folders",
+    "grid",
+    "directory",
+    "organization",
+    "files",
+    "storage",
+    "multiple",
+    "grouped"
+  ],
+  "/icons/ibm/Catalog@2x.png": [
+    "Notebook",
+    "notepad",
+    "notes",
+    "list",
+    "document",
+    "paper",
+    "spiral",
+    "binder",
+    "text"
+  ],
+  "/icons/ibm/Category--add@2x.png": [
+    "Sitemap",
+    "flowchart",
+    "navigation",
+    "directory",
+    "structure",
+    "website",
+    "organization",
+    "hierarchy",
+    "content",
+    "tree diagram"
+  ],
+  "/icons/ibm/Category@2x.png": [
+    "Organization chart",
+    "hierarchy",
+    "diagram",
+    "structure",
+    "flowchart",
+    "connection",
+    "network",
+    "tree diagram"
+  ],
+  "/icons/ibm/Category--and@2x.png": [
+    "Join table",
+    "database join",
+    "ampersand",
+    "connect",
+    "relationship",
+    "SQL",
+    "symbol",
+    "and operator"
+  ],
+  "/icons/ibm/Category--new@2x.png": [
+    "Add",
+    "Plus sign",
+    "Connection",
+    "Network",
+    "Tree",
+    "Branch",
+    "Data structure",
+    "Hierarchy",
+    "Organization chart"
+  ],
+  "/icons/ibm/Category--new-each@2x.png": [
+    "Organization chart",
+    "flowchart",
+    "hierarchy",
+    "tree diagram",
+    "process",
+    "structure",
+    "relationship",
+    "sequential",
+    "connected",
+    "nodes"
+  ],
+  "/icons/ibm/Cd--archive@2x.png": [
+    "Target",
+    "Bullseye",
+    "Focus",
+    "Aim",
+    "Accuracy",
+    "Goal",
+    "Circle",
+    "Concentric",
+    "Dot"
+  ],
+  "/icons/ibm/Caution@2x.png": [
+    "Arrow up",
+    "triangle",
+    "direction",
+    "upward",
+    "navigation",
+    "caret",
+    "move up",
+    "upload"
+  ],
+  "/icons/ibm/Cd--create-archive@2x.png": [
+    "Target",
+    "shield",
+    "security",
+    "protection",
+    "vulnerability",
+    "threat",
+    "privacy",
+    "antivirus"
+  ],
+  "/icons/ibm/Cd--create-exchange@2x.png": [
+    "Refresh",
+    "Reload",
+    "Rotate",
+    "Circle arrow",
+    "Repeat",
+    "Sync",
+    "Update",
+    "Clockwise"
+  ],
+  "/icons/ibm/Center--square@2x.png": [
+    "target",
+    "focus",
+    "aiming",
+    "crosshair",
+    "objective",
+    "scope",
+    "capture",
+    "select",
+    "lock-on"
+  ],
+  "/icons/ibm/Center--circle@2x.png": [
+    "Target",
+    "Aim",
+    "Crosshair",
+    "Focus",
+    "Scope",
+    "Precision",
+    "Accuracy",
+    "Bullseye"
+  ],
+  "/icons/ibm/Cda@2x.png": [
+    "CDA",
+    "acronym",
+    "text",
+    "letters",
+    "abbreviation",
+    "black and white"
+  ],
+  "/icons/ibm/Ccx@2x.png": [
+    "CCX",
+    "text",
+    "letter",
+    "alphabet",
+    "typographic",
+    "black"
+  ],
+  "/icons/ibm/Caution-inverted@2x.png": [
+    "down arrow",
+    "triangle",
+    "drop down",
+    "chevron",
+    "expand",
+    "collapse",
+    "menu",
+    "caret",
+    "downward"
+  ],
+  "/icons/ibm/Center-to-fit@2x.png": [
+    "Crop",
+    "selection",
+    "rectangle",
+    "tool",
+    "frame",
+    "focus",
+    "aspect ratio",
+    "edit"
+  ],
+  "/icons/ibm/Character--sentence-case@2x.png": [
+    "ABC",
+    "text",
+    "font",
+    "typography",
+    "letters",
+    "writing",
+    "education",
+    "alphabet"
+  ],
+  "/icons/ibm/Certificate--check@2x.png": [
+    "checklist",
+    "task complete",
+    "completed",
+    "to-do list",
+    "checkmark",
+    "verified",
+    "approved",
+    "form",
+    "document",
+    "confirmation"
+  ],
+  "/icons/ibm/Character--lower-case@2x.png": [
+    "text",
+    "abc",
+    "letters",
+    "typography",
+    "font",
+    "type"
+  ],
+  "/icons/ibm/Character--integer@2x.png": [
+    "Plus One",
+    "+1",
+    "Vote Up",
+    "Increment",
+    "Ranking",
+    "Like",
+    "Social Media",
+    "Positive",
+    "Feedback"
+  ],
+  "/icons/ibm/Certificate@2x.png": [
+    "Favorite document",
+    "starred page",
+    "important file",
+    "marked list",
+    "star icon",
+    "document with star",
+    "highlighted file",
+    "bookmark",
+    "prioritized list"
+  ],
+  "/icons/ibm/Character--negative-number@2x.png": [
+    "Minus One",
+    "Decrement",
+    "Decrease",
+    "Subtraction",
+    "Negative One",
+    "Reduce",
+    "Numeric",
+    "Negative Value"
+  ],
+  "/icons/ibm/Change-catalog@2x.png": [
+    "Workflow",
+    "process",
+    "task list",
+    "checklist",
+    "flowchart",
+    "automation",
+    "refresh",
+    "loop",
+    "cycle",
+    "diagram"
+  ],
+  "/icons/ibm/Character--fraction@2x.png": [
+    "one half",
+    "1/2",
+    "fraction",
+    "mathematical",
+    "divide",
+    "percentage",
+    "half"
+  ],
+  "/icons/ibm/Character--decimal@2x.png": [
+    "Decimal places",
+    "currency",
+    "price",
+    "numeric value",
+    "two decimals",
+    "money",
+    "accounting",
+    "finance"
+  ],
+  "/icons/ibm/Character--upper-case@2x.png": [
+    "ABC",
+    "text",
+    "font",
+    "letters",
+    "typography",
+    "alphabet"
   ]
 }
