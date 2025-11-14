@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useLayoutEffect } from 'react';
 import Image from 'next/image';
+import { useVirtualizer } from '@tanstack/react-virtual';
 import type { IconInfo, CategoryInfo } from '@/lib/icons';
 
 interface IconBrowserProps {
@@ -17,7 +18,11 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
   const [copiedIcon, setCopiedIcon] = useState<string | null>(null);
   const [showSidebar, setShowSidebar] = useState(true);
   const [selectedIcon, setSelectedIcon] = useState<IconInfo | null>(null);
+  const [isPanelClosing, setIsPanelClosing] = useState(false);
+  const [isPanelOpening, setIsPanelOpening] = useState(false);
   const [downloadedIcon, setDownloadedIcon] = useState<string | null>(null);
+  const [columns, setColumns] = useState(2);
+  const parentRef = useRef<HTMLDivElement>(null);
 
   const filteredIcons = useMemo(() => {
     let filtered = icons;
@@ -38,6 +43,44 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
     return filtered;
   }, [icons, searchQuery, selectedCategory]);
 
+  // Calculate columns based on container width
+  useLayoutEffect(() => {
+    const updateColumns = () => {
+      if (!parentRef.current) {
+        // Retry after a short delay if element not ready
+        setTimeout(updateColumns, 100);
+        return;
+      }
+      const width = parentRef.current.offsetWidth;
+      let cols = 2;
+      if (width >= 1536) cols = 10; // 2xl
+      else if (width >= 1280) cols = 8; // xl
+      else if (width >= 1024) cols = 6; // lg
+      else if (width >= 768) cols = 4; // md
+      else if (width >= 640) cols = 3; // sm
+      setColumns(cols);
+    };
+
+    updateColumns();
+    window.addEventListener('resize', updateColumns);
+    // Also update when sidebar toggles
+    const timeoutId = setTimeout(updateColumns, 100);
+    return () => {
+      window.removeEventListener('resize', updateColumns);
+      clearTimeout(timeoutId);
+    };
+  }, [showSidebar]);
+
+  // Calculate rows for virtualization
+  const rows = useMemo(() => Math.ceil(filteredIcons.length / columns), [filteredIcons.length, columns]);
+  
+  const rowVirtualizer = useVirtualizer({
+    count: rows,
+    getScrollElement: () => parentRef.current,
+    estimateSize: () => 180, // Estimated height per row (icon + padding)
+    overscan: 2, // Render 2 extra rows above/below viewport
+  });
+
   const getDisplayName = (filename: string) => {
     return filename
       .replace('@2x.png', '')
@@ -47,7 +90,42 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
   };
 
   const handleIconClick = (icon: IconInfo) => {
-    setSelectedIcon(icon);
+    if (selectedIcon && selectedIcon.path !== icon.path) {
+      // If panel is already open with a different icon, close it first, then open with new icon
+      setIsPanelClosing(true);
+      setTimeout(() => {
+        setSelectedIcon(icon);
+        setIsPanelClosing(false);
+        setIsPanelOpening(true);
+        // Trigger animation after a brief moment to ensure DOM update
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            setIsPanelOpening(false);
+          });
+        });
+      }, 300);
+    } else if (!selectedIcon) {
+      // Opening for the first time
+      setIsPanelClosing(false);
+      setSelectedIcon(icon);
+      setIsPanelOpening(true);
+      // Trigger animation after a brief moment to ensure DOM update
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setIsPanelOpening(false);
+        });
+      });
+    }
+    // If clicking the same icon, do nothing
+  };
+
+  const handleClosePanel = () => {
+    setIsPanelClosing(true);
+    setIsPanelOpening(false);
+    setTimeout(() => {
+      setSelectedIcon(null);
+      setIsPanelClosing(false);
+    }, 300); // Match the animation duration
   };
 
   const handleCopyPath = async (path: string) => {
@@ -141,6 +219,16 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
         {/* Header with Search */}
         <header className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 sticky top-0 z-20">
           <div className="px-4 sm:px-6 py-4">
+            {/* Site Title */}
+            <div className="mb-4">
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+                Apolitical Image Finder
+              </h1>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                Search through {icons.length} icons by filename
+              </p>
+            </div>
+            
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setShowSidebar(!showSidebar)}
@@ -207,7 +295,10 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
         </header>
 
         {/* Icon Grid */}
-        <main className={`flex-1 overflow-y-auto bg-white dark:bg-gray-900 ${selectedIcon ? 'pb-96 sm:pb-80' : ''}`}>
+        <main 
+          ref={parentRef}
+          className={`flex-1 overflow-y-auto bg-white dark:bg-gray-900 ${selectedIcon ? 'pb-96 sm:pb-80' : ''}`}
+        >
           {filteredIcons.length === 0 ? (
             <div className="flex items-center justify-center h-full">
               <div className="text-center">
@@ -220,40 +311,62 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
               </div>
             </div>
           ) : (
-            <div className="p-6">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 gap-4">
-                {filteredIcons.map((icon) => (
+            <div 
+              className="relative p-6"
+              style={{
+                height: `${rowVirtualizer.getTotalSize()}px`,
+              }}
+            >
+              {rowVirtualizer.getVirtualItems().map((virtualRow) => {
+                const startIndex = virtualRow.index * columns;
+                const endIndex = Math.min(startIndex + columns, filteredIcons.length);
+                const rowIcons = filteredIcons.slice(startIndex, endIndex);
+
+                return (
                   <div
-                    key={icon.path}
-                    onClick={() => handleIconClick(icon)}
-                    className={`group relative flex flex-col items-center p-4 rounded-lg border transition-all bg-white dark:bg-gray-800 cursor-pointer ${
-                      selectedIcon?.path === icon.path
-                        ? 'border-blue-500 dark:border-blue-400 shadow-md ring-2 ring-blue-500 dark:ring-blue-400'
-                        : 'border-gray-200 dark:border-gray-800 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md'
-                    }`}
-                    title={getDisplayName(icon.filename)}
+                    key={virtualRow.key}
+                    className="absolute top-0 left-0 w-full"
+                    style={{
+                      height: `${virtualRow.size}px`,
+                      transform: `translateY(${virtualRow.start}px)`,
+                    }}
                   >
-                    <div
-                      className="relative flex items-center justify-center mb-3 transition-transform group-hover:scale-110"
-                      style={{ width: iconSize, height: iconSize }}
-                    >
-                      <Image
-                        src={icon.path}
-                        alt={getDisplayName(icon.filename)}
-                        fill
-                        className="object-contain"
-                        sizes={`${iconSize}px`}
-                      />
+                    <div className="grid gap-4 min-w-0" style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}>
+                      {rowIcons.map((icon) => (
+                        <div
+                          key={icon.path}
+                          onClick={() => handleIconClick(icon)}
+                          className={`group relative flex flex-col items-center p-4 rounded-lg border transition-all bg-white dark:bg-gray-800 cursor-pointer min-w-0 w-full ${
+                            selectedIcon?.path === icon.path
+                              ? 'border-blue-500 dark:border-blue-400 shadow-md ring-2 ring-blue-500 dark:ring-blue-400'
+                              : 'border-gray-200 dark:border-gray-800 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md'
+                          }`}
+                          title={getDisplayName(icon.filename)}
+                        >
+                          <div
+                            className="relative flex items-center justify-center mb-3 transition-transform group-hover:scale-110"
+                            style={{ width: iconSize, height: iconSize }}
+                          >
+                            <Image
+                              src={icon.path}
+                              alt={getDisplayName(icon.filename)}
+                              fill
+                              className="object-contain"
+                              sizes={`${iconSize}px`}
+                            />
+                          </div>
+                          <p className="text-xs text-center text-gray-700 dark:text-gray-300 font-medium truncate w-full px-1 min-w-0">
+                            {getDisplayName(icon.filename)}
+                          </p>
+                          <span className="text-xs text-gray-400 dark:text-gray-500 mt-1 truncate w-full min-w-0">
+                            {icon.category}
+                          </span>
+                        </div>
+                      ))}
                     </div>
-                    <p className="text-xs text-center text-gray-700 dark:text-gray-300 font-medium truncate w-full px-1">
-                      {getDisplayName(icon.filename)}
-                    </p>
-                    <span className="text-xs text-gray-400 dark:text-gray-500 mt-1">
-                      {icon.category}
-                    </span>
                   </div>
-                ))}
-              </div>
+                );
+              })}
             </div>
           )}
         </main>
@@ -261,7 +374,16 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       
       {/* Icon Detail Panel (Bottom Modal) */}
       {selectedIcon && (
-        <div className="fixed inset-x-0 bottom-0 z-50 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 shadow-2xl transform transition-transform duration-300 ease-out">
+        <div 
+          className={`fixed inset-x-0 bottom-0 z-50 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 shadow-2xl transform transition-transform duration-300 ease-out ${
+            isPanelClosing ? 'translate-y-full' : isPanelOpening ? 'translate-y-full' : 'translate-y-0'
+          }`}
+          onTransitionEnd={() => {
+            if (isPanelOpening) {
+              setIsPanelOpening(false);
+            }
+          }}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
             <div className="flex flex-col sm:flex-row items-start justify-between gap-4 sm:gap-6">
               {/* Icon Preview */}
@@ -300,7 +422,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                     </p>
                   </div>
                   <button
-                    onClick={() => setSelectedIcon(null)}
+                    onClick={handleClosePanel}
                     className="flex-shrink-0 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-500 dark:text-gray-400 ml-2"
                     aria-label="Close"
                   >
@@ -353,12 +475,16 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       
       {/* Toast Notifications */}
       {copiedIcon && !selectedIcon && (
-        <div className="fixed bottom-4 right-4 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-2 rounded-lg shadow-lg z-50 transition-opacity duration-300">
+        <div className={`fixed right-4 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-4 py-2 rounded-lg shadow-lg z-[60] transition-opacity duration-300 ${
+          selectedIcon ? 'bottom-96 sm:bottom-80' : 'bottom-4'
+        }`}>
           Copied to clipboard!
         </div>
       )}
       {downloadedIcon && (
-        <div className="fixed bottom-4 right-4 bg-green-600 dark:bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 transition-opacity duration-300">
+        <div className={`fixed right-4 bg-green-600 dark:bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-[60] transition-opacity duration-300 ${
+          selectedIcon ? 'bottom-96 sm:bottom-80' : 'bottom-4'
+        }`}>
           Image downloaded: {downloadedIcon}
         </div>
       )}
