@@ -13,7 +13,8 @@ interface KeywordsData {
   [iconPath: string]: string[];
 }
 
-const RATE_LIMIT_DELAY = 4100; // ~15 requests per minute (60s / 15 = 4s, add buffer)
+const BATCH_SIZE = 10; // Process 10 images in parallel (matches rate limit - gemini-2.0-flash-exp has 10 req/min)
+const BATCH_DELAY = 65000; // Wait 65 seconds between batches (10 requests per minute with buffer)
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 5000; // 5 seconds
 
@@ -116,7 +117,7 @@ async function main() {
       const existingData = await readFile(keywordsFilePath, 'utf-8');
       existingKeywords = JSON.parse(existingData);
       console.log(`Loaded ${Object.keys(existingKeywords).length} existing keywords`);
-    } catch (error) {
+    } catch {
       console.log('No existing keywords file found, starting fresh');
     }
   }
@@ -139,40 +140,54 @@ async function main() {
   let skipped = 0;
   let errors = 0;
 
-  for (let i = 0; i < icons.length; i++) {
-    const icon = icons[i];
-    
-    // Skip if already processed
-    if (keywords[icon.path]) {
-      skipped++;
-      console.log(`[${i + 1}/${icons.length}] Skipping ${icon.filename} (already processed)`);
-      continue;
-    }
+  // Filter out already processed icons
+  const iconsToProcess = icons.filter(icon => !keywords[icon.path]);
+  skipped = icons.length - iconsToProcess.length;
+  
+  if (skipped > 0) {
+    console.log(`Skipping ${skipped} icons that already have keywords`);
+  }
 
-    try {
-      console.log(`[${i + 1}/${icons.length}] Processing ${icon.filename}...`);
-      const iconKeywords = await generateKeywordsForImage(icon.path);
-      keywords[icon.path] = iconKeywords;
-      processed++;
-      console.log(`  ✓ Generated keywords: ${iconKeywords.join(', ')}`);
+  console.log(`Processing ${iconsToProcess.length} icons in batches of ${BATCH_SIZE}...`);
 
-      // Save progress every 10 images (or after each image in test mode)
-      const shouldSave = isTest || limit ? true : (i + 1) % 10 === 0;
-      if (shouldSave) {
-        await writeFile(keywordsFilePath, JSON.stringify(keywords, null, 2));
-        if (!isTest && !limit) {
-          console.log(`  Progress saved (${processed} processed, ${skipped} skipped, ${errors} errors)`);
-        }
+  // Process in batches
+  for (let batchStart = 0; batchStart < iconsToProcess.length; batchStart += BATCH_SIZE) {
+    const batchEnd = Math.min(batchStart + BATCH_SIZE, iconsToProcess.length);
+    const batch = iconsToProcess.slice(batchStart, batchEnd);
+    const batchNumber = Math.floor(batchStart / BATCH_SIZE) + 1;
+    const totalBatches = Math.ceil(iconsToProcess.length / BATCH_SIZE);
+
+    console.log(`\n📦 Batch ${batchNumber}/${totalBatches} (processing ${batch.length} images)...`);
+
+    // Process batch in parallel
+    const batchPromises = batch.map(async (icon, index) => {
+      const globalIndex = batchStart + index + 1;
+      try {
+        console.log(`  [${globalIndex}/${iconsToProcess.length}] Processing ${icon.filename}...`);
+        const iconKeywords = await generateKeywordsForImage(icon.path);
+        keywords[icon.path] = iconKeywords;
+        processed++;
+        console.log(`  ✓ [${globalIndex}/${iconsToProcess.length}] ${icon.filename}: ${iconKeywords.join(', ')}`);
+        return { success: true, icon, keywords: iconKeywords };
+      } catch (error) {
+        errors++;
+        console.error(`  ✗ [${globalIndex}/${iconsToProcess.length}] Error processing ${icon.filename}:`, error instanceof Error ? error.message : error);
+        return { success: false, icon, error };
       }
+    });
 
-      // Rate limiting - wait between requests
-      if (i < icons.length - 1) {
-        await delay(RATE_LIMIT_DELAY);
-      }
-    } catch (error) {
-      errors++;
-      console.error(`  ✗ Error processing ${icon.filename}:`, error instanceof Error ? error.message : error);
-      // Continue with next image
+    // Wait for all requests in batch to complete
+    await Promise.allSettled(batchPromises);
+
+    // Save progress after each batch
+    await writeFile(keywordsFilePath, JSON.stringify(keywords, null, 2));
+    console.log(`  💾 Progress saved (${processed} processed, ${skipped} skipped, ${errors} errors)`);
+
+    // Rate limiting - wait between batches (except for the last batch)
+    if (batchEnd < iconsToProcess.length) {
+      const waitSeconds = Math.ceil(BATCH_DELAY / 1000);
+      console.log(`  ⏳ Waiting ${waitSeconds} seconds before next batch (rate limiting)...`);
+      await delay(BATCH_DELAY);
     }
   }
 

@@ -155,6 +155,16 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
     }
   };
 
+  const handleCopyKeywords = async (keywords: string[]) => {
+    try {
+      await navigator.clipboard.writeText(keywords.join(', '));
+      setCopiedIcon('keywords');
+      setTimeout(() => setCopiedIcon(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
   const handleDownload = async (icon: IconInfo) => {
     try {
       const response = await fetch(icon.path);
@@ -232,7 +242,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                 Apolitical Image Finder
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                Search through {icons.length} icons by filename
+                Search through {icons.length} icons by keywords or filename
               </p>
             </div>
             
@@ -249,7 +259,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
               <div className="flex-1 relative">
                 <input
                   type="text"
-                  placeholder="Search icons..."
+                  placeholder="Search icons by keywords or filename..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full px-4 py-2 pl-10 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -424,9 +434,21 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                     <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2 truncate">
                       {getDisplayName(selectedIcon.filename)}
                     </h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
                       Category: <span className="font-medium">{selectedIcon.category}</span>
                     </p>
+                    {selectedIcon.keywords && selectedIcon.keywords.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 mt-2">
+                        {selectedIcon.keywords.map((keyword, idx) => (
+                          <span
+                            key={idx}
+                            className="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-md"
+                          >
+                            {keyword}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <button
                     onClick={handleClosePanel}
@@ -473,6 +495,33 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                       </button>
                     </div>
                   </div>
+                  {selectedIcon.keywords && selectedIcon.keywords.length > 0 && (
+                    <div>
+                      <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        Keywords
+                      </label>
+                      <div className="flex items-start gap-2">
+                        <div className="flex-1 px-3 py-2 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded text-sm text-gray-900 dark:text-gray-100">
+                          <div className="flex flex-wrap gap-1.5">
+                            {selectedIcon.keywords.map((keyword, idx) => (
+                              <span
+                                key={idx}
+                                className="px-2 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs"
+                              >
+                                {keyword}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <button
+                          onClick={() => handleCopyKeywords(selectedIcon.keywords!)}
+                          className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded text-sm font-medium transition-colors"
+                        >
+                          {copiedIcon === 'keywords' ? 'Copied!' : 'Copy'}
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
