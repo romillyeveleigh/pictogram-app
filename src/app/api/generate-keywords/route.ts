@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     const mimeType = imagePath.endsWith('.png') ? 'image/png' : 'image/jpeg';
 
     // Get the generative model
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
 
     // Create the prompt
     const prompt = `Analyze this icon image and generate 5-10 descriptive keywords that would help someone find this icon. 

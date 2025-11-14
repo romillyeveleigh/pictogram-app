@@ -13,53 +13,83 @@ interface KeywordsData {
   [iconPath: string]: string[];
 }
 
-const BATCH_SIZE = 10; // Process 10 images in parallel (matches rate limit - gemini-2.0-flash-exp has 10 req/min)
-const BATCH_DELAY = 65000; // Wait 65 seconds between batches (10 requests per minute with buffer)
+const IMAGES_PER_REQUEST = 16; // Gemini supports up to 16 images per request
+const BATCH_DELAY = 10000; // Wait 10 seconds between batches (rate limiting)
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 5000; // 5 seconds
+
+interface IconInfo {
+  path: string;
+  filename: string;
+  category: string;
+}
 
 async function delay(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function generateKeywordsForImage(imagePath: string, retries = 0): Promise<string[]> {
+async function generateKeywordsForImages(
+  icons: IconInfo[], 
+  retries = 0
+): Promise<Map<string, string[]>> {
   try {
-    const imageFilePath = join(process.cwd(), 'public', imagePath);
-    const imageBuffer = await readFile(imageFilePath);
-    const base64Image = imageBuffer.toString('base64');
-    const mimeType = 'image/png';
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-lite' });
 
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
+    // Build the prompt with image references
+    let prompt = `Analyze the following ${icons.length} icon images and generate 5-10 descriptive keywords for each icon that would help someone find it.\n\n`;
+    prompt += `For each image, provide keywords that focus on what the icon represents, its purpose, and visual elements. Keywords should be concise (1-3 words each).\n\n`;
+    prompt += `Return a JSON object where each key is the filename (without path) and the value is an array of keywords.\n`;
+    prompt += `Example format: {"icon1.png": ["keyword1", "keyword2"], "icon2.png": ["keyword3", "keyword4"]}\n\n`;
+    prompt += `Filenames to analyze:\n`;
+    icons.forEach((icon, index) => {
+      prompt += `${index + 1}. ${icon.filename}\n`;
+    });
 
-    const prompt = `Analyze this icon image and generate 5-10 descriptive keywords that would help someone find this icon. 
-    Return only a comma-separated list of keywords, no other text. 
-    Focus on what the icon represents, its purpose, and visual elements. 
-    Keywords should be concise (1-3 words each).`;
+    // Build the content array with prompt and all images
+    const contentParts: (string | { inlineData: { data: string; mimeType: string } })[] = [prompt];
+    
+    for (const icon of icons) {
+      const imageFilePath = join(process.cwd(), 'public', icon.path);
+      const imageBuffer = await readFile(imageFilePath);
+      const base64Image = imageBuffer.toString('base64');
+      const mimeType = 'image/png';
 
-    const result = await model.generateContent([
-      prompt,
-      {
+      contentParts.push({
         inlineData: {
           data: base64Image,
           mimeType,
         },
-      },
-    ]);
+      });
+    }
 
+    const result = await model.generateContent(contentParts);
     const response = await result.response;
-    const keywordsText = response.text().trim();
+    const responseText = response.text().trim();
     
-    const keywords = keywordsText
-      .split(',')
-      .map(k => k.trim())
-      .filter(k => k.length > 0);
+    // Try to parse JSON response
+    let keywordsMap: Record<string, string[]> = {};
+    
+    // Extract JSON from response (in case there's extra text)
+    const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      keywordsMap = JSON.parse(jsonMatch[0]);
+    } else {
+      throw new Error('No JSON found in response');
+    }
 
-    return keywords;
+    // Convert to Map with full paths as keys
+    const resultMap = new Map<string, string[]>();
+    for (const icon of icons) {
+      const keywords = keywordsMap[icon.filename] || [];
+      resultMap.set(icon.path, keywords.filter((k: string) => k && k.trim().length > 0));
+    }
+
+    return resultMap;
   } catch (error) {
     if (retries < MAX_RETRIES) {
-      console.log(`  Retrying... (${retries + 1}/${MAX_RETRIES})`);
+      console.log(`  Retrying batch... (${retries + 1}/${MAX_RETRIES})`);
       await delay(RETRY_DELAY);
-      return generateKeywordsForImage(imagePath, retries + 1);
+      return generateKeywordsForImages(icons, retries + 1);
     }
     throw error;
   }
@@ -148,36 +178,44 @@ async function main() {
     console.log(`Skipping ${skipped} icons that already have keywords`);
   }
 
-  console.log(`Processing ${iconsToProcess.length} icons in batches of ${BATCH_SIZE}...`);
+  console.log(`Processing ${iconsToProcess.length} icons in batches of ${IMAGES_PER_REQUEST} per API call...`);
 
-  // Process in batches
-  for (let batchStart = 0; batchStart < iconsToProcess.length; batchStart += BATCH_SIZE) {
-    const batchEnd = Math.min(batchStart + BATCH_SIZE, iconsToProcess.length);
+  // Process in batches of up to 16 images per API call
+  for (let batchStart = 0; batchStart < iconsToProcess.length; batchStart += IMAGES_PER_REQUEST) {
+    const batchEnd = Math.min(batchStart + IMAGES_PER_REQUEST, iconsToProcess.length);
     const batch = iconsToProcess.slice(batchStart, batchEnd);
-    const batchNumber = Math.floor(batchStart / BATCH_SIZE) + 1;
-    const totalBatches = Math.ceil(iconsToProcess.length / BATCH_SIZE);
+    const batchNumber = Math.floor(batchStart / IMAGES_PER_REQUEST) + 1;
+    const totalBatches = Math.ceil(iconsToProcess.length / IMAGES_PER_REQUEST);
 
-    console.log(`\n📦 Batch ${batchNumber}/${totalBatches} (processing ${batch.length} images)...`);
+    console.log(`\n📦 Batch ${batchNumber}/${totalBatches} (processing ${batch.length} images in one API call)...`);
 
-    // Process batch in parallel
-    const batchPromises = batch.map(async (icon, index) => {
-      const globalIndex = batchStart + index + 1;
-      try {
-        console.log(`  [${globalIndex}/${iconsToProcess.length}] Processing ${icon.filename}...`);
-        const iconKeywords = await generateKeywordsForImage(icon.path);
-        keywords[icon.path] = iconKeywords;
-        processed++;
-        console.log(`  ✓ [${globalIndex}/${iconsToProcess.length}] ${icon.filename}: ${iconKeywords.join(', ')}`);
-        return { success: true, icon, keywords: iconKeywords };
-      } catch (error) {
-        errors++;
-        console.error(`  ✗ [${globalIndex}/${iconsToProcess.length}] Error processing ${icon.filename}:`, error instanceof Error ? error.message : error);
-        return { success: false, icon, error };
+    try {
+      const keywordsMap = await generateKeywordsForImages(batch);
+      
+      // Store results
+      for (let i = 0; i < batch.length; i++) {
+        const icon = batch[i];
+        const globalIndex = batchStart + i + 1;
+        const iconKeywords = keywordsMap.get(icon.path) || [];
+        if (iconKeywords.length > 0) {
+          keywords[icon.path] = iconKeywords;
+          processed++;
+          console.log(`  ✓ [${globalIndex}/${iconsToProcess.length}] ${icon.filename}: ${iconKeywords.join(', ')}`);
+        } else {
+          errors++;
+          console.error(`  ⚠ [${globalIndex}/${iconsToProcess.length}] ${icon.filename}: No keywords returned`);
+        }
       }
-    });
-
-    // Wait for all requests in batch to complete
-    await Promise.allSettled(batchPromises);
+    } catch (error) {
+      errors += batch.length;
+      console.error(`  ✗ Error processing batch:`, error instanceof Error ? error.message : error);
+      // Mark all icons in the failed batch as errors
+      for (let i = 0; i < batch.length; i++) {
+        const icon = batch[i];
+        const globalIndex = batchStart + i + 1;
+        console.error(`  ✗ [${globalIndex}/${iconsToProcess.length}] ${icon.filename}: Batch failed`);
+      }
+    }
 
     // Save progress after each batch
     await writeFile(keywordsFilePath, JSON.stringify(keywords, null, 2));
