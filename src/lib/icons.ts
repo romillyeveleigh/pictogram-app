@@ -7,6 +7,19 @@ export interface IconInfo {
   category: string;
 }
 
+export interface CategoryInfo {
+  name: string;
+  displayName: string;
+  count: number;
+}
+
+const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
+  'ibm': 'IBM Icons',
+  'ibm-pictograms': 'IBM Pictograms',
+  'streamline': 'Streamline',
+  'themed': 'Themed',
+};
+
 export async function getAllIcons(): Promise<IconInfo[]> {
   const iconsDir = join(process.cwd(), 'public', 'icons');
   const categories = ['ibm', 'ibm-pictograms', 'streamline', 'themed'];
@@ -31,5 +44,18 @@ export async function getAllIcons(): Promise<IconInfo[]> {
   }
 
   return icons;
+}
+
+export function getCategories(icons: IconInfo[]): CategoryInfo[] {
+  const categoryCounts = icons.reduce((acc, icon) => {
+    acc[icon.category] = (acc[icon.category] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  return Object.entries(categoryCounts).map(([name, count]) => ({
+    name,
+    displayName: CATEGORY_DISPLAY_NAMES[name] || name,
+    count,
+  }));
 }
 
