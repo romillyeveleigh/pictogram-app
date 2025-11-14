@@ -1,56 +1,4 @@
 {
-  "/icons/ibm/3d-curve--auto-colon@2x.png": [
-    "route",
-    "path",
-    "direction",
-    "travel",
-    "connected",
-    "winding",
-    "map",
-    "journey"
-  ],
-  "/icons/ibm/3d-curve--auto-vessels@2x.png": [
-    "Shuffle",
-    "Randomize",
-    "Interconnect",
-    "Connect",
-    "Swirl",
-    "Abstract",
-    "Loop",
-    "Network"
-  ],
-  "/icons/ibm/3d-curve--manual@2x.png": [
-    "connection",
-    "link",
-    "chain",
-    "network",
-    "nodes",
-    "interconnected",
-    "relationships",
-    "dependency",
-    "linking"
-  ],
-  "/icons/ibm/3d-cursor@2x.png": [
-    "Object",
-    "Select",
-    "Box",
-    "3D",
-    "Transform",
-    "Move",
-    "Manipulation",
-    "Grid",
-    "Positioning"
-  ],
-  "/icons/ibm/3d-cursor--alt@2x.png": [
-    "Target",
-    "aim",
-    "crosshair",
-    "focus",
-    "accuracy",
-    "precision",
-    "select",
-    "location"
-  ],
   "/icons/ibm/Account@2x.png": [
     "window",
     "browser",
@@ -2280,5 +2228,1910 @@
     "music levels",
     "graphic equalizer",
     "bar graph"
+  ],
+  "/icons/ibm/Chemistry@2x.png": [
+    "flask",
+    "chemistry",
+    "science",
+    "lab",
+    "beaker",
+    "experiment",
+    "research",
+    "liquid"
+  ],
+  "/icons/ibm/Chevron--right@2x.png": [
+    "right arrow",
+    "greater than",
+    "next",
+    "chevron",
+    "navigation",
+    "forward",
+    "angle bracket",
+    "right pointing"
+  ],
+  "/icons/ibm/Checkmark--outline@2x.png": [
+    "Checkmark",
+    "Check",
+    "Tick",
+    "Circle",
+    "Approved",
+    "Valid",
+    "Done",
+    "Success",
+    "Confirm"
+  ],
+  "/icons/ibm/Chevron--down@2x.png": [
+    "chevron down",
+    "arrow",
+    "navigation",
+    "more",
+    "expand",
+    "less",
+    "reveal"
+  ],
+  "/icons/ibm/Chevron--mini@2x.png": [
+    "Triangle",
+    "right angle",
+    "pointer",
+    "direction",
+    "arrow",
+    "navigation",
+    "next"
+  ],
+  "/icons/ibm/Checkmark@2x.png": [
+    "Checkmark",
+    "check",
+    "tick",
+    "verification",
+    "valid",
+    "accept",
+    "approve",
+    "confirm",
+    "right"
+  ],
+  "/icons/ibm/Chemistry--reference@2x.png": [
+    "Export",
+    "Download",
+    "Arrow",
+    "Outbox",
+    "Output",
+    "File transfer",
+    "Share",
+    "Data transfer"
+  ],
+  "/icons/ibm/Chevron--left@2x.png": [
+    "Left arrow",
+    "chevron",
+    "back",
+    "previous",
+    "navigation",
+    "angle bracket",
+    "less than"
+  ],
+  "/icons/ibm/Checkmark--outline--error@2x.png": [
+    "Approval denied",
+    "check mark",
+    "no sign",
+    "circle",
+    "cancel",
+    "validation",
+    "reject",
+    "verification failure"
+  ],
+  "/icons/ibm/Checkmark--outline--warning@2x.png": [
+    "Upgrade",
+    "Checkmark",
+    "Arrow Up",
+    "Verified",
+    "Positive",
+    "Circle",
+    "Success",
+    "Confirmation"
+  ],
+  "/icons/ibm/Chevron--sort--down@2x.png": [
+    "Down arrow",
+    "chevron",
+    "dropdown",
+    "expand",
+    "open",
+    "more",
+    "select",
+    "navigation",
+    "arrow"
+  ],
+  "/icons/ibm/Chevron--sort--up@2x.png": [
+    "Up arrow",
+    "chevron",
+    "caret",
+    "upward",
+    "direction",
+    "navigation",
+    "symbol",
+    "UI",
+    "interface"
+  ],
+  "/icons/ibm/Choropleth-map@2x.png": [
+    "Map",
+    "grid",
+    "location",
+    "navigation",
+    "folded map",
+    "travel",
+    "route",
+    "directory"
+  ],
+  "/icons/ibm/Choices@2x.png": [
+    "Expand",
+    "Full Screen",
+    "Maximize",
+    "Arrow",
+    "Two-way Arrow",
+    "Y shape",
+    "Resize",
+    "Outward"
+  ],
+  "/icons/ibm/Choose-item@2x.png": [
+    "Skip",
+    "Next",
+    "Forward",
+    "Right arrow",
+    "End",
+    "Fast forward",
+    "Media control",
+    "Playback"
+  ],
+  "/icons/ibm/Chevron--sort@2x.png": [
+    "double arrow",
+    "up down",
+    "sort",
+    "expand",
+    "collapse",
+    "toggle",
+    "two arrows",
+    "reverse",
+    "bidirectional"
+  ],
+  "/icons/ibm/Circle--solid@2x.png": [
+    "Black circle",
+    "bullet point",
+    "dot",
+    "status indicator",
+    "offline",
+    "disabled",
+    "filled circle"
+  ],
+  "/icons/ibm/Circle-dash@2x.png": [
+    "Loading",
+    "dotted circle",
+    "waiting",
+    "progress",
+    "dashed ring",
+    "buffering",
+    "spinner",
+    "processing"
+  ],
+  "/icons/ibm/Circle--filled@2x.png": [
+    "Record button",
+    "Black circle",
+    "Target",
+    "Filled circle",
+    "Radio button",
+    "Select",
+    "Choice",
+    "Empty selection"
+  ],
+  "/icons/ibm/Chevron--up@2x.png": [
+    "Up arrow",
+    "chevron",
+    "caret",
+    "arrow icon",
+    "UI arrow",
+    "pointed up",
+    "navigation icon"
+  ],
+  "/icons/ibm/Classifier--language@2x.png": [
+    "Gender symbols",
+    "male",
+    "female",
+    "transgender",
+    "equality",
+    "sex symbol",
+    "gender identity",
+    "crossed symbol"
+  ],
+  "/icons/ibm/Cloud-foundry--2@2x.png": [
+    "CF",
+    "letters",
+    "initials",
+    "text",
+    "abbreviation",
+    "black and white"
+  ],
+  "/icons/ibm/Closed-caption--alt@2x.png": [
+    "chat bubble",
+    "comment",
+    "speech",
+    "message",
+    "conversation",
+    "text",
+    "quote"
+  ],
+  "/icons/ibm/Closed-caption@2x.png": [
+    "Closed captions",
+    "subtitles",
+    "CC icon",
+    "accessibility",
+    "video",
+    "rectangular",
+    "captioning"
+  ],
+  "/icons/ibm/Cloud--auditing@2x.png": [
+    "computer",
+    "checkmark",
+    "success",
+    "approved",
+    "online",
+    "desktop",
+    "completed",
+    "verified",
+    "confirmed"
+  ],
+  "/icons/ibm/Cloud--logging@2x.png": [
+    "computer",
+    "display",
+    "list",
+    "menu",
+    "monitor",
+    "options",
+    "settings",
+    "information",
+    "lines"
+  ],
+  "/icons/ibm/Closed-caption--filled@2x.png": [
+    "closed captions",
+    "subtitles",
+    "CC icon",
+    "accessibility",
+    "video",
+    "black rectangle",
+    "white text",
+    "media player",
+    "deaf",
+    "hard of hearing"
+  ],
+  "/icons/ibm/Cloud-app@2x.png": [
+    "Cloud data",
+    "Cloud transfer",
+    "Data migration",
+    "Cloud computing",
+    "Information transfer",
+    "Network",
+    "Cloud synchronization",
+    "Upload",
+    "Download"
+  ],
+  "/icons/ibm/Cloud--monitoring@2x.png": [
+    "computer",
+    "monitor",
+    "waveform",
+    "signal",
+    "chart",
+    "graph",
+    "data analysis",
+    "display",
+    "science"
+  ],
+  "/icons/ibm/Close@2x.png": [
+    "Close",
+    "X icon",
+    "Delete",
+    "Remove",
+    "Cancel",
+    "Cross mark",
+    "Exit"
+  ],
+  "/icons/ibm/Cloud-foundry--1@2x.png": [
+    "Cloudflare",
+    "cloud security",
+    "cf",
+    "network protection",
+    "CDN",
+    "content delivery",
+    "website security",
+    "internet",
+    "cloud",
+    "icon"
+  ],
+  "/icons/ibm/Cloud-registry@2x.png": [
+    "square",
+    "layout",
+    "design",
+    "element",
+    "container",
+    "box",
+    "structure",
+    "frame"
+  ],
+  "/icons/ibm/Circle-stroke@2x.png": [
+    "Circle",
+    "ring",
+    "outline",
+    "black",
+    "empty",
+    "blurred",
+    "geometric",
+    "round",
+    "symbol"
+  ],
+  "/icons/ibm/Clean@2x.png": [
+    "Broom",
+    "sweep",
+    "cleaning",
+    "dust",
+    "dirt",
+    "household",
+    "tidy",
+    "clean up"
+  ],
+  "/icons/ibm/Close--filled@2x.png": [
+    "Close",
+    "Cancel",
+    "Exit",
+    "Delete",
+    "Remove",
+    "X mark",
+    "Black circle",
+    "Button icon"
+  ],
+  "/icons/ibm/Circle-fill@2x.png": [
+    "dot",
+    "circle",
+    "black",
+    "indicator",
+    "mark",
+    "filled",
+    "symbol",
+    "icon",
+    "status"
+  ],
+  "/icons/ibm/Circle-packing@2x.png": [
+    "abstract",
+    "sphere",
+    "circles",
+    "interconnected",
+    "geometric",
+    "design",
+    "symbol",
+    "blurred",
+    "web icon"
+  ],
+  "/icons/ibm/Close--outline@2x.png": [
+    "Cancel",
+    "close",
+    "exit",
+    "delete",
+    "remove",
+    "X mark",
+    "inside circle",
+    "button"
+  ],
+  "/icons/ibm/Classification@2x.png": [
+    "file",
+    "tag",
+    "document",
+    "label",
+    "attachment",
+    "paper",
+    "archive",
+    "bookmark"
+  ],
+  "/icons/ibm/Circuit-composer@2x.png": [
+    "hospital",
+    "emergency",
+    "healthcare",
+    "medical",
+    "first aid",
+    "rectangle",
+    "H",
+    "treatment",
+    "symbol",
+    "circuit"
+  ],
+  "/icons/ibm/Circle-measurement@2x.png": [
+    "Expand",
+    "resize",
+    "full screen",
+    "diagonal arrows",
+    "outward",
+    "enlarge",
+    "circular",
+    "maximize",
+    "screen"
+  ],
+  "/icons/ibm/Cognitive@2x.png": [
+    "Brain",
+    "Neurology",
+    "Mind",
+    "Intelligence",
+    "Thought",
+    "Ideas",
+    "Cognitive",
+    "Outline",
+    "Science"
+  ],
+  "/icons/ibm/Cloud-satellite--link@2x.png": [
+    "molecule",
+    "link",
+    "connection",
+    "atom",
+    "network",
+    "chemistry"
+  ],
+  "/icons/ibm/Collapse-all@2x.png": [
+    "Layers",
+    "stacked",
+    "overlapping",
+    "arrangement",
+    "document",
+    "pages",
+    "elements",
+    "design"
+  ],
+  "/icons/ibm/Color-palette@2x.png": [
+    "Palette",
+    "paint",
+    "art",
+    "color",
+    "design",
+    "creative",
+    "drawing",
+    "artist",
+    "brush"
+  ],
+  "/icons/ibm/Cloud-satellite--services@2x.png": [
+    "molecule",
+    "chemical",
+    "research",
+    "science",
+    "atom",
+    "structure",
+    "biology",
+    "hexagon",
+    "dots"
+  ],
+  "/icons/ibm/Color-switch@2x.png": [
+    "volume",
+    "audio",
+    "sound",
+    "control",
+    "mute",
+    "square",
+    "speaker",
+    "level",
+    "setting"
+  ],
+  "/icons/ibm/Collapse-categories@2x.png": [
+    "menu",
+    "navigation",
+    "list",
+    "options",
+    "hamburger",
+    "arrow",
+    "right",
+    "expand"
+  ],
+  "/icons/ibm/Cloud-satellite--config@2x.png": [
+    "Settings",
+    "configuration",
+    "data",
+    "analysis",
+    "processing",
+    "hexagon",
+    "cog",
+    "parameters",
+    "adjustment"
+  ],
+  "/icons/ibm/Cobb-angle@2x.png": [
+    "ellipsis",
+    "more",
+    "options",
+    "menu",
+    "dots",
+    "vertical",
+    "three",
+    "list"
+  ],
+  "/icons/ibm/Cloud-satellite@2x.png": [
+    "molecule",
+    "chemistry",
+    "atom",
+    "science",
+    "hexagonal",
+    "structure",
+    "chemical",
+    "connection",
+    "dot"
+  ],
+  "/icons/ibm/Concept@2x.png": [
+    "connection",
+    "network",
+    "linking",
+    "relationship",
+    "expansion",
+    "nodes",
+    "data",
+    "central",
+    "disperse"
+  ],
+  "/icons/ibm/Condition--wait-point@2x.png": [
+    "diamond",
+    "circle",
+    "outline",
+    "warning",
+    "alert",
+    "caution",
+    "shape",
+    "symbol",
+    "notification"
+  ],
+  "/icons/ibm/Compare@2x.png": [
+    "merge",
+    "combine",
+    "arrows",
+    "boxes",
+    "transfer",
+    "swap",
+    "sync",
+    "exchange"
+  ],
+  "/icons/ibm/Column-dependency@2x.png": [
+    "flowchart",
+    "branching",
+    "diagram",
+    "structure",
+    "organization",
+    "connection",
+    "process",
+    "hierarchy",
+    "data",
+    "network"
+  ],
+  "/icons/ibm/Composer-edit@2x.png": [
+    "logic gate",
+    "quantum computing",
+    "CNOT",
+    "control-not",
+    "circuit diagram",
+    "square",
+    "circle",
+    "line",
+    "information",
+    "processing"
+  ],
+  "/icons/ibm/Column--insert@2x.png": [
+    "download",
+    "save",
+    "upload",
+    "box",
+    "arrow down",
+    "import",
+    "data",
+    "receiver"
+  ],
+  "/icons/ibm/Column--delete@2x.png": [
+    "stop",
+    "cancel",
+    "close",
+    "terminate",
+    "invalid",
+    "error",
+    "reject",
+    "disable",
+    "delete",
+    "cancel icon"
+  ],
+  "/icons/ibm/Commerce@2x.png": [
+    "Commerce",
+    "text",
+    "title",
+    "font",
+    "word",
+    "label",
+    "business",
+    "market"
+  ],
+  "/icons/ibm/Commit@2x.png": [
+    "connection",
+    "link",
+    "node",
+    "data point",
+    "center",
+    "connect",
+    "circuit",
+    "wire",
+    "circle",
+    "network"
+  ],
+  "/icons/ibm/Condition--point@2x.png": [
+    "diamond",
+    "rhombus",
+    "warning",
+    "caution",
+    "alert",
+    "notification",
+    "symbol",
+    "shape",
+    "sign",
+    "attention"
+  ],
+  "/icons/ibm/Connect--source@2x.png": [
+    "connection",
+    "right arrow",
+    "vertical line",
+    "intersection",
+    "data flow",
+    "node",
+    "network",
+    "direction"
+  ],
+  "/icons/ibm/Container-software@2x.png": [
+    "grid",
+    "square",
+    "layout",
+    "design",
+    "element",
+    "structure",
+    "box",
+    "block",
+    "component"
+  ],
+  "/icons/ibm/Connect--target@2x.png": [
+    "arrow",
+    "right",
+    "input",
+    "symbol",
+    "forward",
+    "process",
+    "control",
+    "flow",
+    "end"
+  ],
+  "/icons/ibm/Connect--recursive@2x.png": [
+    "Undo",
+    "Back",
+    "Reset",
+    "Revert",
+    "Repeat",
+    "Cycle",
+    "Loop",
+    "Arrow",
+    "Circular",
+    "Refresh"
+  ],
+  "/icons/ibm/Continue--filled@2x.png": [
+    "pause",
+    "play",
+    "stop",
+    "media controls",
+    "audio",
+    "video",
+    "player",
+    "button",
+    "UI element",
+    "pause button"
+  ],
+  "/icons/ibm/Contour--draw@2x.png": [
+    "Dotted line",
+    "circular",
+    "outline",
+    "dashed",
+    "design element",
+    "around"
+  ],
+  "/icons/ibm/Continue@2x.png": [
+    "pause play",
+    "video control",
+    "media icon",
+    "play button",
+    "pause button",
+    "audio",
+    "forward",
+    "next"
+  ],
+  "/icons/ibm/Content-view@2x.png": [
+    "View",
+    "show",
+    "display",
+    "eye",
+    "box",
+    "visibility",
+    "observe",
+    "monitor"
+  ],
+  "/icons/ibm/Connect@2x.png": [
+    "Connection",
+    "linked",
+    "attached",
+    "circle",
+    "point",
+    "node",
+    "relationship",
+    "network",
+    "link",
+    "connection"
+  ],
+  "/icons/ibm/Content-delivery-network@2x.png": [
+    "globe",
+    "international",
+    "website",
+    "internet",
+    "location",
+    "global",
+    "networking",
+    "connection"
+  ],
+  "/icons/ibm/Copy--file@2x.png": [
+    "copy",
+    "duplicate",
+    "document",
+    "file",
+    "paper",
+    "corner",
+    "duplicate file",
+    "clone",
+    "paste"
+  ],
+  "/icons/ibm/Controls@2x.png": [
+    "Controls",
+    "text",
+    "typography",
+    "black",
+    "gray",
+    "label",
+    "heading",
+    "title",
+    "UI element",
+    "word"
+  ],
+  "/icons/ibm/Corner@2x.png": [
+    "corner",
+    "connection",
+    "link",
+    "node",
+    "anchor",
+    "point",
+    "join",
+    "element",
+    "symbol"
+  ],
+  "/icons/ibm/Copy@2x.png": [
+    "square",
+    "copy",
+    "duplicate",
+    "clone",
+    "paste",
+    "document",
+    "box",
+    "file"
+  ],
+  "/icons/ibm/Contour--edit@2x.png": [
+    "Partial circle",
+    "dotted",
+    "arc",
+    "incomplete",
+    "progress",
+    "angle",
+    "segment"
+  ],
+  "/icons/ibm/Convert-to-cloud@2x.png": [
+    "Upload",
+    "cloud",
+    "menu",
+    "options",
+    "settings",
+    "sync",
+    "arrow",
+    "data",
+    "cloud storage"
+  ],
+  "/icons/ibm/Contour-finding@2x.png": [
+    "Sun",
+    "weather",
+    "bright",
+    "outline",
+    "circle",
+    "dashed",
+    "sunny",
+    "daylight"
+  ],
+  "/icons/ibm/Contrast@2x.png": [
+    "brightness",
+    "light",
+    "contrast",
+    "half",
+    "circle",
+    "moon",
+    "sun",
+    "shadow",
+    "dark",
+    "setting"
+  ],
+  "/icons/ibm/Copy--link@2x.png": [
+    "Attachment",
+    "paperclip",
+    "link",
+    "file",
+    "upload",
+    "attach",
+    "document",
+    "connect",
+    "square"
+  ],
+  "/icons/ibm/Corn@2x.png": [
+    "Leaf",
+    "Plant",
+    "Nature",
+    "Organic",
+    "Ecology",
+    "Environment",
+    "Growth",
+    "Seedling"
+  ],
+  "/icons/ibm/Course@2x.png": [
+    "bookmark",
+    "save",
+    "document",
+    "file",
+    "tag",
+    "rectangle",
+    "outline",
+    "corner",
+    "digital"
+  ],
+  "/icons/ibm/Cost--total@2x.png": [
+    "Equality",
+    "compare",
+    "match",
+    "connect",
+    "link",
+    "circuit",
+    "symbol",
+    "logic",
+    "equal"
+  ],
+  "/icons/ibm/Critical@2x.png": [
+    "No entry",
+    "do not",
+    "forbidden",
+    "stop",
+    "prohibited",
+    "banned",
+    "blocked",
+    "negative",
+    "cancel"
+  ],
+  "/icons/ibm/Critical-severity@2x.png": [
+    "Triangle",
+    "play",
+    "direction",
+    "media",
+    "button",
+    "forward",
+    "next",
+    "navigation",
+    "arrow",
+    "right"
+  ],
+  "/icons/ibm/Cross-tab@2x.png": [
+    "Table",
+    "spreadsheet",
+    "grid",
+    "data",
+    "information",
+    "analysis",
+    "chart",
+    "outline",
+    "square"
+  ],
+  "/icons/ibm/Covariate@2x.png": [
+    "scatter plot",
+    "graph",
+    "data analysis",
+    "trend",
+    "line",
+    "chart",
+    "statistics",
+    "visualization"
+  ],
+  "/icons/ibm/Cost@2x.png": [
+    "settings",
+    "configuration",
+    "preferences",
+    "options",
+    "control panel",
+    "circle",
+    "gear",
+    "radial",
+    "adjustments"
+  ],
+  "/icons/ibm/Cross-reference@2x.png": [
+    "user profile",
+    "person icon",
+    "account",
+    "user",
+    "outline",
+    "profile picture",
+    "member"
+  ],
+  "/icons/ibm/Coronavirus@2x.png": [
+    "Virus",
+    "cell",
+    "microbiology",
+    "biology",
+    "disease",
+    "infection",
+    "health",
+    "medical",
+    "corona",
+    "microscopic"
+  ],
+  "/icons/ibm/Crop@2x.png": [
+    "Crop",
+    "edit",
+    "resize",
+    "image",
+    "square",
+    "corner",
+    "transform",
+    "selection",
+    "tool"
+  ],
+  "/icons/ibm/Cursor--2@2x.png": [
+    "Cursor",
+    "mouse pointer",
+    "select",
+    "arrow",
+    "direction",
+    "navigation",
+    "pointer",
+    "UI",
+    "click"
+  ],
+  "/icons/ibm/Currency--shekel@2x.png": [
+    "Shekel",
+    "currency",
+    "money",
+    "finance",
+    "Israel",
+    "payment",
+    "symbol",
+    "sign",
+    "icon"
+  ],
+  "/icons/ibm/Currency--yen@2x.png": [
+    "Yen",
+    "currency",
+    "finance",
+    "money",
+    "payment",
+    "Japanese yen",
+    "symbol",
+    "economics"
+  ],
+  "/icons/ibm/Currency--ruble@2x.png": [
+    "ruble",
+    "currency",
+    "money",
+    "finance",
+    "russia",
+    "payment",
+    "symbol",
+    "sign",
+    "economy",
+    "financial"
+  ],
+  "/icons/ibm/Currency--won@2x.png": [
+    "Korean Won",
+    "currency",
+    "money",
+    "finance",
+    "economy",
+    "symbol",
+    "payment",
+    "KRW",
+    "won sign"
+  ],
+  "/icons/ibm/Currency@2x.png": [
+    "Dollar",
+    "currency",
+    "finance",
+    "payment",
+    "money",
+    "coin",
+    "savings",
+    "investment",
+    "economic",
+    "symbol"
+  ],
+  "/icons/ibm/Cut-in-half@2x.png": [
+    "Switch",
+    "On/Off",
+    "Toggle",
+    "Control",
+    "Enable/Disable",
+    "Rectangle",
+    "Rounded",
+    "Black and white",
+    "Interface",
+    "Modern"
+  ],
+  "/icons/ibm/Cut-out@2x.png": [
+    "Cut",
+    "crop",
+    "scissors",
+    "edit",
+    "rectangle",
+    "dotted line",
+    "trim",
+    "document",
+    "selection",
+    "clip"
+  ],
+  "/icons/ibm/Cursor--1@2x.png": [
+    "cursor",
+    "mouse pointer",
+    "arrow",
+    "select",
+    "click",
+    "direction",
+    "navigation",
+    "pointer icon",
+    "computer",
+    "interface"
+  ],
+  "/icons/ibm/Currency--rupee@2x.png": [
+    "Rupee",
+    "currency",
+    "India",
+    "finance",
+    "money",
+    "payment",
+    "symbol",
+    "income"
+  ],
+  "/icons/ibm/Cy@2x.png": [
+    "Cyprus",
+    "currency",
+    "abbreviation",
+    "symbol",
+    "icon",
+    "typography"
+  ],
+  "/icons/ibm/Data--base--alt@2x.png": [
+    "Locker",
+    "storage",
+    "cabinet",
+    "shelves",
+    "organization",
+    "document",
+    "file",
+    "container",
+    "archive"
+  ],
+  "/icons/ibm/Dashboard--reference@2x.png": [
+    "analytics",
+    "data",
+    "report",
+    "chart",
+    "graph",
+    "statistics",
+    "expand",
+    "growth"
+  ],
+  "/icons/ibm/Cut@2x.png": [
+    "Scissors",
+    "cut",
+    "trim",
+    "edit",
+    "clip",
+    "snip",
+    "tool",
+    "separation",
+    "action"
+  ],
+  "/icons/ibm/Data--base@2x.png": [
+    "database",
+    "server",
+    "storage",
+    "data",
+    "archive",
+    "cabinet",
+    "organized",
+    "information",
+    "files"
+  ],
+  "/icons/ibm/Data--check@2x.png": [
+    "checklist",
+    "completed",
+    "task",
+    "list",
+    "verify",
+    "approve",
+    "done",
+    "checkmark",
+    "data",
+    "archive"
+  ],
+  "/icons/ibm/Data--2@2x.png": [
+    "Text",
+    "document",
+    "lines",
+    "content",
+    "information",
+    "paragraph",
+    "writing",
+    "article",
+    "notes"
+  ],
+  "/icons/ibm/Data--1@2x.png": [
+    "List",
+    "sort",
+    "filter",
+    "data",
+    "organize",
+    "process",
+    "arrangement",
+    "icon"
+  ],
+  "/icons/ibm/Cz@2x.png": [
+    "Czech Republic",
+    "country code",
+    "cz",
+    "abbreviation",
+    "text",
+    "letter",
+    "two letters",
+    "flag",
+    "icon"
+  ],
+  "/icons/ibm/Dashboard@2x.png": [
+    "dashboard",
+    "analytics",
+    "data",
+    "chart",
+    "graph",
+    "report",
+    "visual",
+    "statistics",
+    "information"
+  ],
+  "/icons/ibm/Data--format@2x.png": [
+    "switch",
+    "control panel",
+    "settings",
+    "configuration",
+    "options",
+    "interface",
+    "toggle",
+    "on off",
+    "button"
+  ],
+  "/icons/ibm/Data--view--alt@2x.png": [
+    "document",
+    "view",
+    "eye",
+    "see",
+    "read",
+    "preview",
+    "information",
+    "details",
+    "inspection"
+  ],
+  "/icons/ibm/Data--reference@2x.png": [
+    "binary",
+    "data",
+    "coding",
+    "logic",
+    "input",
+    "process",
+    "zero",
+    "one",
+    "arrow"
+  ],
+  "/icons/ibm/Data--view@2x.png": [
+    "database",
+    "visibility",
+    "eye",
+    "view",
+    "server",
+    "monitor",
+    "data",
+    "information",
+    "see",
+    "privacy"
+  ],
+  "/icons/ibm/Data--connected@2x.png": [
+    "brackets",
+    "connection",
+    "nodes",
+    "relationship",
+    "data",
+    "link",
+    "element",
+    "structure"
+  ],
+  "/icons/ibm/Data-bin@2x.png": [
+    "add",
+    "list",
+    "create",
+    "add item",
+    "plus",
+    "menu",
+    "new",
+    "data",
+    "organize"
+  ],
+  "/icons/ibm/Data--structured@2x.png": [
+    "Hierarchy",
+    "Diagram",
+    "Network",
+    "Organization",
+    "Structure",
+    "Data",
+    "System",
+    "Flowchart",
+    "Connectivity",
+    "Nodes"
+  ],
+  "/icons/ibm/Data--set@2x.png": [
+    "Binary code",
+    "computer",
+    "programming",
+    "digital",
+    "ones and zeros",
+    "data",
+    "information",
+    "technology",
+    "coding"
+  ],
+  "/icons/ibm/Data--unstructured@2x.png": [
+    "flowchart",
+    "diagram",
+    "process",
+    "connection",
+    "nodes",
+    "relationship",
+    "structure",
+    "steps",
+    "design",
+    "plan"
+  ],
+  "/icons/ibm/Data--error@2x.png": [
+    "database delete",
+    "data removal",
+    "cancel server",
+    "close database",
+    "remove files",
+    "purge data",
+    "server error",
+    "no access",
+    "data unavailable"
+  ],
+  "/icons/ibm/Data-enrichment@2x.png": [
+    "Idea",
+    "lightbulb",
+    "inspiration",
+    "solution",
+    "bright",
+    "creativity",
+    "thinking",
+    "knowledge"
+  ],
+  "/icons/ibm/Data-definition@2x.png": [
+    "Tag",
+    "price",
+    "label",
+    "purchase",
+    "outline",
+    "rectangle",
+    "open",
+    "icon",
+    "sale"
+  ],
+  "/icons/ibm/Data-class@2x.png": [
+    "hierarchy",
+    "diagram",
+    "flowchart",
+    "branching",
+    "decision",
+    "structure",
+    "relationship",
+    "process",
+    "connect"
+  ],
+  "/icons/ibm/Data-player@2x.png": [
+    "play",
+    "video",
+    "audio",
+    "media",
+    "controls",
+    "progress bar",
+    "timeline",
+    "slider",
+    "adjustment",
+    "settings"
+  ],
+  "/icons/ibm/Data-collection@2x.png": [
+    "center",
+    "focus",
+    "convergence",
+    "inward",
+    "arrows",
+    "target",
+    "direction",
+    "alignment",
+    "consolidation"
+  ],
+  "/icons/ibm/Data-share@2x.png": [
+    "Refresh",
+    "reload",
+    "update",
+    "sync",
+    "download",
+    "exchange",
+    "data transfer",
+    "circular arrow",
+    "process"
+  ],
+  "/icons/ibm/Data-refinery@2x.png": [
+    "route",
+    "path",
+    "direction",
+    "journey",
+    "travel",
+    "navigation",
+    "destination",
+    "plan",
+    "itinerary"
+  ],
+  "/icons/ibm/Data-enrichment--add@2x.png": [
+    "Idea",
+    "lightbulb",
+    "plus",
+    "creativity",
+    "inspiration",
+    "bright",
+    "add",
+    "innovation"
+  ],
+  "/icons/ibm/Data-quality-definition@2x.png": [
+    "Database",
+    "server",
+    "data",
+    "code",
+    "development",
+    "integration",
+    "backend",
+    "programming",
+    "connection"
+  ],
+  "/icons/ibm/Data-refinery--reference@2x.png": [
+    "flow",
+    "process",
+    "steps",
+    "route",
+    "workflow",
+    "path",
+    "diagram",
+    "navigate"
+  ],
+  "/icons/ibm/3d-cursor--alt@2x.png": [
+    "3D",
+    "cursor",
+    "selection",
+    "target",
+    "crosshair",
+    "aim",
+    "focus"
+  ],
+  "/icons/ibm/3d-cursor@2x.png": [
+    "3D",
+    "cube",
+    "box",
+    "cursor",
+    "object",
+    "selection",
+    "geometry"
+  ],
+  "/icons/ibm/3d-curve--auto-colon@2x.png": [
+    "3D",
+    "curve",
+    "colon",
+    "auto",
+    "path",
+    "routing",
+    "connection",
+    "segment"
+  ],
+  "/icons/ibm/3d-curve--auto-vessels@2x.png": [
+    "3D",
+    "curve",
+    "vessels",
+    "auto",
+    "path",
+    "routing",
+    "connection",
+    "network",
+    "branches"
+  ],
+  "/icons/ibm/3d-curve--manual@2x.png": [
+    "3D",
+    "curve",
+    "manual",
+    "path",
+    "dotted",
+    "dashed",
+    "connection",
+    "segment"
+  ],
+  "/icons/ibm/Data@2x.png": [
+    "Data",
+    "Information",
+    "Analysis",
+    "Reports",
+    "Words"
+  ],
+  "/icons/ibm/Database--datastax@2x.png": [
+    "Database",
+    "Datastax",
+    "Ds",
+    "Storage",
+    "Data"
+  ],
+  "/icons/ibm/Database--elastic@2x.png": [
+    "Database",
+    "Elastic",
+    "Es",
+    "Search",
+    "Data"
+  ],
+  "/icons/ibm/Database--enterprise-db2@2x.png": [
+    "Database",
+    "Enterprise",
+    "Db2",
+    "Storage",
+    "Data"
+  ],
+  "/icons/ibm/Database--etcd@2x.png": [
+    "Database",
+    "Etcd",
+    "Distributed",
+    "Consensus",
+    "Data"
+  ],
+  "/icons/ibm/Database--mongodb@2x.png": [
+    "Database",
+    "Mongodb",
+    "Mg",
+    "Document",
+    "Data"
+  ],
+  "/icons/ibm/Database--postgresql@2x.png": [
+    "Database",
+    "Postgresql",
+    "Pg",
+    "Relational",
+    "Data"
+  ],
+  "/icons/ibm/Database--rabbit@2x.png": [
+    "Database",
+    "Rabbit",
+    "Message",
+    "Queue",
+    "Data"
+  ],
+  "/icons/ibm/Database--redis@2x.png": [
+    "Database",
+    "Redis",
+    "Rd",
+    "Cache",
+    "Data"
+  ],
+  "/icons/ibm/Datastore@2x.png": [
+    "Datastore",
+    "Database",
+    "Server",
+    "Storage",
+    "Data"
+  ],
+  "/icons/ibm/Decision-tree@2x.png": [
+    "Decision",
+    "Tree",
+    "Branching",
+    "Analysis",
+    "Diagram"
+  ],
+  "/icons/ibm/Delivery--add@2x.png": [
+    "Delivery",
+    "Truck",
+    "Plus",
+    "Add",
+    "Shipping"
+  ],
+  "/icons/ibm/Delivery--parcel@2x.png": [
+    "Delivery",
+    "Parcel",
+    "Package",
+    "Shipping",
+    "Box"
+  ],
+  "/icons/ibm/Delivery@2x.png": [
+    "Delivery",
+    "Truck",
+    "Shipping",
+    "Transport",
+    "Cargo"
+  ],
+  "/icons/ibm/Denominate@2x.png": [
+    "Denominate",
+    "File",
+    "User",
+    "Access",
+    "Restrict"
+  ],
+  "/icons/ibm/Deploy-rules@2x.png": [
+    "Deploy",
+    "Rules",
+    "Upload",
+    "Apply",
+    "Workflow"
+  ],
+  "/icons/ibm/Deploy@2x.png": [
+    "Deploy",
+    "Upload",
+    "Deployment",
+    "Arrow",
+    "Square",
+    "Container"
+  ],
+  "/icons/ibm/Diagram--reference@2x.png": [
+    "Diagram",
+    "Reference",
+    "Chart",
+    "Pie chart",
+    "Curved arrow",
+    "Data"
+  ],
+  "/icons/ibm/Diagram@2x.png": [
+    "Diagram",
+    "Chart",
+    "Pie chart",
+    "Data",
+    "Analytics",
+    "Progress"
+  ],
+  "/icons/ibm/Dicom--6000@2x.png": [
+    "Dicom",
+    "People",
+    "Users",
+    "6000",
+    "Profile",
+    "Medical"
+  ],
+  "/icons/ibm/Dicom--overlay@2x.png": [
+    "Dicom",
+    "Overlay",
+    "Documents",
+    "Medical",
+    "Sheets"
+  ],
+  "/icons/ibm/Direct-link@2x.png": [
+    "Direct link",
+    "Connection",
+    "Chain",
+    "Link",
+    "Interface",
+    "Spiral"
+  ],
+  "/icons/ibm/Distribute--horizontal-center@2x.png": [
+    "Distribute",
+    "Horizontal",
+    "Center",
+    "Alignment",
+    "Distribution",
+    "Bars"
+  ],
+  "/icons/ibm/Distribute--horizontal-left@2x.png": [
+    "Distribute",
+    "Horizontal",
+    "Left",
+    "Alignment",
+    "Distribution",
+    "Bars"
+  ],
+  "/icons/ibm/Distribute--horizontal-right@2x.png": [
+    "Distribute",
+    "Horizontal",
+    "Right",
+    "Alignment",
+    "Distribution",
+    "Bars"
+  ],
+  "/icons/ibm/Distribute--vertical-bottom@2x.png": [
+    "Distribute",
+    "Vertical",
+    "Bottom",
+    "Alignment",
+    "Distribution",
+    "Bars"
+  ],
+  "/icons/ibm/Distribute--vertical-center@2x.png": [
+    "Distribute",
+    "Vertical",
+    "Center",
+    "Alignment",
+    "Distribution",
+    "Bars"
+  ],
+  "/icons/ibm/Distribute--vertical-top@2x.png": [
+    "Distribute",
+    "Vertical",
+    "Top",
+    "Alignment",
+    "Distribution",
+    "Bars"
+  ],
+  "/icons/ibm/Dna@2x.png": [
+    "DNA",
+    "Genetics",
+    "Helix",
+    "Science",
+    "Double helix"
+  ],
+  "/icons/ibm/Dns-services@2x.png": [
+    "DNS",
+    "Globe",
+    "Network",
+    "Services",
+    "Internet"
+  ],
+  "/icons/ibm/Doc@2x.png": [
+    "Doc",
+    "Document",
+    "File",
+    "Word",
+    "Type"
+  ],
+  "/icons/ibm/Document--add@2x.png": [
+    "Document",
+    "Add",
+    "Create",
+    "New",
+    "Plus",
+    "File"
+  ],
+  "/icons/ibm/Document--attachment@2x.png": [
+    "attachment",
+    "paperclip",
+    "document",
+    "file",
+    "attach"
+  ],
+  "/icons/ibm/Document--audio@2x.png": [
+    "audio",
+    "sound",
+    "volume",
+    "document",
+    "file"
+  ],
+  "/icons/ibm/Document--blank@2x.png": [
+    "document",
+    "blank",
+    "file",
+    "new",
+    "empty"
+  ],
+  "/icons/ibm/Document--download@2x.png": [
+    "download",
+    "arrow",
+    "file",
+    "document",
+    "save"
+  ],
+  "/icons/ibm/Document--epdf@2x.png": [
+    "e",
+    "document",
+    "pdf",
+    "file",
+    "letter"
+  ],
+  "/icons/ibm/Document--export@2x.png": [
+    "export",
+    "arrow",
+    "document",
+    "file",
+    "send"
+  ],
+  "/icons/ibm/Document--horizontal@2x.png": [
+    "horizontal",
+    "portrait",
+    "document",
+    "file",
+    "layout"
+  ],
+  "/icons/ibm/Document--import@2x.png": [
+    "import",
+    "arrow",
+    "document",
+    "file",
+    "receive"
+  ],
+  "/icons/ibm/Document--pdf@2x.png": [
+    "pdf",
+    "document",
+    "file",
+    "text",
+    "format"
+  ],
+  "/icons/ibm/Document--preliminary@2x.png": [
+    "preliminary",
+    "circle",
+    "document",
+    "file",
+    "draft"
+  ],
+  "/icons/ibm/Document--protected@2x.png": [
+    "protected",
+    "lock",
+    "document",
+    "security",
+    "file"
+  ],
+  "/icons/ibm/Document--security@2x.png": [
+    "security",
+    "shield",
+    "document",
+    "safe",
+    "privacy"
+  ],
+  "/icons/ibm/Document--signed@2x.png": [
+    "signed",
+    "key",
+    "document",
+    "file",
+    "approved"
+  ],
+  "/icons/ibm/Document--sketch@2x.png": [
+    "sketch",
+    "pen",
+    "document",
+    "draw",
+    "edit"
+  ],
+  "/icons/ibm/Document--subtract@2x.png": [
+    "subtract",
+    "minus",
+    "remove",
+    "document",
+    "file"
+  ],
+  "/icons/ibm/Document--tasks@2x.png": [
+    "tasks",
+    "check",
+    "document",
+    "complete",
+    "file"
+  ],
+  "/icons/ibm/Filter--edit@2x.png": [
+    "Filter",
+    "Edit filter",
+    "Pencil filter",
+    "Funnel edit",
+    "Modify filter"
+  ],
+  "/icons/ibm/Filter--remove@2x.png": [
+    "Filter",
+    "Remove filter",
+    "Delete filter",
+    "Funnel cancel",
+    "Filter delete"
+  ],
+  "/icons/ibm/Filter--reset@2x.png": [
+    "Filter",
+    "Reset filter",
+    "Funnel reset",
+    "Filter reload",
+    "Restore filter"
+  ],
+  "/icons/ibm/Filter@2x.png": [
+    "Filter",
+    "Funnel",
+    "Sort",
+    "Options",
+    "Filter icon"
+  ],
+  "/icons/ibm/Finance@2x.png": [
+    "Finance",
+    "Bank",
+    "Building",
+    "Financial institution",
+    "Investment"
+  ],
+  "/icons/ibm/Fish--multiple@2x.png": [
+    "Fish",
+    "Multiple fish",
+    "Many fish",
+    "Three fish",
+    "Group fish"
+  ],
+  "/icons/ibm/Fish@2x.png": [
+    "Fish",
+    "Animal",
+    "Aquatic",
+    "Marine life",
+    "Fish icon"
+  ],
+  "/icons/ibm/Fit-to-height@2x.png": [
+    "Fit",
+    "Height",
+    "Resize height",
+    "Fit screen",
+    "Vertical size"
+  ],
+  "/icons/ibm/Fit-to-screen@2x.png": [
+    "Fit to screen",
+    "Maximize",
+    "Full screen",
+    "Display",
+    "Expand"
+  ],
+  "/icons/ibm/Fit-to-width1@2x.png": [
+    "Fit width",
+    "Resize width",
+    "Horizontal",
+    "Fit content",
+    "Width size"
+  ],
+  "/icons/ibm/Flag--filled@2x.png": [
+    "Flag",
+    "Filled flag",
+    "Mark",
+    "Complete",
+    "Flag icon"
+  ],
+  "/icons/ibm/Flag@2x.png": [
+    "Flag",
+    "Flag icon",
+    "Mark",
+    "Outline flag",
+    "Placeholder"
+  ],
+  "/icons/ibm/Floorplan@2x.png": [
+    "Floorplan",
+    "Plan",
+    "Layout",
+    "Building",
+    "Blueprint"
+  ],
+  "/icons/ibm/Flow--connection@2x.png": [
+    "Connection",
+    "Flow",
+    "Relationship",
+    "Connected",
+    "Data flow"
+  ],
+  "/icons/ibm/Flow--data@2x.png": [
+    "Flow",
+    "Data",
+    "Process",
+    "Information",
+    "Data flow"
+  ],
+  "/icons/ibm/Flow--modeler@2x.png": [
+    "Flow",
+    "Model",
+    "Flowchart",
+    "Process model",
+    "Diagram"
   ]
 }
