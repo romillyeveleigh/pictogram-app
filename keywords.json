@@ -2068,5 +2068,217 @@
     "block",
     "stylized",
     "line drawing"
+  ],
+  "/icons/ibm/Chart--stacked@2x.png": [
+    "bar graph",
+    "chart",
+    "statistics",
+    "data",
+    "report",
+    "analysis",
+    "diagram",
+    "growth"
+  ],
+  "/icons/ibm/Chart--sunburst@2x.png": [
+    "Radioactive",
+    "radiation symbol",
+    "hazard",
+    "warning",
+    "danger",
+    "radiation",
+    "circle",
+    "segments",
+    "atomic",
+    "nuclear"
+  ],
+  "/icons/ibm/Chart--treemap@2x.png": [
+    "Layout",
+    "grid",
+    "dashboard",
+    "template",
+    "design",
+    "blocks",
+    "structure",
+    "organization"
+  ],
+  "/icons/ibm/Chart--ring@2x.png": [
+    "Diagram",
+    "circle",
+    "network",
+    "connection",
+    "hub",
+    "node",
+    "schematic",
+    "structure",
+    "graph",
+    "topology"
+  ],
+  "/icons/ibm/Chart--scatter@2x.png": [
+    "scatter plot",
+    "data visualization",
+    "chart",
+    "graph",
+    "points",
+    "diagram",
+    "analysis",
+    "statistics"
+  ],
+  "/icons/ibm/Chart--rose@2x.png": [
+    "Crop",
+    "image cropping",
+    "editing",
+    "image editor",
+    "photography",
+    "quadrant",
+    "circle",
+    "crosshair"
+  ],
+  "/icons/ibm/Chart--t-sne@2x.png": [
+    "Clusters",
+    "dots",
+    "group",
+    "collection",
+    "scatter plot",
+    "organization",
+    "distribution",
+    "data points",
+    "connected dots",
+    "many"
+  ],
+  "/icons/ibm/Chart--spiral@2x.png": [
+    "Navigation",
+    "GPS",
+    "Location",
+    "Compass",
+    "Circle",
+    "Arrows",
+    "Direction",
+    "Target"
+  ],
+  "/icons/ibm/Chart--river@2x.png": [
+    "Document",
+    "Data",
+    "Waves",
+    "File",
+    "Compress",
+    "Stack",
+    "Archive",
+    "Storage",
+    "Zip"
+  ],
+  "/icons/ibm/Chart--stepper@2x.png": [
+    "Stairs",
+    "Steps",
+    "Growth",
+    "Progress",
+    "Ascend",
+    "Ladder",
+    "Stairway",
+    "Navigation",
+    "Level"
+  ],
+  "/icons/ibm/Chat--off@2x.png": [
+    "Maximize",
+    "full screen",
+    "square",
+    "expand",
+    "resize",
+    "arrow",
+    "UI icon"
+  ],
+  "/icons/ibm/Chat@2x.png": [
+    "chat bubble",
+    "speech bubble",
+    "comment",
+    "message",
+    "conversation",
+    "dialogue",
+    "text",
+    "communication"
+  ],
+  "/icons/ibm/Checkmark--filled--warning@2x.png": [
+    "Approval",
+    "Verified",
+    "Checkmark",
+    "Triangle",
+    "Done",
+    "Complete",
+    "Success",
+    "Tick",
+    "Verified Triangle"
+  ],
+  "/icons/ibm/Chat--launch@2x.png": [
+    "External link",
+    "open in new tab",
+    "redirect",
+    "arrow",
+    "box",
+    "expand",
+    "new window",
+    "hyperlink"
+  ],
+  "/icons/ibm/Chart--violin-plot@2x.png": [
+    "Filters",
+    "settings",
+    "equalizer",
+    "control panel",
+    "audio adjustment",
+    "levels",
+    "vertical sliders",
+    "configuration"
+  ],
+  "/icons/ibm/Checkmark--filled@2x.png": [
+    "check mark",
+    "black circle",
+    "approved",
+    "verified",
+    "validation",
+    "completed",
+    "confirmation",
+    "success"
+  ],
+  "/icons/ibm/Chart--win-loss@2x.png": [
+    "Signal",
+    "waveform",
+    "chart",
+    "graph",
+    "wave",
+    "oscillation",
+    "diagram",
+    "square wave"
+  ],
+  "/icons/ibm/Chart--venn-diagram@2x.png": [
+    "Interlocking circles",
+    "Venn diagram",
+    "connection",
+    "relationship",
+    "overlapping",
+    "link",
+    "circles",
+    "shared",
+    "union"
+  ],
+  "/icons/ibm/Checkmark--filled--error@2x.png": [
+    "Approval denied",
+    "approval declined",
+    "checkmark circle",
+    "no symbol",
+    "confirmation denied",
+    "permission denied",
+    "reject",
+    "disapproval",
+    "unchecked",
+    "not approved"
+  ],
+  "/icons/ibm/Chart--waterfall@2x.png": [
+    "Equalizer",
+    "audio levels",
+    "sound bars",
+    "vertical bars",
+    "audio icon",
+    "volume icon",
+    "music levels",
+    "graphic equalizer",
+    "bar graph"
   ]
 }
