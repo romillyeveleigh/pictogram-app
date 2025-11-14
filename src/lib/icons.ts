@@ -39,15 +39,24 @@ async function loadKeywords(): Promise<Record<string, string[]>> {
 }
 
 export async function getAllIcons(): Promise<IconInfo[]> {
+  // Note: This function uses dynamic file system reads which Turbopack cannot
+  // statically analyze. This is expected for server-side code that runs at
+  // request time, not build time. The warning can be safely ignored.
   const iconsDir = join(process.cwd(), 'public', 'icons');
-  const categories = ['ibm', 'ibm-pictograms', 'streamline', 'themed'];
   const icons: IconInfo[] = [];
 
   // Load keywords
   const keywords = await loadKeywords();
 
-  for (const category of categories) {
-    const categoryPath = join(iconsDir, category);
+  // Use explicit paths for each category to help with static analysis
+  const categoryPaths: Array<{ category: string; path: string }> = [
+    { category: 'ibm', path: join(iconsDir, 'ibm') },
+    { category: 'ibm-pictograms', path: join(iconsDir, 'ibm-pictograms') },
+    { category: 'streamline', path: join(iconsDir, 'streamline') },
+    { category: 'themed', path: join(iconsDir, 'themed') },
+  ];
+
+  for (const { category, path: categoryPath } of categoryPaths) {
     try {
       const files = await readdir(categoryPath);
       const pngFiles = files.filter(file => file.endsWith('.png'));
