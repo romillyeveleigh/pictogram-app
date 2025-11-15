@@ -8,12 +8,14 @@
     "start": "next start",
     "lint": "eslint",
     "generate-keywords": "tsx scripts/generate-keywords.ts",
-    "generate-keywords:test": "tsx scripts/generate-keywords.ts --test"
+    "generate-keywords:test": "tsx scripts/generate-keywords.ts --test",
+    "generate-embeddings": "tsx scripts/generate-embeddings.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@tanstack/react-virtual": "^3.13.12",
     "dotenv": "^17.2.3",
+    "ml-distance": "^4.0.1",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-dom": "19.2.0"
