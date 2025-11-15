@@ -14,7 +14,7 @@ interface KeywordsData {
 }
 
 const IMAGES_PER_REQUEST = 16; // Gemini supports up to 16 images per request
-const BATCH_DELAY = 65000; // Wait 10 seconds between batches (rate limiting)
+const BATCH_DELAY = 1000; // Wait 10 seconds between batches (rate limiting)
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 5000; // 5 seconds
 
