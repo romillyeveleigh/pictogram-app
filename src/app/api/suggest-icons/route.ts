@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
 
     // Get the generative model with temperature set to 0 for deterministic results
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-2.0-flash',
+      model: 'gemini-2.5-flash',
       generationConfig: {
         temperature: 0, // Set to 0 for deterministic results
       }
@@ -48,15 +48,25 @@ Text Query: "${query}"
 Icons Data (${icons.length} total):
 ${JSON.stringify(iconsData, null, 2)}
 
-Return ONLY a JSON array of icon paths (the "path" field values) that are thematically related to the text query. 
-IMPORTANT: Only return paths that exist in the Icons Data above. Do not invent or guess paths.
-Do not include any explanation, markdown formatting, or additional text - only the JSON array.
-Each item in the array must include the extension ".png".
+CRITICAL REQUIREMENTS:
+1. Return ONLY a JSON array of icon paths (the "path" field values) that are thematically related to the text query.
+2. Each path must include the extension ".png".
+3. NO DUPLICATES - Each path must appear exactly once in the array. Use a Set-like approach mentally to ensure uniqueness.
+4. Only return paths that exist in the Icons Data above. Do not invent or guess paths.
+5. Do not include any explanation, markdown formatting, or additional text - only the JSON array.
+
 Example format: ["/icons/ibm/example@2x.png", "/icons/streamline/another@2x.png"]`;
 
     // Generate content
     const result = await model.generateContent(prompt);
     const response = await result.response;
+    
+    // Check if response was truncated
+    const finishReason = response.candidates?.[0]?.finishReason;
+    if (finishReason === 'MAX_TOKENS' || finishReason === 'OTHER') {
+      console.warn('Response may have been truncated. Finish reason:', finishReason);
+    }
+    
     const responseText = response.text().trim();
 
     console.log('responseText', responseText);
@@ -79,11 +89,28 @@ Example format: ["/icons/ibm/example@2x.png", "/icons/streamline/another@2x.png"
     const firstBracket = jsonText.indexOf('[');
     const lastBracket = jsonText.lastIndexOf(']');
     
-    if (firstBracket === -1 || lastBracket === -1) {
-      throw new Error('Could not find JSON array in response');
+    if (firstBracket === -1) {
+      throw new Error('Could not find start of JSON array in response');
     }
     
-    jsonText = jsonText.substring(firstBracket, lastBracket + 1);
+    // Handle incomplete JSON (truncated response)
+    if (lastBracket === -1 || lastBracket < firstBracket) {
+      console.warn('Response appears to be truncated - JSON array is incomplete');
+      // Try to extract what we can by finding the last complete entry
+      const partialJson = jsonText.substring(firstBracket);
+      // Find the last complete string entry (ends with " followed by , or ])
+      const lastCompleteMatch = partialJson.match(/(".*?")(?:,\s*|\s*])/g);
+      if (lastCompleteMatch && lastCompleteMatch.length > 0) {
+        // Reconstruct a valid JSON array with what we have
+        const entries = lastCompleteMatch.map(m => m.replace(/[,\]]/g, '').trim());
+        jsonText = '[' + entries.join(', ') + ']';
+        console.warn(`Extracted ${entries.length} complete entries from truncated response`);
+      } else {
+        throw new Error('Response was truncated and could not extract valid JSON array');
+      }
+    } else {
+      jsonText = jsonText.substring(firstBracket, lastBracket + 1);
+    }
     
     const suggestedPaths = JSON.parse(jsonText);
     
@@ -91,8 +118,11 @@ Example format: ["/icons/ibm/example@2x.png", "/icons/streamline/another@2x.png"
       throw new Error('Response is not an array');
     }
 
+    // Remove duplicates - AI models sometimes don't follow uniqueness instructions
+    const uniqueSuggestedPaths = Array.from(new Set(suggestedPaths));
+
     // Validate and filter out invalid paths
-    const validSuggestedPaths = suggestedPaths.filter((path: string) => {
+    const validSuggestedPaths = uniqueSuggestedPaths.filter((path: string) => {
       const isValid = validPaths.has(path);
       if (!isValid) {
         console.warn(`Invalid path returned by AI: ${path}`);
