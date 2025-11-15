@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState, useMemo, useRef, useLayoutEffect } from 'react';
-import Image from 'next/image';
-import { useVirtualizer } from '@tanstack/react-virtual';
-import type { IconInfo, CategoryInfo } from '@/lib/icons';
+import { useState, useMemo, useRef, useLayoutEffect } from "react";
+import Image from "next/image";
+import { useVirtualizer } from "@tanstack/react-virtual";
+import type { IconInfo, CategoryInfo } from "@/lib/icons";
 
 interface IconBrowserProps {
   icons: IconInfo[];
@@ -11,7 +11,7 @@ interface IconBrowserProps {
 }
 
 export default function IconBrowser({ icons, categories }: IconBrowserProps) {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [iconSize, setIconSize] = useState(64);
   const [showCustomizer, setShowCustomizer] = useState(false);
@@ -23,10 +23,10 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
   const [downloadedIcon, setDownloadedIcon] = useState<string | null>(null);
   const [columns, setColumns] = useState(2);
   const parentRef = useRef<HTMLDivElement>(null);
-  
+
   // AI search state
-  const [searchMode, setSearchMode] = useState<'keyword' | 'ai'>('keyword');
-  const [aiSearchQuery, setAiSearchQuery] = useState('');
+  const [searchMode, setSearchMode] = useState<"keyword" | "ai">("keyword");
+  const [aiSearchQuery, setAiSearchQuery] = useState("");
   const [aiLoading, setAiLoading] = useState(false);
   const [aiSuggestedPaths, setAiSuggestedPaths] = useState<string[]>([]);
   const [aiError, setAiError] = useState<string | null>(null);
@@ -36,14 +36,16 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
 
     // Filter by category
     if (selectedCategory) {
-      filtered = filtered.filter(icon => icon.category === selectedCategory);
+      filtered = filtered.filter((icon) => icon.category === selectedCategory);
     }
 
     // Filter based on search mode
-    if (searchMode === 'ai') {
+    if (searchMode === "ai") {
       // AI search mode: filter by suggested paths
       if (aiSuggestedPaths.length > 0) {
-        filtered = filtered.filter(icon => aiSuggestedPaths.includes(icon.path));
+        filtered = filtered.filter((icon) =>
+          aiSuggestedPaths.includes(icon.path)
+        );
       } else {
         // If no suggestions yet, show all (or empty if query exists but no results)
         if (aiSearchQuery.trim() && !aiLoading) {
@@ -54,10 +56,10 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       // Keyword search mode: search in keywords, fallback to filename
       if (searchQuery.trim()) {
         const query = searchQuery.toLowerCase();
-        filtered = filtered.filter(icon => {
+        filtered = filtered.filter((icon) => {
           // If keywords exist, search in keywords
           if (icon.keywords && icon.keywords.length > 0) {
-            return icon.keywords.some(keyword => 
+            return icon.keywords.some((keyword) =>
               keyword.toLowerCase().includes(query)
             );
           }
@@ -68,7 +70,15 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
     }
 
     return filtered;
-  }, [icons, searchQuery, selectedCategory, searchMode, aiSuggestedPaths, aiSearchQuery, aiLoading]);
+  }, [
+    icons,
+    searchQuery,
+    selectedCategory,
+    searchMode,
+    aiSuggestedPaths,
+    aiSearchQuery,
+    aiLoading,
+  ]);
 
   // Calculate columns based on container width
   useLayoutEffect(() => {
@@ -89,18 +99,21 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
     };
 
     updateColumns();
-    window.addEventListener('resize', updateColumns);
+    window.addEventListener("resize", updateColumns);
     // Also update when sidebar toggles
     const timeoutId = setTimeout(updateColumns, 100);
     return () => {
-      window.removeEventListener('resize', updateColumns);
+      window.removeEventListener("resize", updateColumns);
       clearTimeout(timeoutId);
     };
   }, [showSidebar]);
 
   // Calculate rows for virtualization
-  const rows = useMemo(() => Math.ceil(filteredIcons.length / columns), [filteredIcons.length, columns]);
-  
+  const rows = useMemo(
+    () => Math.ceil(filteredIcons.length / columns),
+    [filteredIcons.length, columns]
+  );
+
   const rowVirtualizer = useVirtualizer({
     count: rows,
     getScrollElement: () => parentRef.current,
@@ -110,10 +123,10 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
 
   const getDisplayName = (filename: string) => {
     return filename
-      .replace('@2x.png', '')
-      .replace('.png', '')
-      .replace(/-/g, ' ')
-      .replace(/\b\w/g, l => l.toUpperCase());
+      .replace("@2x.png", "")
+      .replace(".png", "")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (l) => l.toUpperCase());
   };
 
   const handleIconClick = (icon: IconInfo) => {
@@ -161,7 +174,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       setCopiedIcon(path);
       setTimeout(() => setCopiedIcon(null), 2000);
     } catch (err) {
-      console.error('Failed to copy:', err);
+      console.error("Failed to copy:", err);
     }
   };
 
@@ -171,17 +184,17 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       setCopiedIcon(filename);
       setTimeout(() => setCopiedIcon(null), 2000);
     } catch (err) {
-      console.error('Failed to copy:', err);
+      console.error("Failed to copy:", err);
     }
   };
 
   const handleCopyKeywords = async (keywords: string[]) => {
     try {
-      await navigator.clipboard.writeText(keywords.join(', '));
-      setCopiedIcon('keywords');
+      await navigator.clipboard.writeText(keywords.join(", "));
+      setCopiedIcon("keywords");
       setTimeout(() => setCopiedIcon(null), 2000);
     } catch (err) {
-      console.error('Failed to copy:', err);
+      console.error("Failed to copy:", err);
     }
   };
 
@@ -190,7 +203,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       const response = await fetch(icon.path);
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = url;
       link.download = icon.filename;
       document.body.appendChild(link);
@@ -200,13 +213,13 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       setDownloadedIcon(icon.filename);
       setTimeout(() => setDownloadedIcon(null), 2000);
     } catch (err) {
-      console.error('Failed to download:', err);
+      console.error("Failed to download:", err);
     }
   };
 
   const handleAiSearch = async () => {
     if (!aiSearchQuery.trim()) {
-      setAiError('Please enter some text to search');
+      setAiError("Please enter some text to search");
       return;
     }
 
@@ -215,10 +228,10 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
     setAiSuggestedPaths([]);
 
     try {
-      const response = await fetch('/api/suggest-icons', {
-        method: 'POST',
+      const response = await fetch("/api/suggest-icons", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           query: aiSearchQuery,
@@ -228,30 +241,32 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to get suggestions');
+        throw new Error(errorData.error || "Failed to get suggestions");
       }
 
       const data = await response.json();
       setAiSuggestedPaths(data.suggestedPaths || []);
     } catch (err) {
-      console.error('Error getting AI suggestions:', err);
-      setAiError(err instanceof Error ? err.message : 'Failed to get suggestions');
+      console.error("Error getting AI suggestions:", err);
+      setAiError(
+        err instanceof Error ? err.message : "Failed to get suggestions"
+      );
       setAiSuggestedPaths([]);
     } finally {
       setAiLoading(false);
     }
   };
 
-  const handleSearchModeChange = (mode: 'keyword' | 'ai') => {
+  const handleSearchModeChange = (mode: "keyword" | "ai") => {
     setSearchMode(mode);
-    if (mode === 'keyword') {
+    if (mode === "keyword") {
       // Clear AI search state when switching to keyword mode
-      setAiSearchQuery('');
+      setAiSearchQuery("");
       setAiSuggestedPaths([]);
       setAiError(null);
     } else {
       // Clear keyword search when switching to AI mode
-      setSearchQuery('');
+      setSearchQuery("");
     }
   };
 
@@ -260,7 +275,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       {/* Animated gradient background */}
       <div className="fixed inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-950/20 dark:via-purple-950/20 dark:to-pink-950/20 -z-10" />
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.05),transparent_50%)] -z-10" />
-      
+
       {/* Mobile Overlay */}
       {showSidebar && (
         <div
@@ -268,9 +283,13 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
           onClick={() => setShowSidebar(false)}
         />
       )}
-      
+
       {/* Sidebar */}
-      <aside className={`${showSidebar ? 'block' : 'hidden'} lg:block fixed lg:relative inset-y-0 left-0 z-50 w-64 overflow-y-auto glass animate-slide-in`}>
+      <aside
+        className={`${
+          showSidebar ? "block" : "hidden"
+        } lg:block fixed lg:relative inset-y-0 left-0 z-50 w-64 overflow-y-auto glass animate-slide-in`}
+      >
         <div className="p-4 sticky top-0 glass border-b border-white/20 dark:border-white/10 z-10">
           <h2 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
             Categories
@@ -279,8 +298,8 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
             onClick={() => setSelectedCategory(null)}
             className={`w-full text-left px-4 py-2.5 rounded-xl text-sm transition-all duration-300 ${
               selectedCategory === null
-                ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium shadow-lg shadow-indigo-500/30 scale-105'
-                : 'text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/5 hover:scale-[1.02]'
+                ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium shadow-lg shadow-indigo-500/30 scale-105"
+                : "text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/5 hover:scale-[1.02]"
             }`}
           >
             All ({icons.length})
@@ -293,18 +312,22 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
               onClick={() => setSelectedCategory(category.name)}
               className={`w-full text-left px-4 py-2.5 rounded-xl text-sm transition-all duration-300 mb-2 animate-fade-in ${
                 selectedCategory === category.name
-                  ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium shadow-lg shadow-indigo-500/30 scale-105'
-                  : 'text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/5 hover:scale-[1.02]'
+                  ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium shadow-lg shadow-indigo-500/30 scale-105"
+                  : "text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/5 hover:scale-[1.02]"
               }`}
               style={{ animationDelay: `${idx * 20}ms` }}
             >
               <span className="flex items-center justify-between">
                 <span>{category.displayName}</span>
-                <span className={`text-xs px-2 py-0.5 rounded-full ${
-                  selectedCategory === category.name
-                    ? 'bg-white/20 text-white'
-                    : 'opacity-60'
-                }`}>{category.count}</span>
+                <span
+                  className={`text-xs px-2 py-0.5 rounded-full ${
+                    selectedCategory === category.name
+                      ? "bg-white/20 text-white"
+                      : "opacity-60"
+                  }`}
+                >
+                  {category.count}
+                </span>
               </span>
             </button>
           ))}
@@ -322,45 +345,59 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                 Apolitical Image Finder
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Search through <span className="font-semibold text-indigo-600 dark:text-indigo-400">{icons.length}</span> icons by keywords or AI
+                Search through{" "}
+                <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+                  {icons.length}
+                </span>{" "}
+                icons by keywords or AI
               </p>
             </div>
-            
+
             {/* Search Mode Toggle */}
             <div className="mb-4 flex items-center gap-2">
               <button
-                onClick={() => handleSearchModeChange('keyword')}
+                onClick={() => handleSearchModeChange("keyword")}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                  searchMode === 'keyword'
-                    ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30'
-                    : 'glass border border-white/30 dark:border-white/10 text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/10'
+                  searchMode === "keyword"
+                    ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30"
+                    : "glass border border-white/30 dark:border-white/10 text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/10"
                 }`}
               >
                 Keyword Search
               </button>
               <button
-                onClick={() => handleSearchModeChange('ai')}
+                onClick={() => handleSearchModeChange("ai")}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                  searchMode === 'ai'
-                    ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30'
-                    : 'glass border border-white/30 dark:border-white/10 text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/10'
+                  searchMode === "ai"
+                    ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30"
+                    : "glass border border-white/30 dark:border-white/10 text-gray-700 dark:text-gray-300 hover:bg-white/50 dark:hover:bg-white/10"
                 }`}
               >
                 AI Search
               </button>
             </div>
-            
+
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setShowSidebar(!showSidebar)}
                 className="lg:hidden p-2.5 rounded-xl hover:bg-white/50 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110"
                 aria-label="Toggle sidebar"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               </button>
-              {searchMode === 'keyword' ? (
+              {searchMode === "keyword" ? (
                 <div className="flex-1 relative">
                   <input
                     type="text"
@@ -392,7 +429,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                       value={aiSearchQuery}
                       onChange={(e) => setAiSearchQuery(e.target.value)}
                       onKeyDown={(e) => {
-                        if (e.key === 'Enter' && !aiLoading) {
+                        if (e.key === "Enter" && !aiLoading) {
                           handleAiSearch();
                         }
                       }}
@@ -420,16 +457,41 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                   >
                     {aiLoading ? (
                       <>
-                        <svg className="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        <svg
+                          className="animate-spin h-4 w-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
                         </svg>
                         <span>Searching...</span>
                       </>
                     ) : (
                       <>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                          />
                         </svg>
                         <span>Find Icons</span>
                       </>
@@ -454,7 +516,10 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
-                      Icon Size: <span className="text-indigo-600 dark:text-indigo-400 font-bold">{iconSize}px</span>
+                      Icon Size:{" "}
+                      <span className="text-indigo-600 dark:text-indigo-400 font-bold">
+                        {iconSize}px
+                      </span>
                     </label>
                     <input
                       type="range"
@@ -470,18 +535,24 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
               </div>
             )}
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-              {searchMode === 'ai' && aiSuggestedPaths.length > 0 ? (
+              {searchMode === "ai" && aiSuggestedPaths.length > 0 ? (
                 <>
-                  Showing <span className="font-semibold text-indigo-600 dark:text-indigo-400">{filteredIcons.length}</span> AI-suggested icons
+                  Showing{" "}
+                  <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+                    {filteredIcons.length}
+                  </span>{" "}
+                  AI-suggested icons
                   {selectedCategory && ` in ${selectedCategory}`}
                 </>
-              ) : searchMode === 'ai' && aiSearchQuery.trim() && !aiLoading ? (
-                <>
-                  No icons found for &quot;{aiSearchQuery}&quot;
-                </>
+              ) : searchMode === "ai" && aiSearchQuery.trim() && !aiLoading ? (
+                <>No icons found for &quot;{aiSearchQuery}&quot;</>
               ) : (
                 <>
-                  Showing <span className="font-semibold text-indigo-600 dark:text-indigo-400">{filteredIcons.length}</span> of {icons.length} icons
+                  Showing{" "}
+                  <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+                    {filteredIcons.length}
+                  </span>{" "}
+                  of {icons.length} icons
                 </>
               )}
             </p>
@@ -489,28 +560,42 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
         </header>
 
         {/* Icon Grid */}
-        <main 
+        <main
           ref={parentRef}
-          className={`flex-1 overflow-y-auto ${selectedIcon ? 'pb-96 sm:pb-80' : ''}`}
+          className={`flex-1 overflow-y-auto ${
+            selectedIcon ? "pb-96 sm:pb-80" : ""
+          }`}
         >
           {filteredIcons.length === 0 ? (
             <div className="flex items-center justify-center h-full">
               <div className="text-center animate-fade-in">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  <svg
+                    className="w-8 h-8 text-indigo-600 dark:text-indigo-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
                   </svg>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-lg mb-2 font-medium">
                   No icons found
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-500">
-                  {searchQuery ? `No icons match "${searchQuery}"` : 'Try selecting a different category'}
+                  {searchQuery
+                    ? `No icons match "${searchQuery}"`
+                    : "Try selecting a different category"}
                 </p>
               </div>
             </div>
           ) : (
-            <div 
+            <div
               className="relative p-6 mt-2 mx-2"
               style={{
                 height: `${rowVirtualizer.getTotalSize()}px`,
@@ -518,7 +603,10 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
             >
               {rowVirtualizer.getVirtualItems().map((virtualRow) => {
                 const startIndex = virtualRow.index * columns;
-                const endIndex = Math.min(startIndex + columns, filteredIcons.length);
+                const endIndex = Math.min(
+                  startIndex + columns,
+                  filteredIcons.length
+                );
                 const rowIcons = filteredIcons.slice(startIndex, endIndex);
 
                 return (
@@ -530,15 +618,18 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                       transform: `translateY(${virtualRow.start}px)`,
                     }}
                   >
-                    <div className="grid gap-4 min-w-0" style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}>
+                    <div
+                      className="grid gap-4 min-w-0"
+                      style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
+                    >
                       {rowIcons.map((icon, idx) => (
                         <div
                           key={icon.path}
                           onClick={() => handleIconClick(icon)}
                           className={`group relative flex flex-col items-center p-5 rounded-2xl border transition-all duration-300 cursor-pointer min-w-0 w-full animate-scale-in ${
                             selectedIcon?.path === icon.path
-                              ? 'border-indigo-500 dark:border-indigo-400 shadow-xl shadow-indigo-500/20 ring-2 ring-indigo-500/50 dark:ring-indigo-400/50 scale-105 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20'
-                              : 'border-white/30 dark:border-white/10 glass hover:border-indigo-400/50 dark:hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 hover:scale-105 hover:-translate-y-1'
+                              ? "border-indigo-500 dark:border-indigo-400 shadow-xl shadow-indigo-500/20 ring-2 ring-indigo-500/50 dark:ring-indigo-400/50 scale-105 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20"
+                              : "border-white/30 dark:border-white/10 glass hover:border-indigo-400/50 dark:hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 hover:scale-105 hover:-translate-y-1"
                           }`}
                           title={getDisplayName(icon.filename)}
                           style={{ animationDelay: `${idx * 30}ms` }}
@@ -571,12 +662,16 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
           )}
         </main>
       </div>
-      
+
       {/* Icon Detail Panel (Bottom Modal) */}
       {selectedIcon && (
-        <div 
-          className={`fixed inset-x-0 bottom-0 z-50 glass border-t border-white/30 dark:border-white/10 shadow-2xl backdrop-blur-xl transform transition-transform duration-300 ease-out ${
-            isPanelClosing ? 'translate-y-full' : isPanelOpening ? 'translate-y-full' : 'translate-y-0'
+        <div
+          className={`fixed left-0 lg:left-64 right-0 bottom-0 z-50 glass border-t border-white/30 dark:border-white/10 shadow-[0_-2px_12px_rgba(0,0,0,0.08),0_-4px_24px_rgba(0,0,0,0.05)] dark:shadow-[0_-2px_12px_rgba(0,0,0,0.15),0_-4px_24px_rgba(0,0,0,0.1)] backdrop-blur-xl transform transition-transform duration-300 ease-out ${
+            isPanelClosing
+              ? "translate-y-full"
+              : isPanelOpening
+              ? "translate-y-full"
+              : "translate-y-0"
           }`}
           onTransitionEnd={() => {
             if (isPanelOpening) {
@@ -584,27 +679,37 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
             }
           }}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+          <div className="px-4 sm:px-6 py-6">
             <div className="flex flex-col sm:flex-row items-start justify-between gap-4 sm:gap-6">
               {/* Icon Preview */}
               <div className="shrink-0 w-full sm:w-auto animate-scale-in">
-                <div className="w-full sm:w-32 sm:h-32 md:w-40 md:h-40 aspect-square flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-2xl border border-white/30 dark:border-white/10 p-4 mb-4 sm:mb-0 shadow-lg">
+                <div className="w-full sm:w-40 sm:h-40 md:w-48 md:h-48 aspect-square flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-2xl border border-white/30 dark:border-white/10 p-4 mb-4 sm:mb-0 shadow-lg">
                   <div className="relative w-full h-full">
                     <Image
                       src={selectedIcon.path}
                       alt={getDisplayName(selectedIcon.filename)}
                       fill
                       className="object-contain"
-                      sizes="160px"
+                      sizes="192px"
                     />
                   </div>
                 </div>
                 <button
                   onClick={() => handleDownload(selectedIcon)}
-                  className="w-full sm:w-auto px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/30 hover:scale-105"
+                  className="w-full sm:w-40 md:w-48 px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/30 hover:scale-105"
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
                   </svg>
                   Download Image
                 </button>
@@ -618,29 +723,43 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                       {getDisplayName(selectedIcon.filename)}
                     </h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                      Category: <span className="font-medium">{selectedIcon.category}</span>
+                      Category:{" "}
+                      <span className="font-medium">
+                        {selectedIcon.category}
+                      </span>
                     </p>
-                    {selectedIcon.keywords && selectedIcon.keywords.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mt-3">
-                        {selectedIcon.keywords.map((keyword, idx) => (
-                          <span
-                            key={idx}
-                            className="px-3 py-1.5 text-xs bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full font-medium shadow-md animate-scale-in"
-                            style={{ animationDelay: `${idx * 50}ms` }}
-                          >
-                            {keyword}
-                          </span>
-                        ))}
-                      </div>
-                    )}
+                    {selectedIcon.keywords &&
+                      selectedIcon.keywords.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-3">
+                          {selectedIcon.keywords.map((keyword, idx) => (
+                            <span
+                              key={idx}
+                              className="px-3 py-1.5 text-xs bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full font-medium shadow-md "
+                              style={{ animationDelay: `${idx * 50}ms` }}
+                            >
+                              {keyword}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                   </div>
                   <button
                     onClick={handleClosePanel}
                     className="shrink-0 p-2.5 rounded-xl hover:bg-white/50 dark:hover:bg-white/10 text-gray-500 dark:text-gray-400 ml-2 transition-all duration-300 hover:scale-110 hover:rotate-90"
                     aria-label="Close"
                   >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
                     </svg>
                   </button>
                 </div>
@@ -659,7 +778,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                         onClick={() => handleCopyPath(selectedIcon.path)}
                         className="px-5 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg shadow-indigo-500/30 hover:scale-105"
                       >
-                        {copiedIcon === selectedIcon.path ? 'Copied!' : 'Copy'}
+                        {copiedIcon === selectedIcon.path ? "Copied!" : "Copy"}
                       </button>
                     </div>
                   </div>
@@ -672,10 +791,14 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                         {selectedIcon.filename}
                       </code>
                       <button
-                        onClick={() => handleCopyFilename(selectedIcon.filename)}
+                        onClick={() =>
+                          handleCopyFilename(selectedIcon.filename)
+                        }
                         className="px-5 py-2.5 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg hover:scale-105"
                       >
-                        {copiedIcon === selectedIcon.filename ? 'Copied!' : 'Copy'}
+                        {copiedIcon === selectedIcon.filename
+                          ? "Copied!"
+                          : "Copy"}
                       </button>
                     </div>
                   </div>
@@ -685,33 +808,58 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
           </div>
         </div>
       )}
-      
+
       {/* Toast Notifications */}
       {copiedIcon && !selectedIcon && (
-        <div className={`fixed right-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-5 py-3 rounded-xl shadow-2xl shadow-indigo-500/50 z-[60] transition-all duration-300 animate-scale-in ${
-          selectedIcon ? 'bottom-96 sm:bottom-80' : 'bottom-4'
-        }`}>
+        <div
+          className={`fixed right-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-5 py-3 rounded-xl shadow-2xl shadow-indigo-500/50 z-[60] transition-all duration-300 animate-scale-in ${
+            selectedIcon ? "bottom-96 sm:bottom-80" : "bottom-4"
+          }`}
+        >
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
             </svg>
             <span className="font-semibold">Copied to clipboard!</span>
           </div>
         </div>
       )}
       {downloadedIcon && (
-        <div className={`fixed right-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-5 py-3 rounded-xl shadow-2xl shadow-emerald-500/50 z-[60] transition-all duration-300 animate-scale-in ${
-          selectedIcon ? 'bottom-96 sm:bottom-80' : 'bottom-4'
-        }`}>
+        <div
+          className={`fixed right-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-5 py-3 rounded-xl shadow-2xl shadow-emerald-500/50 z-[60] transition-all duration-300 animate-scale-in ${
+            selectedIcon ? "bottom-96 sm:bottom-80" : "bottom-4"
+          }`}
+        >
           <div className="flex items-center gap-2">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
             </svg>
-            <span className="font-semibold">Image downloaded: {downloadedIcon}</span>
+            <span className="font-semibold">
+              Image downloaded: {downloadedIcon}
+            </span>
           </div>
         </div>
       )}
     </div>
   );
 }
-
