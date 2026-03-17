@@ -9,6 +9,7 @@ import {
   findSimilarIcons,
   getFilteredKeywords,
 } from '@/lib/embeddings';
+import { readFile as readFileAsync } from 'fs/promises';
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
@@ -112,6 +113,13 @@ export async function POST(request: NextRequest) {
       }
     });
 
+    // Load SVG mapping to translate PNG paths from AI/embeddings to current SVG paths
+    let svgMapping: Record<string, string> = {};
+    try {
+      const mappingData = await readFileAsync(join(process.cwd(), 'svg-mapping.json'), 'utf-8');
+      svgMapping = JSON.parse(mappingData);
+    } catch {}
+
     // Create a set of valid icon paths for validation
     const validPaths = new Set(icons.map(icon => icon.path));
 
@@ -210,14 +218,16 @@ Example format: ["/icons/ibm/example@2x.png", "/icons/streamline/another@2x.png"
     // Remove duplicates - AI models sometimes don't follow uniqueness instructions
     const uniqueSuggestedPaths = Array.from(new Set(suggestedPaths));
 
-    // Validate and filter out invalid paths
-    const validSuggestedPaths = uniqueSuggestedPaths.filter((path: string) => {
-      const isValid = validPaths.has(path);
-      if (!isValid) {
-        console.warn(`Invalid path returned by AI: ${path}`);
-      }
-      return isValid;
-    });
+    // Translate PNG paths from AI to SVG paths, then validate
+    const validSuggestedPaths = uniqueSuggestedPaths
+      .map((path: string) => svgMapping[path] || path)
+      .filter((path: string) => {
+        const isValid = validPaths.has(path);
+        if (!isValid) {
+          console.warn(`Invalid path returned by AI: ${path}`);
+        }
+        return isValid;
+      });
 
     return NextResponse.json({ suggestedPaths: validSuggestedPaths });
   } catch (error) {

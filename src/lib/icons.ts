@@ -1,4 +1,4 @@
-import { readdir, readFile } from 'fs/promises';
+import { readFile } from 'fs/promises';
 import { join } from 'path';
 import { existsSync } from 'fs';
 
@@ -7,7 +7,6 @@ export interface IconInfo {
   filename: string;
   category: string;
   keywords?: string[];
-  svgPath?: string;
 }
 
 export interface CategoryInfo {
@@ -56,42 +55,25 @@ async function loadKeywords(): Promise<Record<string, string[]>> {
 }
 
 export async function getAllIcons(): Promise<IconInfo[]> {
-  // Note: This function uses dynamic file system reads which Turbopack cannot
-  // statically analyze. This is expected for server-side code that runs at
-  // request time, not build time. The warning can be safely ignored.
-  const iconsDir = join(process.cwd(), 'public', 'icons');
   const icons: IconInfo[] = [];
 
   // Load keywords and SVG mapping
   const keywords = await loadKeywords();
   const svgMapping = await loadSvgMapping();
 
-  // Use explicit paths for each category to help with static analysis
-  const categoryPaths: Array<{ category: string; path: string }> = [
-    { category: 'ibm', path: join(iconsDir, 'ibm') },
-    { category: 'ibm-pictograms', path: join(iconsDir, 'ibm-pictograms') },
-    { category: 'streamline', path: join(iconsDir, 'streamline') },
-    { category: 'themed', path: join(iconsDir, 'themed') },
-  ];
+  // Build icons from SVG mapping (keyed by old PNG paths like /icons/ibm/Account@2x.png)
+  for (const [pngPath, svgPath] of Object.entries(svgMapping)) {
+    // Extract category from path: /icons/{category}/{filename}
+    const parts = pngPath.split('/');
+    const category = parts[2];
+    const filename = svgPath.split('/').pop()!;
 
-  for (const { category, path: categoryPath } of categoryPaths) {
-    try {
-      const files = await readdir(categoryPath);
-      const pngFiles = files.filter(file => file.endsWith('.png'));
-      
-      for (const file of pngFiles) {
-        const iconPath = `/icons/${category}/${file}`;
-        icons.push({
-          path: iconPath,
-          filename: file,
-          category,
-          keywords: keywords[iconPath] || undefined,
-          svgPath: svgMapping[iconPath] || undefined,
-        });
-      }
-    } catch (error) {
-      console.error(`Error reading category ${category}:`, error);
-    }
+    icons.push({
+      path: svgPath,
+      filename,
+      category,
+      keywords: keywords[pngPath] || undefined,
+    });
   }
 
   return icons;

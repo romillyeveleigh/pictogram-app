@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo, useRef, useLayoutEffect } from "react";
-import Image from "next/image";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import type { IconInfo, CategoryInfo } from "@/lib/icons";
 
@@ -200,17 +199,12 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
 
   const handleDownload = async (icon: IconInfo) => {
     try {
-      const downloadPath = icon.svgPath || icon.path;
-      const downloadName = icon.svgPath
-        ? icon.filename.replace(/@2x\.png$/, ".svg")
-        : icon.filename;
-
-      const response = await fetch(downloadPath);
+      const response = await fetch(icon.path);
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = downloadName;
+      link.download = icon.filename;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -643,21 +637,11 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                             className="relative flex items-center justify-center mb-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
                             style={{ width: iconSize, height: iconSize }}
                           >
-                            {icon.svgPath ? (
-                              <img
-                                src={icon.svgPath}
-                                alt={getDisplayName(icon.filename)}
-                                className="absolute inset-0 w-full h-full object-contain transition-all duration-300"
-                              />
-                            ) : (
-                              <Image
-                                src={icon.path}
-                                alt={getDisplayName(icon.filename)}
-                                fill
-                                className="object-contain transition-all duration-300"
-                                sizes={`${iconSize}px`}
-                              />
-                            )}
+                            <img
+                              src={icon.path}
+                              alt={getDisplayName(icon.filename)}
+                              className="absolute inset-0 w-full h-full object-contain transition-all duration-300"
+                            />
                           </div>
                           <p className="text-xs text-center text-gray-700 dark:text-gray-300 font-semibold truncate w-full px-1 min-w-0">
                             {getDisplayName(icon.filename)}
@@ -698,21 +682,11 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
               <div className="shrink-0 w-full sm:w-auto animate-scale-in">
                 <div className="w-full sm:w-40 sm:h-40 md:w-48 md:h-48 aspect-square flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-2xl border border-white/30 dark:border-white/10 p-4 mb-4 sm:mb-0 shadow-lg">
                   <div className="relative w-full h-full">
-                    {selectedIcon.svgPath ? (
-                      <img
-                        src={selectedIcon.svgPath}
-                        alt={getDisplayName(selectedIcon.filename)}
-                        className="absolute inset-0 w-full h-full object-contain"
-                      />
-                    ) : (
-                      <Image
-                        src={selectedIcon.path}
-                        alt={getDisplayName(selectedIcon.filename)}
-                        fill
-                        className="object-contain"
-                        sizes="192px"
-                      />
-                    )}
+                    <img
+                      src={selectedIcon.path}
+                      alt={getDisplayName(selectedIcon.filename)}
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
                   </div>
                 </div>
                 <button
