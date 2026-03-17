@@ -197,7 +197,7 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
     }
   };
 
-  const handleDownload = async (icon: IconInfo) => {
+  const handleDownloadSvg = async (icon: IconInfo) => {
     try {
       const response = await fetch(icon.path);
       const blob = await response.blob();
@@ -213,6 +213,41 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
       setTimeout(() => setDownloadedIcon(null), 2000);
     } catch (err) {
       console.error("Failed to download:", err);
+    }
+  };
+
+  const handleDownloadPng = async (icon: IconInfo) => {
+    try {
+      const response = await fetch(icon.path);
+      const svgText = await response.text();
+      const svgBlob = new Blob([svgText], { type: "image/svg+xml;charset=utf-8" });
+      const svgUrl = URL.createObjectURL(svgBlob);
+      const img = new Image();
+      img.onload = () => {
+        const size = 512;
+        const canvas = document.createElement("canvas");
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext("2d")!;
+        ctx.drawImage(img, 0, 0, size, size);
+        URL.revokeObjectURL(svgUrl);
+        canvas.toBlob((blob) => {
+          if (!blob) return;
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = icon.filename.replace(/\.svg$/i, ".png");
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+          setDownloadedIcon(icon.filename);
+          setTimeout(() => setDownloadedIcon(null), 2000);
+        }, "image/png");
+      };
+      img.src = svgUrl;
+    } catch (err) {
+      console.error("Failed to download PNG:", err);
     }
   };
 
@@ -689,25 +724,26 @@ export default function IconBrowser({ icons, categories }: IconBrowserProps) {
                     />
                   </div>
                 </div>
-                <button
-                  onClick={() => handleDownload(selectedIcon)}
-                  className="w-full sm:w-40 md:w-48 px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/30 hover:scale-105"
-                >
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+                <div className="flex gap-2 w-full sm:w-40 md:w-48 mt-3">
+                  <button
+                    onClick={() => handleDownloadSvg(selectedIcon)}
+                    className="flex-1 px-3 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-500/30 hover:scale-105"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
-                  Download Image
-                </button>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    SVG
+                  </button>
+                  <button
+                    onClick={() => handleDownloadPng(selectedIcon)}
+                    className="flex-1 px-3 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-1.5 shadow-lg shadow-blue-500/30 hover:scale-105"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    PNG
+                  </button>
+                </div>
               </div>
 
               {/* Icon Details */}
