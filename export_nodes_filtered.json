@@ -1,0 +1,4550 @@
+{
+  "manufacturing": {
+    "nodeId": "83:17670",
+    "name": "Manufacturing",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Manufacturing@2x.png"
+  },
+  "mail": {
+    "nodeId": "366:4854",
+    "name": "Mail",
+    "type": "FRAME",
+    "iconPath": "/icons/streamline/Mail@2x.png"
+  },
+  "programming": {
+    "nodeId": "366:5183",
+    "name": "Programming",
+    "type": "FRAME",
+    "iconPath": "/icons/streamline/Programming@2x.png"
+  },
+  "entertainment": {
+    "nodeId": "366:7286",
+    "name": "Entertainment",
+    "type": "FRAME",
+    "iconPath": "/icons/streamline/Entertainment@2x.png"
+  },
+  "phone": {
+    "nodeId": "366:7900",
+    "name": "Phone",
+    "type": "FRAME",
+    "iconPath": "/icons/streamline/Phone@2x.png"
+  },
+  "shipping": {
+    "nodeId": "366:8040",
+    "name": "Shipping",
+    "type": "FRAME",
+    "iconPath": "/icons/streamline/Shipping@2x.png"
+  },
+  "health": {
+    "nodeId": "366:8138",
+    "name": "Health",
+    "type": "FRAME",
+    "iconPath": "/icons/streamline/Health@2x.png"
+  },
+  "culture": {
+    "nodeId": "366:8413",
+    "name": "Culture",
+    "type": "FRAME",
+    "iconPath": "/icons/streamline/Culture@2x.png"
+  },
+  "transportation": {
+    "nodeId": "83:17440",
+    "name": "Transportation",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Transportation@2x.png"
+  },
+  "third-party logos": {
+    "nodeId": "83:17463",
+    "name": "Third-party logos",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Third-party logos@2x.png"
+  },
+  "systems devops": {
+    "nodeId": "83:17466",
+    "name": "Systems DevOps",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Systems DevOps@2x.png"
+  },
+  "supply chain": {
+    "nodeId": "83:17479",
+    "name": "Supply Chain",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Supply Chain@2x.png"
+  },
+  "status": {
+    "nodeId": "83:17505",
+    "name": "Status",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Status@2x.png"
+  },
+  "retail": {
+    "nodeId": "83:17554",
+    "name": "Retail",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Retail@2x.png"
+  },
+  "red hat": {
+    "nodeId": "83:17576",
+    "name": "Red Hat",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Red Hat@2x.png"
+  },
+  "public service": {
+    "nodeId": "83:17597",
+    "name": "Public service",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Public service@2x.png"
+  },
+  "people": {
+    "nodeId": "83:17607",
+    "name": "People",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/People@2x.png"
+  },
+  "networking": {
+    "nodeId": "83:17639",
+    "name": "Networking",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Networking@2x.png"
+  },
+  "lifestyle": {
+    "nodeId": "83:17689",
+    "name": "Lifestyle",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Lifestyle@2x.png"
+  },
+  "life science": {
+    "nodeId": "83:17715",
+    "name": "Life Science",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Life Science@2x.png"
+  },
+  "learning": {
+    "nodeId": "83:17731",
+    "name": "Learning",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Learning@2x.png"
+  },
+  "internet of things": {
+    "nodeId": "83:17746",
+    "name": "Internet of Things",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Internet of Things@2x.png"
+  },
+  "ibm": {
+    "nodeId": "83:17787",
+    "name": "IBM",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/IBM@2x.png"
+  },
+  "healthcare": {
+    "nodeId": "83:17809",
+    "name": "Healthcare",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Healthcare@2x.png"
+  },
+  "government": {
+    "nodeId": "83:17837",
+    "name": "Government",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Government@2x.png"
+  },
+  "file": {
+    "nodeId": "83:17869",
+    "name": "File",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/File@2x.png"
+  },
+  "electronics": {
+    "nodeId": "83:17881",
+    "name": "Electronics",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Electronics@2x.png"
+  },
+  "device interaction": {
+    "nodeId": "83:17909",
+    "name": "Device Interaction",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Device Interaction@2x.png"
+  },
+  "design and development": {
+    "nodeId": "83:17934",
+    "name": "Design and Development",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Design and Development@2x.png"
+  },
+  "data storage": {
+    "nodeId": "83:17962",
+    "name": "Data Storage",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Data Storage@2x.png"
+  },
+  "data analytics": {
+    "nodeId": "83:17987",
+    "name": "Data Analytics",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Data Analytics@2x.png"
+  },
+  "stem--leaf--plot": {
+    "nodeId": "83:18034",
+    "name": "stem--leaf--plot",
+    "type": "INSTANCE",
+    "iconPath": "/icons/ibm-pictograms/stem--leaf--plot@2x.png"
+  },
+  "controls": {
+    "nodeId": "83:18040",
+    "name": "Controls",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Controls@2x.png"
+  },
+  "cloud": {
+    "nodeId": "83:18051",
+    "name": "Cloud",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Cloud@2x.png"
+  },
+  "cities": {
+    "nodeId": "83:18120",
+    "name": "Cities",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Cities@2x.png"
+  },
+  "building structure": {
+    "nodeId": "83:18206",
+    "name": "Building Structure",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Building Structure@2x.png"
+  },
+  "action": {
+    "nodeId": "83:18237",
+    "name": "Action",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm-pictograms/Action@2x.png"
+  },
+  "weather=accumulation--ice": {
+    "nodeId": "83:14681",
+    "name": "Weather=Accumulation--ice",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Accumulation--ice@2x.png"
+  },
+  "weather=accumulation--precipitation": {
+    "nodeId": "83:14683",
+    "name": "Weather=Accumulation--precipitation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Accumulation--precipitation@2x.png"
+  },
+  "weather=accumulation--rain": {
+    "nodeId": "83:14685",
+    "name": "Weather=Accumulation--rain",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Accumulation--rain@2x.png"
+  },
+  "weather=accumulation--snow": {
+    "nodeId": "83:14687",
+    "name": "Weather=Accumulation--snow",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Accumulation--snow@2x.png"
+  },
+  "weather=agriculture-analytics": {
+    "nodeId": "83:14689",
+    "name": "Weather=Agriculture-analytics",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Agriculture-analytics@2x.png"
+  },
+  "weather=buoy": {
+    "nodeId": "83:14691",
+    "name": "Weather=Buoy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Buoy@2x.png"
+  },
+  "weather=carbon-accounting": {
+    "nodeId": "83:14693",
+    "name": "Weather=Carbon-accounting",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Carbon-accounting@2x.png"
+  },
+  "weather=cloud-ceiling": {
+    "nodeId": "83:14695",
+    "name": "Weather=Cloud-ceiling",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Cloud-ceiling@2x.png"
+  },
+  "weather=cloud": {
+    "nodeId": "83:14697",
+    "name": "Weather=Cloud",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Cloud@2x.png"
+  },
+  "weather=cloudy": {
+    "nodeId": "83:14699",
+    "name": "Weather=Cloudy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Cloudy@2x.png"
+  },
+  "weather=crop-growth": {
+    "nodeId": "83:14701",
+    "name": "Weather=Crop-growth",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Crop-growth@2x.png"
+  },
+  "weather=crop-health": {
+    "nodeId": "83:14703",
+    "name": "Weather=Crop-health",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Crop-health@2x.png"
+  },
+  "weather=dew-point--filled": {
+    "nodeId": "83:14705",
+    "name": "Weather=Dew-point--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Dew-point--filled@2x.png"
+  },
+  "weather=dew-point": {
+    "nodeId": "83:14707",
+    "name": "Weather=Dew-point",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Dew-point@2x.png"
+  },
+  "weather=drought": {
+    "nodeId": "83:14709",
+    "name": "Weather=Drought",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Drought@2x.png"
+  },
+  "weather=earthquake": {
+    "nodeId": "83:14711",
+    "name": "Weather=Earthquake",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Earthquake@2x.png"
+  },
+  "weather=energy--renewable": {
+    "nodeId": "83:14713",
+    "name": "Weather=Energy--renewable",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Energy--renewable@2x.png"
+  },
+  "weather=flood--warning": {
+    "nodeId": "83:14715",
+    "name": "Weather=Flood--warning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Flood--warning@2x.png"
+  },
+  "weather=flood": {
+    "nodeId": "83:14717",
+    "name": "Weather=Flood",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Flood@2x.png"
+  },
+  "weather=fog": {
+    "nodeId": "83:14719",
+    "name": "Weather=Fog",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Fog@2x.png"
+  },
+  "weather=forecast--hail-30": {
+    "nodeId": "83:14721",
+    "name": "Weather=Forecast--hail-30",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Forecast--hail-30@2x.png"
+  },
+  "weather=forecast--hail": {
+    "nodeId": "83:14723",
+    "name": "Weather=Forecast--hail",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Forecast--hail@2x.png"
+  },
+  "weather=forecast--lightning-30": {
+    "nodeId": "83:14725",
+    "name": "Weather=Forecast--lightning-30",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Forecast--lightning-30@2x.png"
+  },
+  "weather=forecast--lightning": {
+    "nodeId": "83:14727",
+    "name": "Weather=Forecast--lightning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Forecast--lightning@2x.png"
+  },
+  "weather=lightning": {
+    "nodeId": "83:14729",
+    "name": "Weather=Lightning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Lightning@2x.png"
+  },
+  "weather=ice--vision": {
+    "nodeId": "83:14731",
+    "name": "Weather=Ice--vision",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Ice--vision@2x.png"
+  },
+  "weather=ice--accretion": {
+    "nodeId": "83:14733",
+    "name": "Weather=Ice--accretion",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Ice--accretion@2x.png"
+  },
+  "weather=hurricane": {
+    "nodeId": "83:14735",
+    "name": "Weather=Hurricane",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Hurricane@2x.png"
+  },
+  "weather=humidity--alt": {
+    "nodeId": "83:14737",
+    "name": "Weather=Humidity--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Humidity--alt@2x.png"
+  },
+  "weather=humidity": {
+    "nodeId": "83:14739",
+    "name": "Weather=Humidity",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Humidity@2x.png"
+  },
+  "weather=haze--night": {
+    "nodeId": "83:14741",
+    "name": "Weather=Haze--night",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Haze--night@2x.png"
+  },
+  "weather=haze": {
+    "nodeId": "83:14743",
+    "name": "Weather=Haze",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Haze@2x.png"
+  },
+  "weather=hail": {
+    "nodeId": "83:14745",
+    "name": "Weather=Hail",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Hail@2x.png"
+  },
+  "weather=mostly-cloudy--night": {
+    "nodeId": "83:14747",
+    "name": "Weather=Mostly-cloudy--night",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Mostly-cloudy--night@2x.png"
+  },
+  "weather=mostly-cloudy": {
+    "nodeId": "83:14749",
+    "name": "Weather=Mostly-cloudy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Mostly-cloudy@2x.png"
+  },
+  "weather=moonset": {
+    "nodeId": "83:14751",
+    "name": "Weather=Moonset",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Moonset@2x.png"
+  },
+  "weather=moonrise": {
+    "nodeId": "83:14753",
+    "name": "Weather=Moonrise",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Moonrise@2x.png"
+  },
+  "weather=moon": {
+    "nodeId": "83:14755",
+    "name": "Weather=Moon",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Moon@2x.png"
+  },
+  "weather=mixed-rain-hail": {
+    "nodeId": "83:14757",
+    "name": "Weather=Mixed-rain-hail",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Mixed-rain-hail@2x.png"
+  },
+  "weather=marine-warning": {
+    "nodeId": "83:14759",
+    "name": "Weather=Marine-warning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Marine-warning@2x.png"
+  },
+  "weather=rain--scattered": {
+    "nodeId": "83:14761",
+    "name": "Weather=Rain--scattered",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Rain--scattered@2x.png"
+  },
+  "weather=rain--heavy": {
+    "nodeId": "83:14763",
+    "name": "Weather=Rain--heavy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Rain--heavy@2x.png"
+  },
+  "weather=rain--drizzle": {
+    "nodeId": "83:14765",
+    "name": "Weather=Rain--drizzle",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Rain--drizzle@2x.png"
+  },
+  "weather=rain": {
+    "nodeId": "83:14767",
+    "name": "Weather=Rain",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Rain@2x.png"
+  },
+  "weather=radar--weather": {
+    "nodeId": "83:14769",
+    "name": "Weather=Radar--weather",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Radar--weather@2x.png"
+  },
+  "weather=radar--enhanced": {
+    "nodeId": "83:14771",
+    "name": "Weather=Radar--enhanced",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Radar--enhanced@2x.png"
+  },
+  "weather=pressure--filled": {
+    "nodeId": "83:14773",
+    "name": "Weather=Pressure--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Pressure--filled@2x.png"
+  },
+  "weather=pressure": {
+    "nodeId": "83:14775",
+    "name": "Weather=Pressure",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Pressure@2x.png"
+  },
+  "weather=pest": {
+    "nodeId": "83:14777",
+    "name": "Weather=Pest",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Pest@2x.png"
+  },
+  "weather=partly-cloudy--night": {
+    "nodeId": "83:14779",
+    "name": "Weather=Partly-cloudy--night",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Partly-cloudy--night@2x.png"
+  },
+  "weather=partly-cloudy": {
+    "nodeId": "83:14781",
+    "name": "Weather=Partly-cloudy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Partly-cloudy@2x.png"
+  },
+  "weather=outlook-severe": {
+    "nodeId": "83:14783",
+    "name": "Weather=Outlook-severe",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Outlook-severe@2x.png"
+  },
+  "weather=observed--lightning": {
+    "nodeId": "83:14785",
+    "name": "Weather=Observed--lightning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Observed--lightning@2x.png"
+  },
+  "weather=observed--hail": {
+    "nodeId": "83:14787",
+    "name": "Weather=Observed--hail",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Observed--hail@2x.png"
+  },
+  "weather=not-available": {
+    "nodeId": "83:14789",
+    "name": "Weather=Not-available",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Not-available@2x.png"
+  },
+  "weather=satellite--weather": {
+    "nodeId": "83:14791",
+    "name": "Weather=Satellite--weather",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Satellite--weather@2x.png"
+  },
+  "weather=satellite--radar": {
+    "nodeId": "83:14793",
+    "name": "Weather=Satellite--radar",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Satellite--radar@2x.png"
+  },
+  "weather=sailboat--offshore": {
+    "nodeId": "83:14795",
+    "name": "Weather=Sailboat--offshore",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Sailboat--offshore@2x.png"
+  },
+  "weather=sailboat--coastal": {
+    "nodeId": "83:14797",
+    "name": "Weather=Sailboat--coastal",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Sailboat--coastal@2x.png"
+  },
+  "weather=ref-evapotranspiration": {
+    "nodeId": "83:14799",
+    "name": "Weather=Ref-evapotranspiration",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Ref-evapotranspiration@2x.png"
+  },
+  "weather=rain-drop": {
+    "nodeId": "83:14801",
+    "name": "Weather=Rain-drop",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Rain-drop@2x.png"
+  },
+  "weather=rain--scattered--night": {
+    "nodeId": "83:14803",
+    "name": "Weather=Rain--scattered--night",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Rain--scattered--night@2x.png"
+  },
+  "weather=stay-inside": {
+    "nodeId": "83:14805",
+    "name": "Weather=Stay-inside",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Stay-inside@2x.png"
+  },
+  "weather=solar-panel": {
+    "nodeId": "83:14807",
+    "name": "Weather=Solar-panel",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Solar-panel@2x.png"
+  },
+  "weather=soil-temperature--global": {
+    "nodeId": "83:14809",
+    "name": "Weather=Soil-temperature--global",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Soil-temperature--global@2x.png"
+  },
+  "weather=soil-temperature--field": {
+    "nodeId": "83:14811",
+    "name": "Weather=Soil-temperature--field",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Soil-temperature--field@2x.png"
+  },
+  "weather=soil-temperature": {
+    "nodeId": "83:14813",
+    "name": "Weather=Soil-temperature",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Soil-temperature@2x.png"
+  },
+  "weather=soil-moisture--global": {
+    "nodeId": "83:14815",
+    "name": "Weather=Soil-moisture--global",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Soil-moisture--global@2x.png"
+  },
+  "weather=soil-moisture--field": {
+    "nodeId": "83:14817",
+    "name": "Weather=Soil-moisture--field",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Soil-moisture--field@2x.png"
+  },
+  "weather=soil-moisture": {
+    "nodeId": "83:14819",
+    "name": "Weather=Soil-moisture",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Soil-moisture@2x.png"
+  },
+  "weather=snowflake": {
+    "nodeId": "83:14821",
+    "name": "Weather=Snowflake",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Snowflake@2x.png"
+  },
+  "weather=snow-density": {
+    "nodeId": "83:14823",
+    "name": "Weather=Snow-density",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Snow-density@2x.png"
+  },
+  "weather=snow--scattered--night": {
+    "nodeId": "83:14825",
+    "name": "Weather=Snow--scattered--night",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Snow--scattered--night@2x.png"
+  },
+  "weather=snow--scattered": {
+    "nodeId": "83:14827",
+    "name": "Weather=Snow--scattered",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Snow--scattered@2x.png"
+  },
+  "weather=snow--heavy": {
+    "nodeId": "83:14829",
+    "name": "Weather=Snow--heavy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Snow--heavy@2x.png"
+  },
+  "weather=snow--blizzard": {
+    "nodeId": "83:14831",
+    "name": "Weather=Snow--blizzard",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Snow--blizzard@2x.png"
+  },
+  "weather=snow": {
+    "nodeId": "83:14833",
+    "name": "Weather=Snow",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Snow@2x.png"
+  },
+  "weather=smoke": {
+    "nodeId": "83:14835",
+    "name": "Weather=Smoke",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Smoke@2x.png"
+  },
+  "weather=sleet": {
+    "nodeId": "83:14837",
+    "name": "Weather=Sleet",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Sleet@2x.png"
+  },
+  "weather=storm-tracker": {
+    "nodeId": "83:14839",
+    "name": "Weather=Storm-tracker",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Storm-tracker@2x.png"
+  },
+  "weather=temperature--water": {
+    "nodeId": "83:14841",
+    "name": "Weather=Temperature--water",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--water@2x.png"
+  },
+  "weather=temperature--min": {
+    "nodeId": "83:14843",
+    "name": "Weather=Temperature--min",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--min@2x.png"
+  },
+  "weather=temperature--max": {
+    "nodeId": "83:14845",
+    "name": "Weather=Temperature--max",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--max@2x.png"
+  },
+  "weather=temperature--inversion": {
+    "nodeId": "83:14847",
+    "name": "Weather=Temperature--inversion",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--inversion@2x.png"
+  },
+  "weather=temperature--hot": {
+    "nodeId": "83:14849",
+    "name": "Weather=Temperature--hot",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--hot@2x.png"
+  },
+  "weather=temperature--frigid": {
+    "nodeId": "83:14851",
+    "name": "Weather=Temperature--frigid",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--frigid@2x.png"
+  },
+  "weather=temperature--feels-like": {
+    "nodeId": "83:14853",
+    "name": "Weather=Temperature--feels-like",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--feels-like@2x.png"
+  },
+  "weather=temperature--fahrenheit--alt": {
+    "nodeId": "83:14855",
+    "name": "Weather=Temperature--fahrenheit--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--fahrenheit--alt@2x.png"
+  },
+  "weather=temperature--fahrenheit": {
+    "nodeId": "83:14857",
+    "name": "Weather=Temperature--fahrenheit",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--fahrenheit@2x.png"
+  },
+  "weather=temperature--celsius--alt": {
+    "nodeId": "83:14859",
+    "name": "Weather=Temperature--celsius--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--celsius--alt@2x.png"
+  },
+  "weather=temperature--celsius": {
+    "nodeId": "83:14861",
+    "name": "Weather=Temperature--celsius",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature--celsius@2x.png"
+  },
+  "weather=temperature": {
+    "nodeId": "83:14863",
+    "name": "Weather=Temperature",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Temperature@2x.png"
+  },
+  "weather=sunset": {
+    "nodeId": "83:14865",
+    "name": "Weather=Sunset",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Sunset@2x.png"
+  },
+  "weather=sunrise": {
+    "nodeId": "83:14867",
+    "name": "Weather=Sunrise",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Sunrise@2x.png"
+  },
+  "weather=sun": {
+    "nodeId": "83:14869",
+    "name": "Weather=Sun",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Sun@2x.png"
+  },
+  "weather=tropical-storm": {
+    "nodeId": "83:14871",
+    "name": "Weather=Tropical-storm",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tropical-storm@2x.png"
+  },
+  "weather=tornado-warning": {
+    "nodeId": "83:14873",
+    "name": "Weather=Tornado-warning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tornado-warning@2x.png"
+  },
+  "weather=tornado": {
+    "nodeId": "83:14875",
+    "name": "Weather=Tornado",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tornado@2x.png"
+  },
+  "weather=tides": {
+    "nodeId": "83:14877",
+    "name": "Weather=Tides",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tides@2x.png"
+  },
+  "weather=thunderstorm--strong": {
+    "nodeId": "83:14879",
+    "name": "Weather=Thunderstorm--strong",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Thunderstorm--strong@2x.png"
+  },
+  "weather=thunderstorm--severe": {
+    "nodeId": "83:14881",
+    "name": "Weather=Thunderstorm--severe",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Thunderstorm--severe@2x.png"
+  },
+  "weather=thunderstorm--scattered--night": {
+    "nodeId": "83:14883",
+    "name": "Weather=Thunderstorm--scattered--night",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Thunderstorm--scattered--night@2x.png"
+  },
+  "weather=thunderstorm--scattered": {
+    "nodeId": "83:14885",
+    "name": "Weather=Thunderstorm--scattered",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Thunderstorm--scattered@2x.png"
+  },
+  "weather=thunderstorm": {
+    "nodeId": "83:14887",
+    "name": "Weather=Thunderstorm",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Thunderstorm@2x.png"
+  },
+  "weather=weather-front--warm": {
+    "nodeId": "83:14889",
+    "name": "Weather=Weather-front--warm",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Weather-front--warm@2x.png"
+  },
+  "weather=weather-front--stationary": {
+    "nodeId": "83:14891",
+    "name": "Weather=Weather-front--stationary",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Weather-front--stationary@2x.png"
+  },
+  "weather=weather-front--cold": {
+    "nodeId": "83:14893",
+    "name": "Weather=Weather-front--cold",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Weather-front--cold@2x.png"
+  },
+  "weather=wave-period": {
+    "nodeId": "83:14895",
+    "name": "Weather=Wave-period",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Wave-period@2x.png"
+  },
+  "weather=wave-height": {
+    "nodeId": "83:14897",
+    "name": "Weather=Wave-height",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Wave-height@2x.png"
+  },
+  "weather=wave-direction": {
+    "nodeId": "83:14899",
+    "name": "Weather=Wave-direction",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Wave-direction@2x.png"
+  },
+  "weather=uv-index--filled": {
+    "nodeId": "83:14901",
+    "name": "Weather=Uv-index--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Uv-index--filled@2x.png"
+  },
+  "weather=uv-index--alt": {
+    "nodeId": "83:14903",
+    "name": "Weather=Uv-index--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Uv-index--alt@2x.png"
+  },
+  "weather=uv-index": {
+    "nodeId": "83:14905",
+    "name": "Weather=Uv-index",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Uv-index@2x.png"
+  },
+  "weather=tsunami": {
+    "nodeId": "83:14907",
+    "name": "Weather=Tsunami",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tsunami@2x.png"
+  },
+  "weather=tropical-warning": {
+    "nodeId": "83:14909",
+    "name": "Weather=Tropical-warning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tropical-warning@2x.png"
+  },
+  "weather=tropical-storm--tracks": {
+    "nodeId": "83:14911",
+    "name": "Weather=Tropical-storm--tracks",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tropical-storm--tracks@2x.png"
+  },
+  "weather=tropical-storm--model-tracks": {
+    "nodeId": "83:14913",
+    "name": "Weather=Tropical-storm--model-tracks",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tropical-storm--model-tracks@2x.png"
+  },
+  "weather=wintry-mix": {
+    "nodeId": "83:14915",
+    "name": "Weather=Wintry-mix",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Wintry-mix@2x.png"
+  },
+  "weather=winter-warning": {
+    "nodeId": "83:14917",
+    "name": "Weather=Winter-warning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Winter-warning@2x.png"
+  },
+  "weather=windy--strong": {
+    "nodeId": "83:14919",
+    "name": "Weather=Windy--strong",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Windy--strong@2x.png"
+  },
+  "weather=windy--snow": {
+    "nodeId": "83:14921",
+    "name": "Weather=Windy--snow",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Windy--snow@2x.png"
+  },
+  "weather=windy--dust": {
+    "nodeId": "83:14923",
+    "name": "Weather=Windy--dust",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Windy--dust@2x.png"
+  },
+  "weather=windy": {
+    "nodeId": "83:14925",
+    "name": "Weather=Windy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Windy@2x.png"
+  },
+  "weather=wind-stream": {
+    "nodeId": "83:14927",
+    "name": "Weather=Wind-stream",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Wind-stream@2x.png"
+  },
+  "weather=wind-power": {
+    "nodeId": "83:14929",
+    "name": "Weather=Wind-power",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Wind-power@2x.png"
+  },
+  "weather=wind-gusts": {
+    "nodeId": "83:14931",
+    "name": "Weather=Wind-gusts",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Wind-gusts@2x.png"
+  },
+  "weather=weather-station": {
+    "nodeId": "83:14933",
+    "name": "Weather=Weather-station",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Weather-station@2x.png"
+  },
+  "weather=map-boundary--vegetation": {
+    "nodeId": "83:14935",
+    "name": "Weather=Map-boundary--vegetation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Map-boundary--vegetation@2x.png"
+  },
+  "weather=tree--fall-risk": {
+    "nodeId": "83:14937",
+    "name": "Weather=Tree--fall-risk",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Tree--fall-risk@2x.png"
+  },
+  "weather=vegetation--asset": {
+    "nodeId": "83:14939",
+    "name": "Weather=Vegetation--asset",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Weather=Vegetation--asset@2x.png"
+  },
+  "user=accessibility--alt": {
+    "nodeId": "83:14944",
+    "name": "User=Accessibility--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Accessibility--alt@2x.png"
+  },
+  "user=accessibility--color--filled": {
+    "nodeId": "83:14946",
+    "name": "User=Accessibility--color--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Accessibility--color--filled@2x.png"
+  },
+  "user=accessibility--color": {
+    "nodeId": "83:14948",
+    "name": "User=Accessibility--color",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Accessibility--color@2x.png"
+  },
+  "user=accessibility": {
+    "nodeId": "83:14950",
+    "name": "User=Accessibility",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Accessibility@2x.png"
+  },
+  "user=collaborate": {
+    "nodeId": "83:14952",
+    "name": "User=Collaborate",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Collaborate@2x.png"
+  },
+  "user=cough": {
+    "nodeId": "83:14954",
+    "name": "User=Cough",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Cough@2x.png"
+  },
+  "user=credentials": {
+    "nodeId": "83:14956",
+    "name": "User=Credentials",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Credentials@2x.png"
+  },
+  "user=dog-walker": {
+    "nodeId": "83:14958",
+    "name": "User=Dog-walker",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Dog-walker@2x.png"
+  },
+  "user=education": {
+    "nodeId": "83:14960",
+    "name": "User=Education",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Education@2x.png"
+  },
+  "user=events--alt": {
+    "nodeId": "83:14962",
+    "name": "User=Events--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Events--alt@2x.png"
+  },
+  "user=events": {
+    "nodeId": "83:14964",
+    "name": "User=Events",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Events@2x.png"
+  },
+  "user=face--activated--add": {
+    "nodeId": "83:14966",
+    "name": "User=Face--activated--add",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--activated--add@2x.png"
+  },
+  "user=face--activated--filled": {
+    "nodeId": "83:14968",
+    "name": "User=Face--activated--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--activated--filled@2x.png"
+  },
+  "user=face--activated": {
+    "nodeId": "83:14970",
+    "name": "User=Face--activated",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--activated@2x.png"
+  },
+  "user=face--add": {
+    "nodeId": "83:14972",
+    "name": "User=Face--add",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--add@2x.png"
+  },
+  "user=face--cool": {
+    "nodeId": "83:14974",
+    "name": "User=Face--cool",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--cool@2x.png"
+  },
+  "user=face--dissatisfied--filled": {
+    "nodeId": "83:14976",
+    "name": "User=Face--dissatisfied--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--dissatisfied--filled@2x.png"
+  },
+  "user=face--dissatisfied": {
+    "nodeId": "83:14978",
+    "name": "User=Face--dissatisfied",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--dissatisfied@2x.png"
+  },
+  "user=face--dizzy--filled": {
+    "nodeId": "83:14980",
+    "name": "User=Face--dizzy--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--dizzy--filled@2x.png"
+  },
+  "user=face--dizzy": {
+    "nodeId": "83:14982",
+    "name": "User=Face--dizzy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--dizzy@2x.png"
+  },
+  "user=face--mask": {
+    "nodeId": "83:14984",
+    "name": "User=Face--mask",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--mask@2x.png"
+  },
+  "user=face--neutral--filled": {
+    "nodeId": "83:14986",
+    "name": "User=Face--neutral--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--neutral--filled@2x.png"
+  },
+  "user=face--neutral": {
+    "nodeId": "83:14988",
+    "name": "User=Face--neutral",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--neutral@2x.png"
+  },
+  "user=face--pending--filled": {
+    "nodeId": "83:14990",
+    "name": "User=Face--pending--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--pending--filled@2x.png"
+  },
+  "user=face--pending": {
+    "nodeId": "83:14992",
+    "name": "User=Face--pending",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--pending@2x.png"
+  },
+  "user=face--satisfied--filled": {
+    "nodeId": "83:14994",
+    "name": "User=Face--satisfied--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--satisfied--filled@2x.png"
+  },
+  "user=face--satisfied": {
+    "nodeId": "83:14996",
+    "name": "User=Face--satisfied",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--satisfied@2x.png"
+  },
+  "user=face--wink--filled": {
+    "nodeId": "83:14998",
+    "name": "User=Face--wink--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--wink--filled@2x.png"
+  },
+  "user=face--wink": {
+    "nodeId": "83:15000",
+    "name": "User=Face--wink",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Face--wink@2x.png"
+  },
+  "user=group": {
+    "nodeId": "83:15002",
+    "name": "User=Group",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Group@2x.png"
+  },
+  "user=gender--male": {
+    "nodeId": "83:15004",
+    "name": "User=Gender--male",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Gender--male@2x.png"
+  },
+  "user=gender--female": {
+    "nodeId": "83:15006",
+    "name": "User=Gender--female",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Gender--female@2x.png"
+  },
+  "user=friendship": {
+    "nodeId": "83:15008",
+    "name": "User=Friendship",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Friendship@2x.png"
+  },
+  "user=group--presentation": {
+    "nodeId": "83:15010",
+    "name": "User=Group--presentation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Group--presentation@2x.png"
+  },
+  "user=identification": {
+    "nodeId": "83:15012",
+    "name": "User=Identification",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Identification@2x.png"
+  },
+  "user=partnership": {
+    "nodeId": "83:15014",
+    "name": "User=Partnership",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Partnership@2x.png"
+  },
+  "user=person--favorite": {
+    "nodeId": "83:15016",
+    "name": "User=Person--favorite",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Person--favorite@2x.png"
+  },
+  "user=person": {
+    "nodeId": "83:15018",
+    "name": "User=Person",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Person@2x.png"
+  },
+  "user=sight": {
+    "nodeId": "83:15020",
+    "name": "User=Sight",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Sight@2x.png"
+  },
+  "user=transgender": {
+    "nodeId": "83:15022",
+    "name": "User=Transgender",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Transgender@2x.png"
+  },
+  "user=user--follow": {
+    "nodeId": "83:15024",
+    "name": "User=User--follow",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--follow@2x.png"
+  },
+  "user=user--filled": {
+    "nodeId": "83:15026",
+    "name": "User=User--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--filled@2x.png"
+  },
+  "user=user--favorite--alt--filled": {
+    "nodeId": "83:15028",
+    "name": "User=User--favorite--alt--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--favorite--alt--filled@2x.png"
+  },
+  "user=user--favorite--alt": {
+    "nodeId": "83:15030",
+    "name": "User=User--favorite--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--favorite--alt@2x.png"
+  },
+  "user=user--favorite": {
+    "nodeId": "83:15032",
+    "name": "User=User--favorite",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--favorite@2x.png"
+  },
+  "user=user--data": {
+    "nodeId": "83:15034",
+    "name": "User=User--data",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--data@2x.png"
+  },
+  "user=user--certification": {
+    "nodeId": "83:15036",
+    "name": "User=User--certification",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--certification@2x.png"
+  },
+  "user=user--avatar--filled--alt": {
+    "nodeId": "83:15038",
+    "name": "User=User--avatar--filled--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--avatar--filled--alt@2x.png"
+  },
+  "user=user--avatar--filled": {
+    "nodeId": "83:15040",
+    "name": "User=User--avatar--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--avatar--filled@2x.png"
+  },
+  "user=user--avatar": {
+    "nodeId": "83:15042",
+    "name": "User=User--avatar",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--avatar@2x.png"
+  },
+  "user=user--admin": {
+    "nodeId": "83:15044",
+    "name": "User=User--admin",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--admin@2x.png"
+  },
+  "user=user--activity": {
+    "nodeId": "83:15046",
+    "name": "User=User--activity",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--activity@2x.png"
+  },
+  "user=user--access": {
+    "nodeId": "83:15048",
+    "name": "User=User--access",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--access@2x.png"
+  },
+  "user=user": {
+    "nodeId": "83:15050",
+    "name": "User=User",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User@2x.png"
+  },
+  "user=voice-activate": {
+    "nodeId": "83:15052",
+    "name": "User=Voice-activate",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=Voice-activate@2x.png"
+  },
+  "user=user-profile--alt": {
+    "nodeId": "83:15054",
+    "name": "User=User-profile--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User-profile--alt@2x.png"
+  },
+  "user=user--x-ray": {
+    "nodeId": "83:15056",
+    "name": "User=User--x-ray",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--x-ray@2x.png"
+  },
+  "user=user--speaker": {
+    "nodeId": "83:15058",
+    "name": "User=User--speaker",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--speaker@2x.png"
+  },
+  "user=user--simulation": {
+    "nodeId": "83:15060",
+    "name": "User=User--simulation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--simulation@2x.png"
+  },
+  "user=user--settings": {
+    "nodeId": "83:15062",
+    "name": "User=User--settings",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--settings@2x.png"
+  },
+  "user=user--service-desk": {
+    "nodeId": "83:15064",
+    "name": "User=User--service-desk",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--service-desk@2x.png"
+  },
+  "user=user--role": {
+    "nodeId": "83:15066",
+    "name": "User=User--role",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--role@2x.png"
+  },
+  "user=user--profile": {
+    "nodeId": "83:15068",
+    "name": "User=User--profile",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--profile@2x.png"
+  },
+  "user=user--online": {
+    "nodeId": "83:15070",
+    "name": "User=User--online",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--online@2x.png"
+  },
+  "user=user--multiple": {
+    "nodeId": "83:15072",
+    "name": "User=User--multiple",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--multiple@2x.png"
+  },
+  "user=user--military": {
+    "nodeId": "83:15074",
+    "name": "User=User--military",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--military@2x.png"
+  },
+  "user=user--identification": {
+    "nodeId": "83:15076",
+    "name": "User=User--identification",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/User=User--identification@2x.png"
+  },
+  "travel=airline--digital-gate": {
+    "nodeId": "83:15081",
+    "name": "Travel=Airline--digital-gate",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Airline--digital-gate@2x.png"
+  },
+  "travel=airline--manage-gates": {
+    "nodeId": "83:15083",
+    "name": "Travel=Airline--manage-gates",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Airline--manage-gates@2x.png"
+  },
+  "travel=airline--passenger-care": {
+    "nodeId": "83:15085",
+    "name": "Travel=Airline--passenger-care",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Airline--passenger-care@2x.png"
+  },
+  "travel=airline--rapid-board": {
+    "nodeId": "83:15087",
+    "name": "Travel=Airline--rapid-board",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Airline--rapid-board@2x.png"
+  },
+  "travel=airport--01": {
+    "nodeId": "83:15089",
+    "name": "Travel=Airport--01",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Airport--01@2x.png"
+  },
+  "travel=airport--02": {
+    "nodeId": "83:15091",
+    "name": "Travel=Airport--02",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Airport--02@2x.png"
+  },
+  "travel=airport-location": {
+    "nodeId": "83:15093",
+    "name": "Travel=Airport-location",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Airport-location@2x.png"
+  },
+  "travel=arrival": {
+    "nodeId": "83:15095",
+    "name": "Travel=Arrival",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Arrival@2x.png"
+  },
+  "travel=baggage-claim": {
+    "nodeId": "83:15097",
+    "name": "Travel=Baggage-claim",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Baggage-claim@2x.png"
+  },
+  "travel=bar": {
+    "nodeId": "83:15099",
+    "name": "Travel=Bar",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Bar@2x.png"
+  },
+  "travel=bicycle": {
+    "nodeId": "83:15101",
+    "name": "Travel=Bicycle",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Bicycle@2x.png"
+  },
+  "travel=boot": {
+    "nodeId": "83:15103",
+    "name": "Travel=Boot",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Boot@2x.png"
+  },
+  "travel=bus": {
+    "nodeId": "83:15105",
+    "name": "Travel=Bus",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Bus@2x.png"
+  },
+  "travel=cabin-care--alert": {
+    "nodeId": "83:15107",
+    "name": "Travel=Cabin-care--alert",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Cabin-care--alert@2x.png"
+  },
+  "travel=cabin-care--alt": {
+    "nodeId": "83:15109",
+    "name": "Travel=Cabin-care--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Cabin-care--alt@2x.png"
+  },
+  "travel=cabin-care": {
+    "nodeId": "83:15111",
+    "name": "Travel=Cabin-care",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Cabin-care@2x.png"
+  },
+  "travel=cafe": {
+    "nodeId": "83:15113",
+    "name": "Travel=Cafe",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Cafe@2x.png"
+  },
+  "travel=campsite": {
+    "nodeId": "83:15115",
+    "name": "Travel=Campsite",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Campsite@2x.png"
+  },
+  "travel=car--front": {
+    "nodeId": "83:15117",
+    "name": "Travel=Car--front",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Car--front@2x.png"
+  },
+  "travel=car": {
+    "nodeId": "83:15119",
+    "name": "Travel=Car",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Car@2x.png"
+  },
+  "travel=charging-station--filled": {
+    "nodeId": "83:15121",
+    "name": "Travel=Charging-station--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Charging-station--filled@2x.png"
+  },
+  "travel=charging-station": {
+    "nodeId": "83:15123",
+    "name": "Travel=Charging-station",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Charging-station@2x.png"
+  },
+  "travel=compass": {
+    "nodeId": "83:15125",
+    "name": "Travel=Compass",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Compass@2x.png"
+  },
+  "travel=construction": {
+    "nodeId": "83:15127",
+    "name": "Travel=Construction",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Construction@2x.png"
+  },
+  "travel=crossroads": {
+    "nodeId": "83:15129",
+    "name": "Travel=Crossroads",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Crossroads@2x.png"
+  },
+  "travel=crowd-report--filled": {
+    "nodeId": "83:15131",
+    "name": "Travel=Crowd-report--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Crowd-report--filled@2x.png"
+  },
+  "travel=crowd-report": {
+    "nodeId": "83:15133",
+    "name": "Travel=Crowd-report",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Crowd-report@2x.png"
+  },
+  "travel=cyclist": {
+    "nodeId": "83:15135",
+    "name": "Travel=Cyclist",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Cyclist@2x.png"
+  },
+  "travel=delivery-truck": {
+    "nodeId": "83:15137",
+    "name": "Travel=Delivery-truck",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Delivery-truck@2x.png"
+  },
+  "travel=departure": {
+    "nodeId": "83:15139",
+    "name": "Travel=Departure",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Departure@2x.png"
+  },
+  "travel=direction--bear-right--01--filled": {
+    "nodeId": "83:15141",
+    "name": "Travel=Direction--bear-right--01--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--bear-right--01--filled@2x.png"
+  },
+  "travel=direction--bear-right--02--filled": {
+    "nodeId": "83:15143",
+    "name": "Travel=Direction--bear-right--02--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--bear-right--02--filled@2x.png"
+  },
+  "travel=direction--bear-right--02": {
+    "nodeId": "83:15145",
+    "name": "Travel=Direction--bear-right--02",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--bear-right--02@2x.png"
+  },
+  "travel=direction--curve--filled": {
+    "nodeId": "83:15147",
+    "name": "Travel=Direction--curve--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--curve--filled@2x.png"
+  },
+  "travel=direction--curve": {
+    "nodeId": "83:15149",
+    "name": "Travel=Direction--curve",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--curve@2x.png"
+  },
+  "travel=direction--fork--filled": {
+    "nodeId": "83:15151",
+    "name": "Travel=Direction--fork--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--fork--filled@2x.png"
+  },
+  "travel=direction--fork": {
+    "nodeId": "83:15153",
+    "name": "Travel=Direction--fork",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--fork@2x.png"
+  },
+  "travel=direction--loop-left": {
+    "nodeId": "83:15155",
+    "name": "Travel=Direction--loop-left",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--loop-left@2x.png"
+  },
+  "travel=direction--bear-right--01": {
+    "nodeId": "83:15157",
+    "name": "Travel=Direction--bear-right--01",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--bear-right--01@2x.png"
+  },
+  "travel=direction--rotary--right--filled": {
+    "nodeId": "83:15159",
+    "name": "Travel=Direction--rotary--right--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--rotary--right--filled@2x.png"
+  },
+  "travel=direction--loop-left--filled": {
+    "nodeId": "83:15161",
+    "name": "Travel=Direction--loop-left--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--loop-left--filled@2x.png"
+  },
+  "travel=direction--loop-right--filled": {
+    "nodeId": "83:15163",
+    "name": "Travel=Direction--loop-right--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--loop-right--filled@2x.png"
+  },
+  "travel=direction--loop-right": {
+    "nodeId": "83:15165",
+    "name": "Travel=Direction--loop-right",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--loop-right@2x.png"
+  },
+  "travel=direction--merge--filled": {
+    "nodeId": "83:15167",
+    "name": "Travel=Direction--merge--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--merge--filled@2x.png"
+  },
+  "travel=direction--merge": {
+    "nodeId": "83:15169",
+    "name": "Travel=Direction--merge",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--merge@2x.png"
+  },
+  "travel=direction--right--01--filled": {
+    "nodeId": "83:15171",
+    "name": "Travel=Direction--right--01--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--right--01--filled@2x.png"
+  },
+  "travel=direction--right--01": {
+    "nodeId": "83:15173",
+    "name": "Travel=Direction--right--01",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--right--01@2x.png"
+  },
+  "travel=direction--right--02--filled": {
+    "nodeId": "83:15175",
+    "name": "Travel=Direction--right--02--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--right--02--filled@2x.png"
+  },
+  "travel=direction--right--02": {
+    "nodeId": "83:15177",
+    "name": "Travel=Direction--right--02",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--right--02@2x.png"
+  },
+  "travel=direction--rotary--first-right--filled": {
+    "nodeId": "83:15179",
+    "name": "Travel=Direction--rotary--first-right--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--rotary--first-right--filled@2x.png"
+  },
+  "travel=direction--rotary--first-right": {
+    "nodeId": "83:15181",
+    "name": "Travel=Direction--rotary--first-right",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--rotary--first-right@2x.png"
+  },
+  "travel=direction--rotary--right": {
+    "nodeId": "83:15183",
+    "name": "Travel=Direction--rotary--right",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--rotary--right@2x.png"
+  },
+  "travel=direction--rotary--straight--filled": {
+    "nodeId": "83:15185",
+    "name": "Travel=Direction--rotary--straight--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--rotary--straight--filled@2x.png"
+  },
+  "travel=direction--rotary--straight": {
+    "nodeId": "83:15187",
+    "name": "Travel=Direction--rotary--straight",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--rotary--straight@2x.png"
+  },
+  "travel=direction--sharp-turn--filled": {
+    "nodeId": "83:15189",
+    "name": "Travel=Direction--sharp-turn--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--sharp-turn--filled@2x.png"
+  },
+  "travel=direction--sharp-turn": {
+    "nodeId": "83:15191",
+    "name": "Travel=Direction--sharp-turn",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--sharp-turn@2x.png"
+  },
+  "travel=direction--straight--filled": {
+    "nodeId": "83:15193",
+    "name": "Travel=Direction--straight--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--straight--filled@2x.png"
+  },
+  "travel=direction--straight--right--filled": {
+    "nodeId": "83:15195",
+    "name": "Travel=Direction--straight--right--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--straight--right--filled@2x.png"
+  },
+  "travel=direction--straight--right": {
+    "nodeId": "83:15197",
+    "name": "Travel=Direction--straight--right",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--straight--right@2x.png"
+  },
+  "travel=direction--straight": {
+    "nodeId": "83:15199",
+    "name": "Travel=Direction--straight",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--straight@2x.png"
+  },
+  "travel=direction--u-turn--filled": {
+    "nodeId": "83:15201",
+    "name": "Travel=Direction--u-turn--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--u-turn--filled@2x.png"
+  },
+  "travel=direction--u-turn": {
+    "nodeId": "83:15203",
+    "name": "Travel=Direction--u-turn",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Direction--u-turn@2x.png"
+  },
+  "travel=earth--americas--filled": {
+    "nodeId": "83:15205",
+    "name": "Travel=Earth--americas--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth--americas--filled@2x.png"
+  },
+  "travel=earth--americas": {
+    "nodeId": "83:15207",
+    "name": "Travel=Earth--americas",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth--americas@2x.png"
+  },
+  "travel=earth--europe-africa--filled": {
+    "nodeId": "83:15209",
+    "name": "Travel=Earth--europe-africa--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth--europe-africa--filled@2x.png"
+  },
+  "travel=earth--europe-africa": {
+    "nodeId": "83:15211",
+    "name": "Travel=Earth--europe-africa",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth--europe-africa@2x.png"
+  },
+  "travel=earth--filled": {
+    "nodeId": "83:15213",
+    "name": "Travel=Earth--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth--filled@2x.png"
+  },
+  "travel=earth--southeast-asia--filled": {
+    "nodeId": "83:15215",
+    "name": "Travel=Earth--southeast-asia--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth--southeast-asia--filled@2x.png"
+  },
+  "travel=earth--southeast-asia": {
+    "nodeId": "83:15217",
+    "name": "Travel=Earth--southeast-asia",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth--southeast-asia@2x.png"
+  },
+  "travel=earth": {
+    "nodeId": "83:15219",
+    "name": "Travel=Earth",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Earth@2x.png"
+  },
+  "travel=fire": {
+    "nodeId": "83:15221",
+    "name": "Travel=Fire",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Fire@2x.png"
+  },
+  "travel=flagging-taxi": {
+    "nodeId": "83:15223",
+    "name": "Travel=Flagging-taxi",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Flagging-taxi@2x.png"
+  },
+  "travel=flight--international": {
+    "nodeId": "83:15225",
+    "name": "Travel=Flight--international",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Flight--international@2x.png"
+  },
+  "travel=flight--roster": {
+    "nodeId": "83:15227",
+    "name": "Travel=Flight--roster",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Flight--roster@2x.png"
+  },
+  "travel=flight--schedule": {
+    "nodeId": "83:15229",
+    "name": "Travel=Flight--schedule",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Flight--schedule@2x.png"
+  },
+  "travel=hotel": {
+    "nodeId": "83:15231",
+    "name": "Travel=Hotel",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Hotel@2x.png"
+  },
+  "travel=hospital-bed": {
+    "nodeId": "83:15233",
+    "name": "Travel=Hospital-bed",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Hospital-bed@2x.png"
+  },
+  "travel=hospital": {
+    "nodeId": "83:15235",
+    "name": "Travel=Hospital",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Hospital@2x.png"
+  },
+  "travel=help-desk": {
+    "nodeId": "83:15237",
+    "name": "Travel=Help-desk",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Help-desk@2x.png"
+  },
+  "travel=helicopter": {
+    "nodeId": "83:15239",
+    "name": "Travel=Helicopter",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Helicopter@2x.png"
+  },
+  "travel=harbor": {
+    "nodeId": "83:15241",
+    "name": "Travel=Harbor",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Harbor@2x.png"
+  },
+  "travel=globe": {
+    "nodeId": "83:15243",
+    "name": "Travel=Globe",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Globe@2x.png"
+  },
+  "travel=gas-station--filled": {
+    "nodeId": "83:15245",
+    "name": "Travel=Gas-station--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Gas-station--filled@2x.png"
+  },
+  "travel=gas-station": {
+    "nodeId": "83:15247",
+    "name": "Travel=Gas-station",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Gas-station@2x.png"
+  },
+  "travel=location--hazard--filled": {
+    "nodeId": "83:15249",
+    "name": "Travel=Location--hazard--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--hazard--filled@2x.png"
+  },
+  "travel=location--hazard": {
+    "nodeId": "83:15251",
+    "name": "Travel=Location--hazard",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--hazard@2x.png"
+  },
+  "travel=location--filled": {
+    "nodeId": "83:15253",
+    "name": "Travel=Location--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--filled@2x.png"
+  },
+  "travel=location--company--filled": {
+    "nodeId": "83:15255",
+    "name": "Travel=Location--company--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--company--filled@2x.png"
+  },
+  "travel=location--company": {
+    "nodeId": "83:15257",
+    "name": "Travel=Location--company",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--company@2x.png"
+  },
+  "travel=location": {
+    "nodeId": "83:15259",
+    "name": "Travel=Location",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location@2x.png"
+  },
+  "travel=lifesaver": {
+    "nodeId": "83:15261",
+    "name": "Travel=Lifesaver",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Lifesaver@2x.png"
+  },
+  "travel=location--star--filled": {
+    "nodeId": "83:15263",
+    "name": "Travel=Location--star--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--star--filled@2x.png"
+  },
+  "travel=location--star": {
+    "nodeId": "83:15265",
+    "name": "Travel=Location--star",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--star@2x.png"
+  },
+  "travel=location--person--filled": {
+    "nodeId": "83:15267",
+    "name": "Travel=Location--person--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--person--filled@2x.png"
+  },
+  "travel=location--person": {
+    "nodeId": "83:15269",
+    "name": "Travel=Location--person",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--person@2x.png"
+  },
+  "travel=location--heart--filled": {
+    "nodeId": "83:15271",
+    "name": "Travel=Location--heart--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--heart--filled@2x.png"
+  },
+  "travel=location--heart": {
+    "nodeId": "83:15273",
+    "name": "Travel=Location--heart",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--heart@2x.png"
+  },
+  "travel=location--save": {
+    "nodeId": "83:15275",
+    "name": "Travel=Location--save",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Location--save@2x.png"
+  },
+  "travel=map": {
+    "nodeId": "83:15277",
+    "name": "Travel=Map",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Map@2x.png"
+  },
+  "travel=map--center": {
+    "nodeId": "83:15279",
+    "name": "Travel=Map--center",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Map--center@2x.png"
+  },
+  "travel=map--identify": {
+    "nodeId": "83:15281",
+    "name": "Travel=Map--identify",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Map--identify@2x.png"
+  },
+  "travel=milestone": {
+    "nodeId": "83:15283",
+    "name": "Travel=Milestone",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Milestone@2x.png"
+  },
+  "travel=map-boundary": {
+    "nodeId": "83:15285",
+    "name": "Travel=Map-boundary",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Map-boundary@2x.png"
+  },
+  "travel=military-camp": {
+    "nodeId": "83:15287",
+    "name": "Travel=Military-camp",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Military-camp@2x.png"
+  },
+  "travel=navaid--vortac": {
+    "nodeId": "83:15289",
+    "name": "Travel=Navaid--vortac",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--vortac@2x.png"
+  },
+  "travel=navaid--vordme": {
+    "nodeId": "83:15291",
+    "name": "Travel=Navaid--vordme",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--vordme@2x.png"
+  },
+  "travel=navaid--vor": {
+    "nodeId": "83:15293",
+    "name": "Travel=Navaid--vor",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--vor@2x.png"
+  },
+  "travel=navaid--vhfor": {
+    "nodeId": "83:15295",
+    "name": "Travel=Navaid--vhfor",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--vhfor@2x.png"
+  },
+  "travel=navaid--tacan": {
+    "nodeId": "83:15297",
+    "name": "Travel=Navaid--tacan",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--tacan@2x.png"
+  },
+  "travel=navaid--seaplane": {
+    "nodeId": "83:15299",
+    "name": "Travel=Navaid--seaplane",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--seaplane@2x.png"
+  },
+  "travel=navaid--private": {
+    "nodeId": "83:15301",
+    "name": "Travel=Navaid--private",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--private@2x.png"
+  },
+  "travel=navaid--ndb-dme": {
+    "nodeId": "83:15303",
+    "name": "Travel=Navaid--ndb-dme",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--ndb-dme@2x.png"
+  },
+  "travel=navaid--ndb": {
+    "nodeId": "83:15305",
+    "name": "Travel=Navaid--ndb",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--ndb@2x.png"
+  },
+  "travel=navaid--military-civil": {
+    "nodeId": "83:15307",
+    "name": "Travel=Navaid--military-civil",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--military-civil@2x.png"
+  },
+  "travel=navaid--military": {
+    "nodeId": "83:15309",
+    "name": "Travel=Navaid--military",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--military@2x.png"
+  },
+  "travel=navaid--helipad": {
+    "nodeId": "83:15311",
+    "name": "Travel=Navaid--helipad",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--helipad@2x.png"
+  },
+  "travel=navaid--dme": {
+    "nodeId": "83:15313",
+    "name": "Travel=Navaid--dme",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--dme@2x.png"
+  },
+  "travel=navaid--civil": {
+    "nodeId": "83:15315",
+    "name": "Travel=Navaid--civil",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Navaid--civil@2x.png"
+  },
+  "travel=mountain": {
+    "nodeId": "83:15317",
+    "name": "Travel=Mountain",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Mountain@2x.png"
+  },
+  "travel=monument": {
+    "nodeId": "83:15319",
+    "name": "Travel=Monument",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Monument@2x.png"
+  },
+  "travel=police": {
+    "nodeId": "83:15321",
+    "name": "Travel=Police",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Police@2x.png"
+  },
+  "travel=plane--sea": {
+    "nodeId": "83:15323",
+    "name": "Travel=Plane--sea",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Plane--sea@2x.png"
+  },
+  "travel=plane--private": {
+    "nodeId": "83:15325",
+    "name": "Travel=Plane--private",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Plane--private@2x.png"
+  },
+  "travel=plane": {
+    "nodeId": "83:15327",
+    "name": "Travel=Plane",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Plane@2x.png"
+  },
+  "travel=picnic-area": {
+    "nodeId": "83:15329",
+    "name": "Travel=Picnic-area",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Picnic-area@2x.png"
+  },
+  "travel=pedestrian-child": {
+    "nodeId": "83:15331",
+    "name": "Travel=Pedestrian-child",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Pedestrian-child@2x.png"
+  },
+  "travel=pedestrian--family": {
+    "nodeId": "83:15333",
+    "name": "Travel=Pedestrian--family",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Pedestrian--family@2x.png"
+  },
+  "travel=pedestrian": {
+    "nodeId": "83:15335",
+    "name": "Travel=Pedestrian",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Pedestrian@2x.png"
+  },
+  "travel=passenger--plus": {
+    "nodeId": "83:15337",
+    "name": "Travel=Passenger--plus",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Passenger--plus@2x.png"
+  },
+  "travel=passenger--drinks": {
+    "nodeId": "83:15339",
+    "name": "Travel=Passenger--drinks",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Passenger--drinks@2x.png"
+  },
+  "travel=palm-tree": {
+    "nodeId": "83:15341",
+    "name": "Travel=Palm-tree",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Palm-tree@2x.png"
+  },
+  "travel=stop-sign--filled": {
+    "nodeId": "83:15343",
+    "name": "Travel=Stop-sign--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Stop-sign--filled@2x.png"
+  },
+  "travel=stop-sign": {
+    "nodeId": "83:15345",
+    "name": "Travel=Stop-sign",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Stop-sign@2x.png"
+  },
+  "travel=shuttle": {
+    "nodeId": "83:15347",
+    "name": "Travel=Shuttle",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Shuttle@2x.png"
+  },
+  "travel=service-desk": {
+    "nodeId": "83:15349",
+    "name": "Travel=Service-desk",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Service-desk@2x.png"
+  },
+  "travel=scooter--front": {
+    "nodeId": "83:15351",
+    "name": "Travel=Scooter--front",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Scooter--front@2x.png"
+  },
+  "travel=scooter": {
+    "nodeId": "83:15353",
+    "name": "Travel=Scooter",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Scooter@2x.png"
+  },
+  "travel=road--weather": {
+    "nodeId": "83:15355",
+    "name": "Travel=Road--weather",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Road--weather@2x.png"
+  },
+  "travel=road": {
+    "nodeId": "83:15357",
+    "name": "Travel=Road",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Road@2x.png"
+  },
+  "travel=restaurant--fine": {
+    "nodeId": "83:15359",
+    "name": "Travel=Restaurant--fine",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Restaurant--fine@2x.png"
+  },
+  "travel=restaurant": {
+    "nodeId": "83:15361",
+    "name": "Travel=Restaurant",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Restaurant@2x.png"
+  },
+  "travel=swim": {
+    "nodeId": "83:15363",
+    "name": "Travel=Swim",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Swim@2x.png"
+  },
+  "travel=tank": {
+    "nodeId": "83:15365",
+    "name": "Travel=Tank",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Tank@2x.png"
+  },
+  "travel=train--profile": {
+    "nodeId": "83:15367",
+    "name": "Travel=Train--profile",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Train--profile@2x.png"
+  },
+  "travel=train--heart": {
+    "nodeId": "83:15369",
+    "name": "Travel=Train--heart",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Train--heart@2x.png"
+  },
+  "travel=train": {
+    "nodeId": "83:15371",
+    "name": "Travel=Train",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Train@2x.png"
+  },
+  "travel=traffic-cone": {
+    "nodeId": "83:15373",
+    "name": "Travel=Traffic-cone",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Traffic-cone@2x.png"
+  },
+  "travel=traffic--weather-incident": {
+    "nodeId": "83:15375",
+    "name": "Travel=Traffic--weather-incident",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Traffic--weather-incident@2x.png"
+  },
+  "travel=traffic--incident": {
+    "nodeId": "83:15377",
+    "name": "Travel=Traffic--incident",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Traffic--incident@2x.png"
+  },
+  "travel=traffic--flow-incident": {
+    "nodeId": "83:15379",
+    "name": "Travel=Traffic--flow-incident",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Traffic--flow-incident@2x.png"
+  },
+  "travel=traffic--flow": {
+    "nodeId": "83:15381",
+    "name": "Travel=Traffic--flow",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Traffic--flow@2x.png"
+  },
+  "travel=traffic--event": {
+    "nodeId": "83:15383",
+    "name": "Travel=Traffic--event",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Traffic--event@2x.png"
+  },
+  "travel=theater": {
+    "nodeId": "83:15385",
+    "name": "Travel=Theater",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Theater@2x.png"
+  },
+  "travel=taxi": {
+    "nodeId": "83:15387",
+    "name": "Travel=Taxi",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Taxi@2x.png"
+  },
+  "travel=worship--muslim": {
+    "nodeId": "83:15389",
+    "name": "Travel=Worship--muslim",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Worship--muslim@2x.png"
+  },
+  "travel=worship--jewish": {
+    "nodeId": "83:15391",
+    "name": "Travel=Worship--jewish",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Worship--jewish@2x.png"
+  },
+  "travel=worship--christian": {
+    "nodeId": "83:15393",
+    "name": "Travel=Worship--christian",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Worship--christian@2x.png"
+  },
+  "travel=worship": {
+    "nodeId": "83:15395",
+    "name": "Travel=Worship",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Worship@2x.png"
+  },
+  "travel=van": {
+    "nodeId": "83:15397",
+    "name": "Travel=Van",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Van@2x.png"
+  },
+  "travel=tram": {
+    "nodeId": "83:15399",
+    "name": "Travel=Tram",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Tram@2x.png"
+  },
+  "travel=train--time": {
+    "nodeId": "83:15401",
+    "name": "Travel=Train--time",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Train--time@2x.png"
+  },
+  "travel=train--ticket": {
+    "nodeId": "83:15403",
+    "name": "Travel=Train--ticket",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Train--ticket@2x.png"
+  },
+  "travel=train--speed": {
+    "nodeId": "83:15405",
+    "name": "Travel=Train--speed",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Travel=Train--speed@2x.png"
+  },
+  "modes=asleep--filled": {
+    "nodeId": "83:15410",
+    "name": "Modes=Asleep--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Asleep--filled@2x.png"
+  },
+  "modes=asleep": {
+    "nodeId": "83:15412",
+    "name": "Modes=Asleep",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Asleep@2x.png"
+  },
+  "modes=awake": {
+    "nodeId": "83:15414",
+    "name": "Modes=Awake",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Awake@2x.png"
+  },
+  "modes=carousel--horizontal": {
+    "nodeId": "83:15416",
+    "name": "Modes=Carousel--horizontal",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Carousel--horizontal@2x.png"
+  },
+  "modes=carousel--vertical": {
+    "nodeId": "83:15418",
+    "name": "Modes=Carousel--vertical",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Carousel--vertical@2x.png"
+  },
+  "modes=checkbox--checked--filled": {
+    "nodeId": "83:15420",
+    "name": "Modes=Checkbox--checked--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Checkbox--checked--filled@2x.png"
+  },
+  "modes=checkbox--checked": {
+    "nodeId": "83:15422",
+    "name": "Modes=Checkbox--checked",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Checkbox--checked@2x.png"
+  },
+  "modes=checkbox--indeterminate--filled": {
+    "nodeId": "83:15424",
+    "name": "Modes=Checkbox--indeterminate--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Checkbox--indeterminate--filled@2x.png"
+  },
+  "modes=checkbox--indeterminate": {
+    "nodeId": "83:15426",
+    "name": "Modes=Checkbox--indeterminate",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Checkbox--indeterminate@2x.png"
+  },
+  "modes=checkbox": {
+    "nodeId": "83:15428",
+    "name": "Modes=Checkbox",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Checkbox@2x.png"
+  },
+  "modes=column": {
+    "nodeId": "83:15430",
+    "name": "Modes=Column",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Column@2x.png"
+  },
+  "modes=favorite--filled": {
+    "nodeId": "83:15432",
+    "name": "Modes=Favorite--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Favorite--filled@2x.png"
+  },
+  "modes=favorite--half": {
+    "nodeId": "83:15434",
+    "name": "Modes=Favorite--half",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Favorite--half@2x.png"
+  },
+  "modes=favorite": {
+    "nodeId": "83:15436",
+    "name": "Modes=Favorite",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Favorite@2x.png"
+  },
+  "modes=flash--filled": {
+    "nodeId": "83:15438",
+    "name": "Modes=Flash--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Flash--filled@2x.png"
+  },
+  "modes=flash--off--filled": {
+    "nodeId": "83:15440",
+    "name": "Modes=Flash--off--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Flash--off--filled@2x.png"
+  },
+  "modes=flash--off": {
+    "nodeId": "83:15442",
+    "name": "Modes=Flash--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Flash--off@2x.png"
+  },
+  "modes=flash": {
+    "nodeId": "83:15444",
+    "name": "Modes=Flash",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Flash@2x.png"
+  },
+  "modes=grid": {
+    "nodeId": "83:15446",
+    "name": "Modes=Grid",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Grid@2x.png"
+  },
+  "modes=light": {
+    "nodeId": "83:15448",
+    "name": "Modes=Light",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Light@2x.png"
+  },
+  "modes=light--filled": {
+    "nodeId": "83:15450",
+    "name": "Modes=Light--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Light--filled@2x.png"
+  },
+  "modes=list": {
+    "nodeId": "83:15452",
+    "name": "Modes=List",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=List@2x.png"
+  },
+  "modes=notification--off--filled": {
+    "nodeId": "83:15454",
+    "name": "Modes=Notification--off--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Notification--off--filled@2x.png"
+  },
+  "modes=notification--off": {
+    "nodeId": "83:15456",
+    "name": "Modes=Notification--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Notification--off@2x.png"
+  },
+  "modes=notification--new": {
+    "nodeId": "83:15458",
+    "name": "Modes=Notification--new",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Notification--new@2x.png"
+  },
+  "modes=notification--filled": {
+    "nodeId": "83:15460",
+    "name": "Modes=Notification--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Notification--filled@2x.png"
+  },
+  "modes=notification": {
+    "nodeId": "83:15462",
+    "name": "Modes=Notification",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Notification@2x.png"
+  },
+  "modes=microphone--off--filled": {
+    "nodeId": "83:15464",
+    "name": "Modes=Microphone--off--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Microphone--off--filled@2x.png"
+  },
+  "modes=microphone--off": {
+    "nodeId": "83:15466",
+    "name": "Modes=Microphone--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Microphone--off@2x.png"
+  },
+  "modes=microphone--filled": {
+    "nodeId": "83:15468",
+    "name": "Modes=Microphone--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Microphone--filled@2x.png"
+  },
+  "modes=microphone": {
+    "nodeId": "83:15470",
+    "name": "Modes=Microphone",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Microphone@2x.png"
+  },
+  "modes=locked": {
+    "nodeId": "83:15472",
+    "name": "Modes=Locked",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Locked@2x.png"
+  },
+  "modes=phone--voice--filled": {
+    "nodeId": "83:15474",
+    "name": "Modes=Phone--voice--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--voice--filled@2x.png"
+  },
+  "modes=phone--voice": {
+    "nodeId": "83:15476",
+    "name": "Modes=Phone--voice",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--voice@2x.png"
+  },
+  "modes=phone--settings": {
+    "nodeId": "83:15478",
+    "name": "Modes=Phone--settings",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--settings@2x.png"
+  },
+  "modes=phone--outgoing--filled": {
+    "nodeId": "83:15480",
+    "name": "Modes=Phone--outgoing--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--outgoing--filled@2x.png"
+  },
+  "modes=phone--outgoing": {
+    "nodeId": "83:15482",
+    "name": "Modes=Phone--outgoing",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--outgoing@2x.png"
+  },
+  "modes=phone--off--filled": {
+    "nodeId": "83:15484",
+    "name": "Modes=Phone--off--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--off--filled@2x.png"
+  },
+  "modes=phone--off": {
+    "nodeId": "83:15486",
+    "name": "Modes=Phone--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--off@2x.png"
+  },
+  "modes=phone--incoming--filled": {
+    "nodeId": "83:15488",
+    "name": "Modes=Phone--incoming--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--incoming--filled@2x.png"
+  },
+  "modes=phone--incoming": {
+    "nodeId": "83:15490",
+    "name": "Modes=Phone--incoming",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--incoming@2x.png"
+  },
+  "modes=phone--filled": {
+    "nodeId": "83:15492",
+    "name": "Modes=Phone--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--filled@2x.png"
+  },
+  "modes=phone--block--filled": {
+    "nodeId": "83:15494",
+    "name": "Modes=Phone--block--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--block--filled@2x.png"
+  },
+  "modes=phone--block": {
+    "nodeId": "83:15496",
+    "name": "Modes=Phone--block",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--block@2x.png"
+  },
+  "modes=phone--application": {
+    "nodeId": "83:15498",
+    "name": "Modes=Phone--application",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone--application@2x.png"
+  },
+  "modes=phone": {
+    "nodeId": "83:15500",
+    "name": "Modes=Phone",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Phone@2x.png"
+  },
+  "modes=radio-button--checked": {
+    "nodeId": "83:15502",
+    "name": "Modes=Radio-button--checked",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Radio-button--checked@2x.png"
+  },
+  "modes=radio-button": {
+    "nodeId": "83:15504",
+    "name": "Modes=Radio-button",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Radio-button@2x.png"
+  },
+  "modes=star--half": {
+    "nodeId": "83:15506",
+    "name": "Modes=Star--half",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Star--half@2x.png"
+  },
+  "modes=star--filled": {
+    "nodeId": "83:15508",
+    "name": "Modes=Star--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Star--filled@2x.png"
+  },
+  "modes=star": {
+    "nodeId": "83:15510",
+    "name": "Modes=Star",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Star@2x.png"
+  },
+  "modes=screen--off": {
+    "nodeId": "83:15512",
+    "name": "Modes=Screen--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Screen--off@2x.png"
+  },
+  "modes=screen": {
+    "nodeId": "83:15514",
+    "name": "Modes=Screen",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Screen@2x.png"
+  },
+  "modes=row": {
+    "nodeId": "83:15516",
+    "name": "Modes=Row",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Row@2x.png"
+  },
+  "modes=thumbnail--2": {
+    "nodeId": "83:15518",
+    "name": "Modes=Thumbnail--2",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Thumbnail--2@2x.png"
+  },
+  "modes=thumbnail--1": {
+    "nodeId": "83:15520",
+    "name": "Modes=Thumbnail--1",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Thumbnail--1@2x.png"
+  },
+  "modes=thumbs-up--filled": {
+    "nodeId": "83:15522",
+    "name": "Modes=Thumbs-up--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Thumbs-up--filled@2x.png"
+  },
+  "modes=thumbs-up": {
+    "nodeId": "83:15524",
+    "name": "Modes=Thumbs-up",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Thumbs-up@2x.png"
+  },
+  "modes=thumbs-down--filled": {
+    "nodeId": "83:15526",
+    "name": "Modes=Thumbs-down--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Thumbs-down--filled@2x.png"
+  },
+  "modes=thumbs-down": {
+    "nodeId": "83:15528",
+    "name": "Modes=Thumbs-down",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Thumbs-down@2x.png"
+  },
+  "modes=view--off--filled": {
+    "nodeId": "83:15530",
+    "name": "Modes=View--off--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=View--off--filled@2x.png"
+  },
+  "modes=view--off": {
+    "nodeId": "83:15532",
+    "name": "Modes=View--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=View--off@2x.png"
+  },
+  "modes=view--mode-2": {
+    "nodeId": "83:15534",
+    "name": "Modes=View--mode-2",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=View--mode-2@2x.png"
+  },
+  "modes=view--mode-1": {
+    "nodeId": "83:15536",
+    "name": "Modes=View--mode-1",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=View--mode-1@2x.png"
+  },
+  "modes=view--filled": {
+    "nodeId": "83:15538",
+    "name": "Modes=View--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=View--filled@2x.png"
+  },
+  "modes=view": {
+    "nodeId": "83:15540",
+    "name": "Modes=View",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=View@2x.png"
+  },
+  "modes=video--off--filled": {
+    "nodeId": "83:15542",
+    "name": "Modes=Video--off--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Video--off--filled@2x.png"
+  },
+  "modes=video--off": {
+    "nodeId": "83:15544",
+    "name": "Modes=Video--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Video--off@2x.png"
+  },
+  "modes=video--filled": {
+    "nodeId": "83:15546",
+    "name": "Modes=Video--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Video--filled@2x.png"
+  },
+  "modes=video": {
+    "nodeId": "83:15548",
+    "name": "Modes=Video",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Video@2x.png"
+  },
+  "modes=trophy--filled": {
+    "nodeId": "83:15550",
+    "name": "Modes=Trophy--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Trophy--filled@2x.png"
+  },
+  "modes=trophy": {
+    "nodeId": "83:15552",
+    "name": "Modes=Trophy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Trophy@2x.png"
+  },
+  "modes=unlocked": {
+    "nodeId": "83:15554",
+    "name": "Modes=Unlocked",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Modes=Unlocked@2x.png"
+  },
+  "time=alarm--add": {
+    "nodeId": "83:15559",
+    "name": "Time=Alarm--add",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Alarm--add@2x.png"
+  },
+  "time=alarm--subtract": {
+    "nodeId": "83:15561",
+    "name": "Time=Alarm--subtract",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Alarm--subtract@2x.png"
+  },
+  "time=alarm": {
+    "nodeId": "83:15563",
+    "name": "Time=Alarm",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Alarm@2x.png"
+  },
+  "time=calendar--settings": {
+    "nodeId": "83:15565",
+    "name": "Time=Calendar--settings",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Calendar--settings@2x.png"
+  },
+  "time=calendar--tools": {
+    "nodeId": "83:15567",
+    "name": "Time=Calendar--tools",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Calendar--tools@2x.png"
+  },
+  "time=calendar--add--alt": {
+    "nodeId": "83:15569",
+    "name": "Time=Calendar--add--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Calendar--add--alt@2x.png"
+  },
+  "time=calendar--add": {
+    "nodeId": "83:15571",
+    "name": "Time=Calendar--add",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Calendar--add@2x.png"
+  },
+  "time=calendar": {
+    "nodeId": "83:15573",
+    "name": "Time=Calendar",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Calendar@2x.png"
+  },
+  "time=event--schedule": {
+    "nodeId": "83:15575",
+    "name": "Time=Event--schedule",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Event--schedule@2x.png"
+  },
+  "time=event": {
+    "nodeId": "83:15577",
+    "name": "Time=Event",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Event@2x.png"
+  },
+  "time=hourglass": {
+    "nodeId": "83:15579",
+    "name": "Time=Hourglass",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Hourglass@2x.png"
+  },
+  "time=reminder--medical": {
+    "nodeId": "83:15581",
+    "name": "Time=Reminder--medical",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Reminder--medical@2x.png"
+  },
+  "time=reminder": {
+    "nodeId": "83:15583",
+    "name": "Time=Reminder",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Reminder@2x.png"
+  },
+  "time=snooze": {
+    "nodeId": "83:15585",
+    "name": "Time=Snooze",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Snooze@2x.png"
+  },
+  "time=timer": {
+    "nodeId": "83:15587",
+    "name": "Time=Timer",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Timer@2x.png"
+  },
+  "time=time": {
+    "nodeId": "83:15589",
+    "name": "Time=Time",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Time=Time@2x.png"
+  },
+  "technology=airplay": {
+    "nodeId": "83:15594",
+    "name": "Technology=Airplay",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Airplay@2x.png"
+  },
+  "technology=airplay--filled": {
+    "nodeId": "83:15596",
+    "name": "Technology=Airplay--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Airplay--filled@2x.png"
+  },
+  "technology=aperture": {
+    "nodeId": "83:15598",
+    "name": "Technology=Aperture",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Aperture@2x.png"
+  },
+  "technology=asset": {
+    "nodeId": "83:15600",
+    "name": "Technology=Asset",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Asset@2x.png"
+  },
+  "technology=asset--confirm": {
+    "nodeId": "83:15602",
+    "name": "Technology=Asset--confirm",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Asset--confirm@2x.png"
+  },
+  "technology=asset--digital-twin": {
+    "nodeId": "83:15604",
+    "name": "Technology=Asset--digital-twin",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Asset--digital-twin@2x.png"
+  },
+  "technology=asset--view": {
+    "nodeId": "83:15606",
+    "name": "Technology=Asset--view",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Asset--view@2x.png"
+  },
+  "technology=at": {
+    "nodeId": "83:15608",
+    "name": "Technology=At",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=At@2x.png"
+  },
+  "technology=audio-console": {
+    "nodeId": "83:15610",
+    "name": "Technology=Audio-console",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Audio-console@2x.png"
+  },
+  "technology=augmented-reality": {
+    "nodeId": "83:15612",
+    "name": "Technology=Augmented-reality",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Augmented-reality@2x.png"
+  },
+  "technology=barcode": {
+    "nodeId": "83:15614",
+    "name": "Technology=Barcode",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Barcode@2x.png"
+  },
+  "technology=battery--charging": {
+    "nodeId": "83:15616",
+    "name": "Technology=Battery--charging",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Battery--charging@2x.png"
+  },
+  "technology=battery--empty": {
+    "nodeId": "83:15618",
+    "name": "Technology=Battery--empty",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Battery--empty@2x.png"
+  },
+  "technology=battery--full": {
+    "nodeId": "83:15620",
+    "name": "Technology=Battery--full",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Battery--full@2x.png"
+  },
+  "technology=battery--half": {
+    "nodeId": "83:15622",
+    "name": "Technology=Battery--half",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Battery--half@2x.png"
+  },
+  "technology=battery--low": {
+    "nodeId": "83:15624",
+    "name": "Technology=Battery--low",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Battery--low@2x.png"
+  },
+  "technology=battery--quarter": {
+    "nodeId": "83:15626",
+    "name": "Technology=Battery--quarter",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Battery--quarter@2x.png"
+  },
+  "technology=blog": {
+    "nodeId": "83:15628",
+    "name": "Technology=Blog",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Blog@2x.png"
+  },
+  "technology=bluetooth--off": {
+    "nodeId": "83:15630",
+    "name": "Technology=Bluetooth--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Bluetooth--off@2x.png"
+  },
+  "technology=bluetooth": {
+    "nodeId": "83:15632",
+    "name": "Technology=Bluetooth",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Bluetooth@2x.png"
+  },
+  "technology=bot": {
+    "nodeId": "83:15634",
+    "name": "Technology=Bot",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Bot@2x.png"
+  },
+  "technology=breaking-change": {
+    "nodeId": "83:15636",
+    "name": "Technology=Breaking-change",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Breaking-change@2x.png"
+  },
+  "technology=building--insights-1": {
+    "nodeId": "83:15638",
+    "name": "Technology=Building--insights-1",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Building--insights-1@2x.png"
+  },
+  "technology=building--insights-2": {
+    "nodeId": "83:15640",
+    "name": "Technology=Building--insights-2",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Building--insights-2@2x.png"
+  },
+  "technology=building--insights-3": {
+    "nodeId": "83:15642",
+    "name": "Technology=Building--insights-3",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Building--insights-3@2x.png"
+  },
+  "technology=calculator--check": {
+    "nodeId": "83:15644",
+    "name": "Technology=Calculator--check",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Calculator--check@2x.png"
+  },
+  "technology=calculator": {
+    "nodeId": "83:15646",
+    "name": "Technology=Calculator",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Calculator@2x.png"
+  },
+  "technology=camera--action": {
+    "nodeId": "83:15648",
+    "name": "Technology=Camera--action",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Camera--action@2x.png"
+  },
+  "technology=camera": {
+    "nodeId": "83:15650",
+    "name": "Technology=Camera",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Camera@2x.png"
+  },
+  "technology=cell-tower": {
+    "nodeId": "83:15652",
+    "name": "Technology=Cell-tower",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Cell-tower@2x.png"
+  },
+  "technology=chat-bot": {
+    "nodeId": "83:15654",
+    "name": "Technology=Chat-bot",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Chat-bot@2x.png"
+  },
+  "technology=chip": {
+    "nodeId": "83:15656",
+    "name": "Technology=Chip",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Chip@2x.png"
+  },
+  "technology=cloud--download": {
+    "nodeId": "83:15658",
+    "name": "Technology=Cloud--download",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Cloud--download@2x.png"
+  },
+  "technology=cloud--upload": {
+    "nodeId": "83:15660",
+    "name": "Technology=Cloud--upload",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Cloud--upload@2x.png"
+  },
+  "technology=code--hide": {
+    "nodeId": "83:15662",
+    "name": "Technology=Code--hide",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Code--hide@2x.png"
+  },
+  "technology=code--reference": {
+    "nodeId": "83:15664",
+    "name": "Technology=Code--reference",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Code--reference@2x.png"
+  },
+  "technology=code": {
+    "nodeId": "83:15666",
+    "name": "Technology=Code",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Code@2x.png"
+  },
+  "technology=connection--receive": {
+    "nodeId": "83:15668",
+    "name": "Technology=Connection--receive",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Connection--receive@2x.png"
+  },
+  "technology=connection--send": {
+    "nodeId": "83:15670",
+    "name": "Technology=Connection--send",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Connection--send@2x.png"
+  },
+  "technology=connection--two-way": {
+    "nodeId": "83:15672",
+    "name": "Technology=Connection--two-way",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Connection--two-way@2x.png"
+  },
+  "technology=connection-signal--off": {
+    "nodeId": "83:15674",
+    "name": "Technology=Connection-signal--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Connection-signal--off@2x.png"
+  },
+  "technology=connection-signal": {
+    "nodeId": "83:15676",
+    "name": "Technology=Connection-signal",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Connection-signal@2x.png"
+  },
+  "technology=debug": {
+    "nodeId": "83:15678",
+    "name": "Technology=Debug",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Debug@2x.png"
+  },
+  "technology=deployment-pattern": {
+    "nodeId": "83:15680",
+    "name": "Technology=Deployment-pattern",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Deployment-pattern@2x.png"
+  },
+  "technology=deployment-policy": {
+    "nodeId": "83:15682",
+    "name": "Technology=Deployment-policy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Deployment-policy@2x.png"
+  },
+  "technology=desk--adjustable": {
+    "nodeId": "83:15684",
+    "name": "Technology=Desk--adjustable",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Desk--adjustable@2x.png"
+  },
+  "technology=development": {
+    "nodeId": "83:15686",
+    "name": "Technology=Development",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Development@2x.png"
+  },
+  "technology=devices": {
+    "nodeId": "83:15688",
+    "name": "Technology=Devices",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Devices@2x.png"
+  },
+  "technology=drone--front": {
+    "nodeId": "83:15690",
+    "name": "Technology=Drone--front",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Drone--front@2x.png"
+  },
+  "technology=drone--video": {
+    "nodeId": "83:15692",
+    "name": "Technology=Drone--video",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Drone--video@2x.png"
+  },
+  "technology=drone--delivery": {
+    "nodeId": "83:15694",
+    "name": "Technology=Drone--delivery",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Drone--delivery@2x.png"
+  },
+  "technology=drone": {
+    "nodeId": "83:15696",
+    "name": "Technology=Drone",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Drone@2x.png"
+  },
+  "technology=edge-cluster": {
+    "nodeId": "83:15698",
+    "name": "Technology=Edge-cluster",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Edge-cluster@2x.png"
+  },
+  "technology=edge-device": {
+    "nodeId": "83:15700",
+    "name": "Technology=Edge-device",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Edge-device@2x.png"
+  },
+  "technology=edge-node": {
+    "nodeId": "83:15702",
+    "name": "Technology=Edge-node",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Edge-node@2x.png"
+  },
+  "technology=edge-service": {
+    "nodeId": "83:15704",
+    "name": "Technology=Edge-service",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Edge-service@2x.png"
+  },
+  "technology=email--new": {
+    "nodeId": "83:15706",
+    "name": "Technology=Email--new",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Email--new@2x.png"
+  },
+  "technology=email": {
+    "nodeId": "83:15708",
+    "name": "Technology=Email",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Email@2x.png"
+  },
+  "technology=equalizer": {
+    "nodeId": "83:15710",
+    "name": "Technology=Equalizer",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Equalizer@2x.png"
+  },
+  "technology=fetch-upload--cloud": {
+    "nodeId": "83:15712",
+    "name": "Technology=Fetch-upload--cloud",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Fetch-upload--cloud@2x.png"
+  },
+  "technology=fetch-upload": {
+    "nodeId": "83:15714",
+    "name": "Technology=Fetch-upload",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Fetch-upload@2x.png"
+  },
+  "technology=fingerprint-recognition": {
+    "nodeId": "83:15716",
+    "name": "Technology=Fingerprint-recognition",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Fingerprint-recognition@2x.png"
+  },
+  "technology=forum": {
+    "nodeId": "83:15718",
+    "name": "Technology=Forum",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Forum@2x.png"
+  },
+  "technology=keyboard": {
+    "nodeId": "83:15720",
+    "name": "Technology=Keyboard",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Keyboard@2x.png"
+  },
+  "technology=iot--platform": {
+    "nodeId": "83:15722",
+    "name": "Technology=Iot--platform",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Iot--platform@2x.png"
+  },
+  "technology=iot--connect": {
+    "nodeId": "83:15724",
+    "name": "Technology=Iot--connect",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Iot--connect@2x.png"
+  },
+  "technology=integration": {
+    "nodeId": "83:15726",
+    "name": "Technology=Integration",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Integration@2x.png"
+  },
+  "technology=headset": {
+    "nodeId": "83:15728",
+    "name": "Technology=Headset",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Headset@2x.png"
+  },
+  "technology=headphones": {
+    "nodeId": "83:15730",
+    "name": "Technology=Headphones",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Headphones@2x.png"
+  },
+  "technology=game--wireless": {
+    "nodeId": "83:15732",
+    "name": "Technology=Game--wireless",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Game--wireless@2x.png"
+  },
+  "technology=game--console": {
+    "nodeId": "83:15734",
+    "name": "Technology=Game--console",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Game--console@2x.png"
+  },
+  "technology=function": {
+    "nodeId": "83:15736",
+    "name": "Technology=Function",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Function@2x.png"
+  },
+  "technology=laptop": {
+    "nodeId": "83:15738",
+    "name": "Technology=Laptop",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Laptop@2x.png"
+  },
+  "technology=location--current": {
+    "nodeId": "83:15740",
+    "name": "Technology=Location--current",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Location--current@2x.png"
+  },
+  "technology=mail--reply": {
+    "nodeId": "83:15742",
+    "name": "Technology=Mail--reply",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mail--reply@2x.png"
+  },
+  "technology=mail--all": {
+    "nodeId": "83:15744",
+    "name": "Technology=Mail--all",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mail--all@2x.png"
+  },
+  "technology=machine-learning-model": {
+    "nodeId": "83:15746",
+    "name": "Technology=Machine-learning-model",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Machine-learning-model@2x.png"
+  },
+  "technology=machine-learning": {
+    "nodeId": "83:15748",
+    "name": "Technology=Machine-learning",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Machine-learning@2x.png"
+  },
+  "technology=media-cast": {
+    "nodeId": "83:15750",
+    "name": "Technology=Media-cast",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Media-cast@2x.png"
+  },
+  "technology=mobile": {
+    "nodeId": "83:15752",
+    "name": "Technology=Mobile",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mobile@2x.png"
+  },
+  "technology=mobile--landscape": {
+    "nodeId": "83:15754",
+    "name": "Technology=Mobile--landscape",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mobile--landscape@2x.png"
+  },
+  "technology=mobile--download": {
+    "nodeId": "83:15756",
+    "name": "Technology=Mobile--download",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mobile--download@2x.png"
+  },
+  "technology=mobile--check": {
+    "nodeId": "83:15758",
+    "name": "Technology=Mobile--check",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mobile--check@2x.png"
+  },
+  "technology=mobile--audio": {
+    "nodeId": "83:15760",
+    "name": "Technology=Mobile--audio",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mobile--audio@2x.png"
+  },
+  "technology=mobile--add": {
+    "nodeId": "83:15762",
+    "name": "Technology=Mobile--add",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Mobile--add@2x.png"
+  },
+  "technology=outage": {
+    "nodeId": "83:15764",
+    "name": "Technology=Outage",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Outage@2x.png"
+  },
+  "technology=printer": {
+    "nodeId": "83:15766",
+    "name": "Technology=Printer",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Printer@2x.png"
+  },
+  "technology=plug--filled": {
+    "nodeId": "83:15768",
+    "name": "Technology=Plug--filled",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Plug--filled@2x.png"
+  },
+  "technology=plug": {
+    "nodeId": "83:15770",
+    "name": "Technology=Plug",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Plug@2x.png"
+  },
+  "technology=phone--ip": {
+    "nodeId": "83:15772",
+    "name": "Technology=Phone--ip",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Phone--ip@2x.png"
+  },
+  "technology=password": {
+    "nodeId": "83:15774",
+    "name": "Technology=Password",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Password@2x.png"
+  },
+  "technology=signal-strength": {
+    "nodeId": "83:15776",
+    "name": "Technology=Signal-strength",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Signal-strength@2x.png"
+  },
+  "technology=share": {
+    "nodeId": "83:15778",
+    "name": "Technology=Share",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Share@2x.png"
+  },
+  "technology=satellite": {
+    "nodeId": "83:15780",
+    "name": "Technology=Satellite",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Satellite@2x.png"
+  },
+  "technology=rss": {
+    "nodeId": "83:15782",
+    "name": "Technology=Rss",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Rss@2x.png"
+  },
+  "technology=rocket": {
+    "nodeId": "83:15784",
+    "name": "Technology=Rocket",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Rocket@2x.png"
+  },
+  "technology=radio--push-to-talk": {
+    "nodeId": "83:15786",
+    "name": "Technology=Radio--push-to-talk",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Radio--push-to-talk@2x.png"
+  },
+  "technology=radio--combat": {
+    "nodeId": "83:15788",
+    "name": "Technology=Radio--combat",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Radio--combat@2x.png"
+  },
+  "technology=radio": {
+    "nodeId": "83:15790",
+    "name": "Technology=Radio",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Radio@2x.png"
+  },
+  "technology=qr-code": {
+    "nodeId": "83:15792",
+    "name": "Technology=Qr-code",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Qr-code@2x.png"
+  },
+  "technology=terminal": {
+    "nodeId": "83:15794",
+    "name": "Technology=Terminal",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Terminal@2x.png"
+  },
+  "technology=tablet--landscape": {
+    "nodeId": "83:15796",
+    "name": "Technology=Tablet--landscape",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Tablet--landscape@2x.png"
+  },
+  "technology=tablet": {
+    "nodeId": "83:15798",
+    "name": "Technology=Tablet",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Tablet@2x.png"
+  },
+  "technology=sim-card": {
+    "nodeId": "83:15800",
+    "name": "Technology=Sim-card",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Sim-card@2x.png"
+  },
+  "technology=wikis": {
+    "nodeId": "83:15802",
+    "name": "Technology=Wikis",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Wikis@2x.png"
+  },
+  "technology=wifi--off": {
+    "nodeId": "83:15804",
+    "name": "Technology=Wifi--off",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Wifi--off@2x.png"
+  },
+  "technology=wifi--controller": {
+    "nodeId": "83:15806",
+    "name": "Technology=Wifi--controller",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Wifi--controller@2x.png"
+  },
+  "technology=wifi": {
+    "nodeId": "83:15808",
+    "name": "Technology=Wifi",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Wifi@2x.png"
+  },
+  "technology=watch": {
+    "nodeId": "83:15810",
+    "name": "Technology=Watch",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Watch@2x.png"
+  },
+  "technology=vpn": {
+    "nodeId": "83:15812",
+    "name": "Technology=Vpn",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Vpn@2x.png"
+  },
+  "technology=voicemail": {
+    "nodeId": "83:15814",
+    "name": "Technology=Voicemail",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Voicemail@2x.png"
+  },
+  "technology=usb": {
+    "nodeId": "83:15816",
+    "name": "Technology=Usb",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Usb@2x.png"
+  },
+  "technology=transmission-lte": {
+    "nodeId": "83:15818",
+    "name": "Technology=Transmission-lte",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Transmission-lte@2x.png"
+  },
+  "technology=logo--python": {
+    "nodeId": "83:15820",
+    "name": "Technology=Logo--python",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Logo--python@2x.png"
+  },
+  "technology=logo--keybase": {
+    "nodeId": "83:15822",
+    "name": "Technology=Logo--keybase",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Logo--keybase@2x.png"
+  },
+  "technology=logo--openshift": {
+    "nodeId": "83:15824",
+    "name": "Technology=Logo--openshift",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Logo--openshift@2x.png"
+  },
+  "technology=logo--r-script": {
+    "nodeId": "83:15826",
+    "name": "Technology=Logo--r-script",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Logo--r-script@2x.png"
+  },
+  "technology=logo--vmware": {
+    "nodeId": "83:15828",
+    "name": "Technology=Logo--vmware",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Logo--vmware@2x.png"
+  },
+  "technology=logo--jupyter": {
+    "nodeId": "83:15830",
+    "name": "Technology=Logo--jupyter",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Logo--jupyter@2x.png"
+  },
+  "technology=cloud--offline": {
+    "nodeId": "83:15832",
+    "name": "Technology=Cloud--offline",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Cloud--offline@2x.png"
+  },
+  "technology=cookie": {
+    "nodeId": "83:15834",
+    "name": "Technology=Cookie",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Cookie@2x.png"
+  },
+  "technology=webhook": {
+    "nodeId": "83:15836",
+    "name": "Technology=Webhook",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Webhook@2x.png"
+  },
+  "technology=logo--kubernetes": {
+    "nodeId": "83:15838",
+    "name": "Technology=Logo--kubernetes",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Logo--kubernetes@2x.png"
+  },
+  "technology=service-id": {
+    "nodeId": "83:15840",
+    "name": "Technology=Service-id",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Technology=Service-id@2x.png"
+  },
+  "systems=application--mobile": {
+    "nodeId": "83:15845",
+    "name": "Systems=Application--mobile",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Application--mobile@2x.png"
+  },
+  "systems=application--virtual": {
+    "nodeId": "83:15847",
+    "name": "Systems=Application--virtual",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Application--virtual@2x.png"
+  },
+  "systems=application--web": {
+    "nodeId": "83:15849",
+    "name": "Systems=Application--web",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Application--web@2x.png"
+  },
+  "systems=bare-metal-server": {
+    "nodeId": "83:15851",
+    "name": "Systems=Bare-metal-server",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Bare-metal-server@2x.png"
+  },
+  "systems=bare-metal-server--01": {
+    "nodeId": "83:15853",
+    "name": "Systems=Bare-metal-server--01",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Bare-metal-server--01@2x.png"
+  },
+  "systems=bare-metal-server--02": {
+    "nodeId": "83:15855",
+    "name": "Systems=Bare-metal-server--02",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Bare-metal-server--02@2x.png"
+  },
+  "systems=bastion-host": {
+    "nodeId": "83:15857",
+    "name": "Systems=Bastion-host",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Bastion-host@2x.png"
+  },
+  "systems=block-storage--alt": {
+    "nodeId": "83:15859",
+    "name": "Systems=Block-storage--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Block-storage--alt@2x.png"
+  },
+  "systems=box--extra-large": {
+    "nodeId": "83:15861",
+    "name": "Systems=Box--extra-large",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Box--extra-large@2x.png"
+  },
+  "systems=box--large": {
+    "nodeId": "83:15863",
+    "name": "Systems=Box--large",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Box--large@2x.png"
+  },
+  "systems=box--medium": {
+    "nodeId": "83:15865",
+    "name": "Systems=Box--medium",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Box--medium@2x.png"
+  },
+  "systems=box--small": {
+    "nodeId": "83:15867",
+    "name": "Systems=Box--small",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Box--small@2x.png"
+  },
+  "systems=chat--operational": {
+    "nodeId": "83:15869",
+    "name": "Systems=Chat--operational",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Chat--operational@2x.png"
+  },
+  "systems=code-signing-service": {
+    "nodeId": "83:15871",
+    "name": "Systems=Code-signing-service",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Code-signing-service@2x.png"
+  },
+  "systems=communication--unified": {
+    "nodeId": "83:15873",
+    "name": "Systems=Communication--unified",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Communication--unified@2x.png"
+  },
+  "systems=container-registry": {
+    "nodeId": "83:15875",
+    "name": "Systems=Container-registry",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Container-registry@2x.png"
+  },
+  "systems=container-services": {
+    "nodeId": "83:15877",
+    "name": "Systems=Container-services",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Container-services@2x.png"
+  },
+  "systems=data--center": {
+    "nodeId": "83:15879",
+    "name": "Systems=Data--center",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Data--center@2x.png"
+  },
+  "systems=data-accessor": {
+    "nodeId": "83:15881",
+    "name": "Systems=Data-accessor",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Data-accessor@2x.png"
+  },
+  "systems=data-backup": {
+    "nodeId": "83:15883",
+    "name": "Systems=Data-backup",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Data-backup@2x.png"
+  },
+  "systems=data-blob": {
+    "nodeId": "83:15885",
+    "name": "Systems=Data-blob",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Data-blob@2x.png"
+  },
+  "systems=data-diode": {
+    "nodeId": "83:15887",
+    "name": "Systems=Data-diode",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Data-diode@2x.png"
+  },
+  "systems=deployment-unit--data": {
+    "nodeId": "83:15889",
+    "name": "Systems=Deployment-unit--data",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--data@2x.png"
+  },
+  "systems=deployment-unit--execution": {
+    "nodeId": "83:15891",
+    "name": "Systems=Deployment-unit--execution",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--execution@2x.png"
+  },
+  "systems=deployment-unit--installation1": {
+    "nodeId": "83:15893",
+    "name": "Systems=Deployment-unit--installation1",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--installation1@2x.png"
+  },
+  "systems=deployment-unit--presentation": {
+    "nodeId": "83:15895",
+    "name": "Systems=Deployment-unit--presentation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--presentation@2x.png"
+  },
+  "systems=deployment-unit--technical--data": {
+    "nodeId": "83:15897",
+    "name": "Systems=Deployment-unit--technical--data",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--technical--data@2x.png"
+  },
+  "systems=deployment-unit--technical--execution": {
+    "nodeId": "83:15899",
+    "name": "Systems=Deployment-unit--technical--execution",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--technical--execution@2x.png"
+  },
+  "systems=deployment-unit--technical--installation": {
+    "nodeId": "83:15901",
+    "name": "Systems=Deployment-unit--technical--installation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--technical--installation@2x.png"
+  },
+  "systems=deployment-unit--technical--presentation": {
+    "nodeId": "83:15903",
+    "name": "Systems=Deployment-unit--technical--presentation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Deployment-unit--technical--presentation@2x.png"
+  },
+  "systems=directory-domain": {
+    "nodeId": "83:15905",
+    "name": "Systems=Directory-domain",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Directory-domain@2x.png"
+  },
+  "systems=edge-node--alt": {
+    "nodeId": "83:15907",
+    "name": "Systems=Edge-node--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Edge-node--alt@2x.png"
+  },
+  "systems=encryption": {
+    "nodeId": "83:15909",
+    "name": "Systems=Encryption",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Encryption@2x.png"
+  },
+  "systems=file-storage": {
+    "nodeId": "83:15911",
+    "name": "Systems=File-storage",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=File-storage@2x.png"
+  },
+  "systems=firewall--classic": {
+    "nodeId": "83:15913",
+    "name": "Systems=Firewall--classic",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Firewall--classic@2x.png"
+  },
+  "systems=firewall": {
+    "nodeId": "83:15915",
+    "name": "Systems=Firewall",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Firewall@2x.png"
+  },
+  "systems=floating-ip": {
+    "nodeId": "83:15917",
+    "name": "Systems=Floating-ip",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Floating-ip@2x.png"
+  },
+  "systems=gateway--vpn": {
+    "nodeId": "83:15919",
+    "name": "Systems=Gateway--vpn",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gateway--vpn@2x.png"
+  },
+  "systems=gateway--user-access": {
+    "nodeId": "83:15921",
+    "name": "Systems=Gateway--user-access",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gateway--user-access@2x.png"
+  },
+  "systems=gateway--security": {
+    "nodeId": "83:15923",
+    "name": "Systems=Gateway--security",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gateway--security@2x.png"
+  },
+  "systems=gateway--public": {
+    "nodeId": "83:15925",
+    "name": "Systems=Gateway--public",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gateway--public@2x.png"
+  },
+  "systems=gateway--mail": {
+    "nodeId": "83:15927",
+    "name": "Systems=Gateway--mail",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gateway--mail@2x.png"
+  },
+  "systems=gateway--api": {
+    "nodeId": "83:15929",
+    "name": "Systems=Gateway--api",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gateway--api@2x.png"
+  },
+  "systems=gateway": {
+    "nodeId": "83:15931",
+    "name": "Systems=Gateway",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gateway@2x.png"
+  },
+  "systems=group--account": {
+    "nodeId": "83:15933",
+    "name": "Systems=Group--account",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Group--account@2x.png"
+  },
+  "systems=group--access": {
+    "nodeId": "83:15935",
+    "name": "Systems=Group--access",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Group--access@2x.png"
+  },
+  "systems=group--security": {
+    "nodeId": "83:15937",
+    "name": "Systems=Group--security",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Group--security@2x.png"
+  },
+  "systems=group--resource": {
+    "nodeId": "83:15939",
+    "name": "Systems=Group--resource",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Group--resource@2x.png"
+  },
+  "systems=gui--management": {
+    "nodeId": "83:15941",
+    "name": "Systems=Gui--management",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gui--management@2x.png"
+  },
+  "systems=gui": {
+    "nodeId": "83:15943",
+    "name": "Systems=Gui",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Gui@2x.png"
+  },
+  "systems=hardware-security-module": {
+    "nodeId": "83:15945",
+    "name": "Systems=Hardware-security-module",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Hardware-security-module@2x.png"
+  },
+  "systems=hybrid-networking--alt": {
+    "nodeId": "83:15947",
+    "name": "Systems=Hybrid-networking--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Hybrid-networking--alt@2x.png"
+  },
+  "systems=id-management": {
+    "nodeId": "83:15949",
+    "name": "Systems=Id-management",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Id-management@2x.png"
+  },
+  "systems=image-service": {
+    "nodeId": "83:15951",
+    "name": "Systems=Image-service",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Image-service@2x.png"
+  },
+  "systems=instance--bx": {
+    "nodeId": "83:15953",
+    "name": "Systems=Instance--bx",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Instance--bx@2x.png"
+  },
+  "systems=kubernetes": {
+    "nodeId": "83:15955",
+    "name": "Systems=Kubernetes",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Kubernetes@2x.png"
+  },
+  "systems=intrusion-prevention": {
+    "nodeId": "83:15957",
+    "name": "Systems=Intrusion-prevention",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intrusion-prevention@2x.png"
+  },
+  "systems=intent-request--active": {
+    "nodeId": "83:15959",
+    "name": "Systems=Intent-request--active",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intent-request--active@2x.png"
+  },
+  "systems=intent-request--create": {
+    "nodeId": "83:15961",
+    "name": "Systems=Intent-request--create",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intent-request--create@2x.png"
+  },
+  "systems=intent-request--heal": {
+    "nodeId": "83:15963",
+    "name": "Systems=Intent-request--heal",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intent-request--heal@2x.png"
+  },
+  "systems=intent-request--inactive": {
+    "nodeId": "83:15965",
+    "name": "Systems=Intent-request--inactive",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intent-request--inactive@2x.png"
+  },
+  "systems=intent-request--scale-in": {
+    "nodeId": "83:15967",
+    "name": "Systems=Intent-request--scale-in",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intent-request--scale-in@2x.png"
+  },
+  "systems=intent-request--scale-out": {
+    "nodeId": "83:15969",
+    "name": "Systems=Intent-request--scale-out",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intent-request--scale-out@2x.png"
+  },
+  "systems=intent-request--uninstall": {
+    "nodeId": "83:15971",
+    "name": "Systems=Intent-request--uninstall",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Intent-request--uninstall@2x.png"
+  },
+  "systems=instance--virtual": {
+    "nodeId": "83:15973",
+    "name": "Systems=Instance--virtual",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Instance--virtual@2x.png"
+  },
+  "systems=instance--mx": {
+    "nodeId": "83:15975",
+    "name": "Systems=Instance--mx",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Instance--mx@2x.png"
+  },
+  "systems=instance--cx": {
+    "nodeId": "83:15977",
+    "name": "Systems=Instance--cx",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Instance--cx@2x.png"
+  },
+  "systems=instance--classic": {
+    "nodeId": "83:15979",
+    "name": "Systems=Instance--classic",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Instance--classic@2x.png"
+  },
+  "systems=load-balancer--network": {
+    "nodeId": "83:15981",
+    "name": "Systems=Load-balancer--network",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Load-balancer--network@2x.png"
+  },
+  "systems=load-balancer--local": {
+    "nodeId": "83:15983",
+    "name": "Systems=Load-balancer--local",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Load-balancer--local@2x.png"
+  },
+  "systems=load-balancer--listener": {
+    "nodeId": "83:15985",
+    "name": "Systems=Load-balancer--listener",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Load-balancer--listener@2x.png"
+  },
+  "systems=load-balancer--global": {
+    "nodeId": "83:15987",
+    "name": "Systems=Load-balancer--global",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Load-balancer--global@2x.png"
+  },
+  "systems=load-balancer--classic": {
+    "nodeId": "83:15989",
+    "name": "Systems=Load-balancer--classic",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Load-balancer--classic@2x.png"
+  },
+  "systems=load-balancer--application": {
+    "nodeId": "83:15991",
+    "name": "Systems=Load-balancer--application",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Load-balancer--application@2x.png"
+  },
+  "systems=load-balancer--pool": {
+    "nodeId": "83:15993",
+    "name": "Systems=Load-balancer--pool",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Load-balancer--pool@2x.png"
+  },
+  "systems=message-queue": {
+    "nodeId": "83:15995",
+    "name": "Systems=Message-queue",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Message-queue@2x.png"
+  },
+  "systems=mobility--services": {
+    "nodeId": "83:15997",
+    "name": "Systems=Mobility--services",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Mobility--services@2x.png"
+  },
+  "systems=network--admin-control": {
+    "nodeId": "83:15999",
+    "name": "Systems=Network--admin-control",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Network--admin-control@2x.png"
+  },
+  "systems=network--public": {
+    "nodeId": "83:16001",
+    "name": "Systems=Network--public",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Network--public@2x.png"
+  },
+  "systems=network--overlay": {
+    "nodeId": "83:16003",
+    "name": "Systems=Network--overlay",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Network--overlay@2x.png"
+  },
+  "systems=network--enterprise": {
+    "nodeId": "83:16005",
+    "name": "Systems=Network--enterprise",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Network--enterprise@2x.png"
+  },
+  "systems=object-storage--alt": {
+    "nodeId": "83:16007",
+    "name": "Systems=Object-storage--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Object-storage--alt@2x.png"
+  },
+  "systems=pcn--e-node": {
+    "nodeId": "83:16009",
+    "name": "Systems=Pcn--e-node",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Pcn--e-node@2x.png"
+  },
+  "systems=pcn--military": {
+    "nodeId": "83:16011",
+    "name": "Systems=Pcn--military",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Pcn--military@2x.png"
+  },
+  "systems=pcn--p-node": {
+    "nodeId": "83:16013",
+    "name": "Systems=Pcn--p-node",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Pcn--p-node@2x.png"
+  },
+  "systems=pcn--z-node": {
+    "nodeId": "83:16015",
+    "name": "Systems=Pcn--z-node",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Pcn--z-node@2x.png"
+  },
+  "systems=point-of-presence": {
+    "nodeId": "83:16017",
+    "name": "Systems=Point-of-presence",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Point-of-presence@2x.png"
+  },
+  "systems=router--wifi": {
+    "nodeId": "83:16019",
+    "name": "Systems=Router--wifi",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Router--wifi@2x.png"
+  },
+  "systems=router--voice": {
+    "nodeId": "83:16021",
+    "name": "Systems=Router--voice",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Router--voice@2x.png"
+  },
+  "systems=router": {
+    "nodeId": "83:16023",
+    "name": "Systems=Router",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Router@2x.png"
+  },
+  "systems=security-services": {
+    "nodeId": "83:16025",
+    "name": "Systems=Security-services",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Security-services@2x.png"
+  },
+  "systems=server--time": {
+    "nodeId": "83:16027",
+    "name": "Systems=Server--time",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Server--time@2x.png"
+  },
+  "systems=server--proxy": {
+    "nodeId": "83:16029",
+    "name": "Systems=Server--proxy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Server--proxy@2x.png"
+  },
+  "systems=server--dns": {
+    "nodeId": "83:16031",
+    "name": "Systems=Server--dns",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Server--dns@2x.png"
+  },
+  "systems=session-border-control": {
+    "nodeId": "83:16033",
+    "name": "Systems=Session-border-control",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Session-border-control@2x.png"
+  },
+  "systems=slisor": {
+    "nodeId": "83:16035",
+    "name": "Systems=Slisor",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Slisor@2x.png"
+  },
+  "systems=switch-layer-3": {
+    "nodeId": "83:16037",
+    "name": "Systems=Switch-layer-3",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Switch-layer-3@2x.png"
+  },
+  "systems=switch-layer-2": {
+    "nodeId": "83:16039",
+    "name": "Systems=Switch-layer-2",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Switch-layer-2@2x.png"
+  },
+  "systems=subnet-acl-rules": {
+    "nodeId": "83:16041",
+    "name": "Systems=Subnet-acl-rules",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Subnet-acl-rules@2x.png"
+  },
+  "systems=two-factor-authentication": {
+    "nodeId": "83:16043",
+    "name": "Systems=Two-factor-authentication",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Two-factor-authentication@2x.png"
+  },
+  "systems=vlan": {
+    "nodeId": "83:16045",
+    "name": "Systems=Vlan",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Vlan@2x.png"
+  },
+  "systems=virtual-desktop": {
+    "nodeId": "83:16047",
+    "name": "Systems=Virtual-desktop",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Virtual-desktop@2x.png"
+  },
+  "systems=vehicle--services": {
+    "nodeId": "83:16049",
+    "name": "Systems=Vehicle--services",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Vehicle--services@2x.png"
+  },
+  "systems=vehicle--insights": {
+    "nodeId": "83:16051",
+    "name": "Systems=Vehicle--insights",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Vehicle--insights@2x.png"
+  },
+  "systems=vehicle--connected": {
+    "nodeId": "83:16053",
+    "name": "Systems=Vehicle--connected",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Vehicle--connected@2x.png"
+  },
+  "systems=vehicle--api": {
+    "nodeId": "83:16055",
+    "name": "Systems=Vehicle--api",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Vehicle--api@2x.png"
+  },
+  "systems=volume--block-storage": {
+    "nodeId": "83:16057",
+    "name": "Systems=Volume--block-storage",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Volume--block-storage@2x.png"
+  },
+  "systems=volume--file-storage": {
+    "nodeId": "83:16059",
+    "name": "Systems=Volume--file-storage",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Volume--file-storage@2x.png"
+  },
+  "systems=volume--object-storage": {
+    "nodeId": "83:16061",
+    "name": "Systems=Volume--object-storage",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Volume--object-storage@2x.png"
+  },
+  "systems=wifi-bridge--alt": {
+    "nodeId": "83:16063",
+    "name": "Systems=Wifi-bridge--alt",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Wifi-bridge--alt@2x.png"
+  },
+  "systems=wifi-bridge": {
+    "nodeId": "83:16065",
+    "name": "Systems=Wifi-bridge",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Wifi-bridge@2x.png"
+  },
+  "systems=wifi--secure": {
+    "nodeId": "83:16067",
+    "name": "Systems=Wifi--secure",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Wifi--secure@2x.png"
+  },
+  "systems=wifi--not-secure": {
+    "nodeId": "83:16069",
+    "name": "Systems=Wifi--not-secure",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Wifi--not-secure@2x.png"
+  },
+  "systems=vpn--policy": {
+    "nodeId": "83:16071",
+    "name": "Systems=Vpn--policy",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Vpn--policy@2x.png"
+  },
+  "systems=vpn--connection": {
+    "nodeId": "83:16073",
+    "name": "Systems=Vpn--connection",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Vpn--connection@2x.png"
+  },
+  "systems=cloud--alerting": {
+    "nodeId": "83:16075",
+    "name": "Systems=Cloud--alerting",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cloud--alerting@2x.png"
+  },
+  "systems=cloud--data-ops": {
+    "nodeId": "83:16077",
+    "name": "Systems=Cloud--data-ops",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cloud--data-ops@2x.png"
+  },
+  "systems=cloud--service-management": {
+    "nodeId": "83:16079",
+    "name": "Systems=Cloud--service-management",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cloud--service-management@2x.png"
+  },
+  "systems=cloud-services": {
+    "nodeId": "83:16081",
+    "name": "Systems=Cloud-services",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cloud-services@2x.png"
+  },
+  "systems=assembly": {
+    "nodeId": "83:16083",
+    "name": "Systems=Assembly",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Assembly@2x.png"
+  },
+  "systems=assembly--cluster": {
+    "nodeId": "83:16085",
+    "name": "Systems=Assembly--cluster",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Assembly--cluster@2x.png"
+  },
+  "systems=assembly--reference": {
+    "nodeId": "83:16087",
+    "name": "Systems=Assembly--reference",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Assembly--reference@2x.png"
+  },
+  "systems=cics--cmas": {
+    "nodeId": "83:16089",
+    "name": "Systems=Cics--cmas",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cics--cmas@2x.png"
+  },
+  "systems=cics--explorer": {
+    "nodeId": "83:16091",
+    "name": "Systems=Cics--explorer",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cics--explorer@2x.png"
+  },
+  "systems=cics--system-group": {
+    "nodeId": "83:16093",
+    "name": "Systems=Cics--system-group",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cics--system-group@2x.png"
+  },
+  "systems=cics--wui-region": {
+    "nodeId": "83:16095",
+    "name": "Systems=Cics--wui-region",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cics--wui-region@2x.png"
+  },
+  "systems=cics-region": {
+    "nodeId": "83:16097",
+    "name": "Systems=Cics-region",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cics-region@2x.png"
+  },
+  "systems=cics-region--routing": {
+    "nodeId": "83:16099",
+    "name": "Systems=Cics-region--routing",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cics-region--routing@2x.png"
+  },
+  "systems=cics-region--target": {
+    "nodeId": "83:16101",
+    "name": "Systems=Cics-region--target",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cics-region--target@2x.png"
+  },
+  "systems=cicsplex": {
+    "nodeId": "83:16103",
+    "name": "Systems=Cicsplex",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Cicsplex@2x.png"
+  },
+  "systems=logical-partition": {
+    "nodeId": "83:16105",
+    "name": "Systems=Logical-partition",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Logical-partition@2x.png"
+  },
+  "systems=property-relationship": {
+    "nodeId": "83:16107",
+    "name": "Systems=Property-relationship",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Property-relationship@2x.png"
+  },
+  "systems=software-resource": {
+    "nodeId": "83:16109",
+    "name": "Systems=Software-resource",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Software-resource@2x.png"
+  },
+  "systems=software-resource--cluster": {
+    "nodeId": "83:16111",
+    "name": "Systems=Software-resource--cluster",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Software-resource--cluster@2x.png"
+  },
+  "systems=software-resource--resource": {
+    "nodeId": "83:16113",
+    "name": "Systems=Software-resource--resource",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Software-resource--resource@2x.png"
+  },
+  "systems=terminal--3270": {
+    "nodeId": "83:16115",
+    "name": "Systems=Terminal--3270",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Terminal--3270@2x.png"
+  },
+  "systems=microservices--1": {
+    "nodeId": "83:16117",
+    "name": "Systems=Microservices--1",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Microservices--1@2x.png"
+  },
+  "systems=microservices--2": {
+    "nodeId": "83:16119",
+    "name": "Systems=Microservices--2",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Microservices--2@2x.png"
+  },
+  "systems=workflow-automation": {
+    "nodeId": "83:16121",
+    "name": "Systems=Workflow-automation",
+    "type": "COMPONENT",
+    "iconPath": "/icons/ibm/Systems=Workflow-automation@2x.png"
+  },
+  "social": {
+    "nodeId": "83:16178",
+    "name": "Social",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Social@2x.png"
+  },
+  "senses": {
+    "nodeId": "83:16201",
+    "name": "Senses",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Senses@2x.png"
+  },
+  "operations": {
+    "nodeId": "83:16245",
+    "name": "Operations",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Operations@2x.png"
+  },
+  "navigation": {
+    "nodeId": "83:16390",
+    "name": "Navigation",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Navigation@2x.png"
+  },
+  "instruments": {
+    "nodeId": "83:16435",
+    "name": "Instruments",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Instruments@2x.png"
+  },
+  "formatting": {
+    "nodeId": "83:16591",
+    "name": "Formatting",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Formatting@2x.png"
+  },
+  "data": {
+    "nodeId": "83:16909",
+    "name": "Data",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Data@2x.png"
+  },
+  "commerce": {
+    "nodeId": "83:17199",
+    "name": "Commerce",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Commerce@2x.png"
+  },
+  "alphanumeric": {
+    "nodeId": "83:17318",
+    "name": "Alphanumeric",
+    "type": "FRAME",
+    "iconPath": "/icons/ibm/Alphanumeric@2x.png"
+  }
+}

@@ -7,6 +7,7 @@ export interface IconInfo {
   filename: string;
   category: string;
   keywords?: string[];
+  svgPath?: string;
 }
 
 export interface CategoryInfo {
@@ -21,6 +22,22 @@ const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
   'streamline': 'Streamline',
   'themed': 'Themed',
 };
+
+async function loadSvgMapping(): Promise<Record<string, string>> {
+  const mappingPath = join(process.cwd(), 'svg-mapping.json');
+
+  if (!existsSync(mappingPath)) {
+    return {};
+  }
+
+  try {
+    const data = await readFile(mappingPath, 'utf-8');
+    return JSON.parse(data);
+  } catch (error) {
+    console.error('Error loading svg-mapping.json:', error);
+    return {};
+  }
+}
 
 async function loadKeywords(): Promise<Record<string, string[]>> {
   const keywordsFilePath = join(process.cwd(), 'keywords.json');
@@ -45,8 +62,9 @@ export async function getAllIcons(): Promise<IconInfo[]> {
   const iconsDir = join(process.cwd(), 'public', 'icons');
   const icons: IconInfo[] = [];
 
-  // Load keywords
+  // Load keywords and SVG mapping
   const keywords = await loadKeywords();
+  const svgMapping = await loadSvgMapping();
 
   // Use explicit paths for each category to help with static analysis
   const categoryPaths: Array<{ category: string; path: string }> = [
@@ -68,6 +86,7 @@ export async function getAllIcons(): Promise<IconInfo[]> {
           filename: file,
           category,
           keywords: keywords[iconPath] || undefined,
+          svgPath: svgMapping[iconPath] || undefined,
         });
       }
     } catch (error) {
