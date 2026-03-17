@@ -40,5 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# embeddings (generated file, can be large)
-# icon_embeddings.json
+# embeddings (stored in Vercel Blob)
+icon_embeddings.json
+.env*.local

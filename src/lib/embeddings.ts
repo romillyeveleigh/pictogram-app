@@ -1,7 +1,6 @@
-import { readFile } from 'fs/promises';
-import { join } from 'path';
-import { existsSync } from 'fs';
 import { similarity } from 'ml-distance';
+
+const EMBEDDINGS_BLOB_URL = 'https://ydihagdqen4rjczn.public.blob.vercel-storage.com/icon_embeddings.json';
 
 export interface IconEmbedding {
   path: string;
@@ -13,25 +12,19 @@ export interface IconEmbedding {
 let cachedEmbeddings: IconEmbedding[] | null = null;
 
 /**
- * Load pre-computed embeddings from file
+ * Load pre-computed embeddings from Vercel Blob
  */
 export async function loadEmbeddings(): Promise<IconEmbedding[]> {
-  // Return cached embeddings if available
   if (cachedEmbeddings !== null) {
     return cachedEmbeddings;
   }
 
-  const embeddingsFilePath = join(process.cwd(), 'icon_embeddings.json');
-  
-  if (!existsSync(embeddingsFilePath)) {
-    console.warn('icon_embeddings.json not found. Run generate-embeddings script first.');
-    cachedEmbeddings = [];
-    return cachedEmbeddings;
-  }
-
   try {
-    const embeddingsData = await readFile(embeddingsFilePath, 'utf-8');
-    const parsed = JSON.parse(embeddingsData);
+    const response = await fetch(EMBEDDINGS_BLOB_URL);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch embeddings: ${response.status}`);
+    }
+    const parsed = await response.json();
     cachedEmbeddings = Array.isArray(parsed) ? parsed : [];
     return cachedEmbeddings;
   } catch (error) {
