@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
 
     // Get the generative model with temperature set to 0 for deterministic results
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-2.0-flash',
+      model: 'gemini-2.5-flash',
       generationConfig: {
         temperature: 0.2, // Set to 0 for deterministic results
       }
